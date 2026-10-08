@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Coat Check 1.3.1</title>
+<title>The Coat Check 1.3.2</title>
 <meta name="citation_title" content="The Coat Check: a living technical report on whether an agent&#x27;s &quot;done&quot; can be trusted">
 <meta name="citation_author" content="Joshua Bauer">
 <meta name="citation_publication_date" content="2026/10/08">
@@ -12,7 +12,7 @@
 <meta name="citation_pdf_url" content="https://github.com/ISWT42/coat-check-report/releases/latest/download/report.pdf">
 <meta name="citation_keywords" content="AI agents; verification; false completion; receipts; timestamps; preregistration">
 <meta name="citation_language" content="en">
-<meta name="description" content="A living technical report on whether an AI agent&#x27;s done can be trusted. Version 1.3.1.">
+<meta name="description" content="A living technical report on whether an AI agent&#x27;s done can be trusted. Version 1.3.2.">
 <meta name="author" content="Joshua Bauer">
 <style>
 :root{color-scheme:light dark;--bg:#f3f5f9;--panel:#fff;--soft:#edf0f6;--ink:#192338;--muted:#526078;--line:#d5dce7;--accent:#6238d4;--accent-soft:#eee8ff;--green:#176443;--green-soft:#e5f4eb;--red:#ae2941;--red-soft:#ffeaf0;--amber:#765009;--amber-soft:#fff2d5;--shadow:0 8px 28px rgb(21 33 55 / 5%)}
@@ -55,7 +55,7 @@ blockquote.retracted{border-color:var(--red);background:var(--red-soft)}
 <body>
 <main>
 <h1>The Coat Check: a living technical report on whether an agent's "done" can be trusted</h1>
-<p class="byline">Joshua Bauer (ISWT42), independent researcher · version 1.3.1 · 8 October 2026</p>
+<p class="byline">Joshua Bauer (ISWT42), independent researcher · version 1.3.2 · 8 October 2026</p>
 <p class="meta">Contact: joshua@iswt.ca. DOI (always the latest version): <a href="https://doi.org/10.5281/zenodo.23228949">10.5281/zenodo.23228949</a>. Each version's own DOI is listed on that record (version 1.0.0: 10.5281/zenodo.23228950). Licence: Text and data CC BY 4.0; code MIT.</p>
 <nav class="toc" aria-label="Contents">
 <a href="#1-summary">Summary</a>
@@ -71,7 +71,7 @@ blockquote.retracted{border-color:var(--red);background:var(--red-soft)}
 <h2 id="1-summary">1. Summary</h2>
 <p>Can an AI agent's report of "done" be trusted? This report answers one finding at a time.</p>
 <p><strong>Short version.</strong> Small and mid-sized models often quoted the failing line and still marked the job done, or marked it done when the check never ran. In the studies here, the coat check (a ticket written before the work, matched at pickup against a record the agent cannot change) went with less false done. The studies differ in design and size, so this report does not rank them. I run and evaluate these methods myself: see Interests and independence, under Limits.</p>
-<p>Version 1.3.1: 11 findings, 6 shown, 2 not shown, 3 exploratory.</p>
+<p>Version 1.3.2: 11 findings, 6 shown, 2 not shown, 3 exploratory.</p>
 <ul><li><strong><a href="#F001">F001</a></strong> [exploratory] Models quoted the failing line yet said done; rewording the task moved false done onto checks that never ran.</li><li><strong><a href="#F002">F002</a></strong> [shown] On one model, a coat-check ticket removed false done on never-ran logs after the do sentence.</li><li><strong><a href="#F003">F003</a></strong> [exploratory] On the benchmark models, a ticket plus a settling line cut never-ran false done to nearly none.</li><li><strong><a href="#F004">F004</a></strong> [exploratory] A ticket that names only the check, not the answer, also took false done to none.</li><li><strong><a href="#F005">F005</a></strong> [shown] On coding jobs, a ticket plus the real check result and one fix cut false done left at the end.</li><li><strong><a href="#F006">F006</a></strong> [shown] Forced yes or no made models guess; allowing not shown nearly stopped it.</li><li><strong><a href="#F007">F007</a></strong> [shown] A reviewer agent followed the build agent's word; a receipt check from an unchangeable record cut false release most.</li><li><strong><a href="#F008">F008</a></strong> [shown] Telling the reviewer the rule cut false release a great deal, on hosted, local and fresh claims.</li><li><strong><a href="#F009">F009</a></strong> [not shown] A binding gate let few false claims through, but did not beat a told reviewer on the primary test.</li><li><strong><a href="#F010">F010</a></strong> [shown] On small-model coding jobs, certifying every job against the grading result handed on no false done in this run (the easy case: the checker was given the result); a benefit from the ticket alone was not shown.</li><li><strong><a href="#F011">F011</a></strong> [not shown] Checking jobs less often for agents with a better track record was not shown to help; in this run, checking every job (the checker was handed the test line) handed on fewer false done.</li></ul>
 <h2 id="2-method">2. Method</h2>
 <h3 id="2-1-the-coat-check">2.1 The coat check</h3>
@@ -98,7 +98,7 @@ blockquote.retracted{border-color:var(--red);background:var(--red-soft)}
 <div class="tw"><table><thead><tr><th></th><th>Gemini 3.7 Flash</th><th>Gemini 3.8 Flash</th><th>Claude Haiku 4.5</th><th>GPT-5.4 nano</th></tr></thead><tbody><tr><th scope="row">T1 plain report</th><td>0</td><td>0</td><td>1</td><td>6</td></tr><tr><th scope="row">T2 with definitions</th><td>0</td><td>0</td><td>0</td><td>5</td></tr><tr><th scope="row">T3 do the work</th><td>11</td><td>5</td><td>10</td><td>16</td></tr><tr><th scope="row">T4 with proof sentence</th><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody></table></div>
 <ul><li>Gemini 3.7 Flash, plain report against do sentence: 7 against 0, p = 0.01562 (not shown).</li></ul>
 <p><em>Meaning.</em> Done covers different errors. Doing the work removed one and produced the other. A quoted line is not a receipt.</p>
-<p><em>Limits.</em> Invented logs; small and mid-sized models. The sealed paired test did not survive correction over 12 tests.</p>
+<p><em>Limits.</em> Invented logs, generated with a language model from fixed specifications; small and mid-sized models. The sealed paired test did not survive correction over 12 tests.</p>
 <p><em>Seal.</em> Bitcoin 969401 to 969403 (Appendix C).</p>
 </section>
 <section class="card" id="F002">
@@ -196,7 +196,7 @@ blockquote.retracted{border-color:var(--red);background:var(--red-soft)}
 <div class="tw"><table><thead><tr><th></th><th>G1</th><th>G1T</th><th>G2</th><th>G3</th></tr></thead><tbody><tr><th scope="row">Qwen3-4B</th><td>29</td><td>10</td><td>14</td><td>5</td></tr><tr><th scope="row">Gemma-4-E4B</th><td>21</td><td>9</td><td>20</td><td>5</td></tr></tbody></table></div>
 <ul><li>primary, Qwen3-4B, G1T against G3: 6 against 1, p = 0.125 (not shown).</li><li>primary, Gemma-4-E4B, G1T against G3: 4 against 0, p = 0.125 (not shown).</li><li>Qwen3-4B, G2 against G3: 9 against 0, p = 0.00391 (exploratory).</li><li>Gemma-4-E4B, G2 against G3: 15 against 0, p = 6.1e-05 (exploratory).</li></ul>
 <p><em>Meaning.</em> The gate let few through, but this size cannot show a modest gap over a told reviewer; advice alone was much weaker.</p>
-<p><em>Limits.</em> Small models; invented claims; the key is withheld. Each held-back true claim is a job for a person.</p>
+<p><em>Limits.</em> Small models; invented claims, generated with a language model from fixed specifications; the key is withheld. Each held-back true claim is a job for a person.</p>
 <p><em>Seal.</em> FreeTSA 2026-10-07; Bitcoin 970271 to 970333 (Appendix C).</p>
 </section>
 <section class="card" id="F010">
@@ -226,13 +226,16 @@ blockquote.retracted{border-color:var(--red);background:var(--red-soft)}
 <p><em>Seal.</em> FreeTSA 2026-10-08; Bitcoin 970432 to 970467 (Appendix C).</p>
 </section>
 <h2 id="4-limits-and-threats-to-validity">4. Limits and threats to validity</h2>
-<ul><li><strong>Small models, invented items.</strong> Most tests use small or mid-sized models and items made up for the tests. Results may not carry to larger models or real logs.</li><li><strong>Public items.</strong> The Kaggle logs and answers are public, so a model with web access could look them up (<a href="#F002">F002</a>).</li><li><strong>My work only, no outside replication yet.</strong> A time stamp shows a file existed by then, not that no other version was sealed.</li><li><strong>Small counts, many tests.</strong> Most tests are exact paired tests on a few dozen items, uncorrected unless a card says so.</li><li><strong>Counts moved by audit.</strong> A parser audit moved a few counts after sealing; cards record the correction, and no headline reversed.</li><li><strong>Local checks only.</strong> Quotes were checked against local copies, not live public copies.</li><li><strong>Withheld.</strong> Forecasts and some run records are not published.</li></ul>
+<ul><li><strong>Small models, invented items.</strong> Most tests use small or mid-sized models. The test items were generated with a language model from fixed specifications, not drawn from real work. Results may not carry to larger models or real logs.</li><li><strong>Public items.</strong> The Kaggle logs and answers are public, so a model with web access could look them up (<a href="#F002">F002</a>).</li><li><strong>My work only, no outside replication yet.</strong> A time stamp shows a file existed by then, not that no other version was sealed.</li><li><strong>Small counts, many tests.</strong> Most tests are exact paired tests on a few dozen items, uncorrected unless a card says so.</li><li><strong>Counts moved by audit.</strong> A parser audit moved a few counts after sealing; cards record the correction, and no headline reversed.</li><li><strong>Local checks only.</strong> Quotes were checked against local copies, not live public copies.</li><li><strong>Withheld.</strong> Forecasts and some run records are not published.</li></ul>
 <h3 id="interests-and-independence">Interests and independence</h3>
 <p>I develop the coat-check method and receipt tools, and I may offer paid services built on them. My evaluations here of my own methods and tools are developer-led, not independent validation. Outside review and replication are invited: a replication kit exists and will be published, with its link added here. I hold no investments in AI companies.</p>
 <h2 id="5-what-s-next">5. What's next</h2>
 <ul><li><strong>Q001</strong> [open] Replicate on fresh items, held back until they run.</li><li><strong>Q002</strong> [open] Does the ticket hold on longer real logs and larger models?</li><li><strong>Q003</strong> [open] Pair "Report whether" and "Check that" on identical logs.</li><li><strong>Q004</strong> [open] Why did a certifier that rewrote the work add errors? Test certify-only.</li><li><strong>Q005</strong> [open] Compare the binding gate with a told reviewer on enough claims to see a modest gap.</li><li><strong>Q006</strong> [open] Recompute the pooled forced-choice test with the audited Gemini 3.8 Flash count.</li><li><strong>Q007</strong> [closed] The harness comparison ended as the OpenAI pair only: too few errors to show a difference; I closed the Claude pair on 8 October.</li><li><strong>Q008</strong> [answered by a finding] Earned Agency Bench: run once on small models; the results are in the findings listed here.</li><li><strong>Q009</strong> [open] A second bench on messy real logs, with an imperfect checker that is not handed the test line.</li><li><strong>Q010</strong> [open] Replicate the bench with other models and fresh jobs. The sealed code is in the public record.</li></ul>
 <p><strong>Acknowledgement.</strong> Version 1.3.0 was revised after an outside methods review, 8 October 2026.</p>
 <h2 id="6-changelog">6. Changelog</h2>
+<h3 id="version-1-3-2-2026-10-08">Version 1.3.2 (2026-10-08)</h3>
+<p>Limits: state that the test items were generated with a language model from fixed specifications.</p>
+<ul><li>Findings added: none</li><li>Changed: <a href="#F001">F001</a>: limits line states how the test items were generated; <a href="#F009">F009</a>: limits line states how the test items were generated</li><li>Retracted (card kept, marked): none</li></ul>
 <h3 id="version-1-3-1-2026-10-08">Version 1.3.1 (2026-10-08)</h3>
 <p>Wording: removed reviewer tool names from the acknowledgements.</p>
 <ul><li>Findings added: none</li><li>Changed: <a href="#F006">F006</a>: limits line reworded (first person); <a href="#F009">F009</a>: limits line reworded</li><li>Retracted (card kept, marked): none</li></ul>

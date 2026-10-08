@@ -15,7 +15,7 @@
  "headline": "Under the plain report sentence Gemini 3.7 Flash called {{F001.c.t1_g37_fail}} failed checks done. After the do sentence it called {{F001.c.t3_g37_absent}} never-ran logs done (GPT-5.4 nano: {{F001.c.t3_nano_absent}}). All {{F001.c.quoted_failing.n}} plain-report false done replies quoted the failing line.",
  "plain_meaning": "Done covers different errors. Doing the work removed one and produced the other. A quoted line is not a receipt.",
  "limits": [
-  "Invented logs; small and mid-sized models.",
+  "Invented logs, generated with a language model from fixed specifications; small and mid-sized models.",
   "The sealed paired test did not survive correction over {{F001.c.sealed_tests.n}} tests."
  ],
  "counts": [

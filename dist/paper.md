@@ -1,6 +1,6 @@
 # The Coat Check: a living technical report on whether an agent's "done" can be trusted (paper extract)
 
-Joshua Bauer (ISWT42), independent researcher · version 1.3.1
+Joshua Bauer (ISWT42), independent researcher · version 1.3.2
 
 ## 1. Summary
 
@@ -8,7 +8,7 @@ Can an AI agent's report of "done" be trusted? This report answers one finding a
 
 **Short version.** Small and mid-sized models often quoted the failing line and still marked the job done, or marked it done when the check never ran. In the studies here, the coat check (a ticket written before the work, matched at pickup against a record the agent cannot change) went with less false done. The studies differ in design and size, so this report does not rank them. I run and evaluate these methods myself: see Interests and independence, under Limits.
 
-Version 1.3.1: 8 findings, 5 shown, 1 not shown, 2 exploratory.
+Version 1.3.2: 8 findings, 5 shown, 1 not shown, 2 exploratory.
 
 - **F001** [exploratory] Models quoted the failing line yet said done; rewording the task moved false done onto checks that never ran.
 - **F002** [shown] On one model, a coat-check ticket removed false done on never-ran logs after the do sentence.
@@ -82,7 +82,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Meaning.* Done covers different errors. Doing the work removed one and produced the other. A quoted line is not a receipt.
 
-*Limits.* Invented logs; small and mid-sized models. The sealed paired test did not survive correction over 12 tests.
+*Limits.* Invented logs, generated with a language model from fixed specifications; small and mid-sized models. The sealed paired test did not survive correction over 12 tests.
 
 *Seal.* Bitcoin 969401 to 969403 (Appendix C).
 
@@ -281,13 +281,13 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Meaning.* The gate let few through, but this size cannot show a modest gap over a told reviewer; advice alone was much weaker.
 
-*Limits.* Small models; invented claims; the key is withheld. Each held-back true claim is a job for a person.
+*Limits.* Small models; invented claims, generated with a language model from fixed specifications; the key is withheld. Each held-back true claim is a job for a person.
 
 *Seal.* FreeTSA 2026-10-07; Bitcoin 970271 to 970333 (Appendix C).
 
 ## 4. Limits and threats to validity
 
-- **Small models, invented items.** Most tests use small or mid-sized models and items made up for the tests. Results may not carry to larger models or real logs.
+- **Small models, invented items.** Most tests use small or mid-sized models. The test items were generated with a language model from fixed specifications, not drawn from real work. Results may not carry to larger models or real logs.
 - **Public items.** The Kaggle logs and answers are public, so a model with web access could look them up (F002).
 - **My work only, no outside replication yet.** A time stamp shows a file existed by then, not that no other version was sealed.
 - **Small counts, many tests.** Most tests are exact paired tests on a few dozen items, uncorrected unless a card says so.
