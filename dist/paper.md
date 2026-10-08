@@ -1,18 +1,17 @@
 # The Coat Check: a living technical report on whether an agent's "done" can be trusted (paper extract)
 
-Joshua Bauer (ISWT42), independent researcher · version 1.2.0
+Joshua Bauer (ISWT42), independent researcher · version 1.3.0
 
 ## 1. Summary
 
 Can an AI agent's report of "done" be trusted? This report answers one finding at a time.
 
-**Short version.** Small and mid-sized models often quoted the failing line and still marked the job done, or marked it done when the check never ran. What helped most was the coat check: a ticket written before the work, matched at pickup against a record the agent cannot change.
+**Short version.** Small and mid-sized models often quoted the failing line and still marked the job done, or marked it done when the check never ran. In the studies here, the coat check (a ticket written before the work, matched at pickup against a record the agent cannot change) went with less false done. The studies differ in design and size, so this report does not rank them. One author runs and evaluates these methods: see Interests and independence, under Limits.
 
-Version 1.2.0: 9 findings, 5 shown, 1 not shown, 3 exploratory.
+Version 1.3.0: 8 findings, 5 shown, 1 not shown, 2 exploratory.
 
 - **F001** [exploratory] Models quoted the failing line yet said done; rewording the task moved false done onto checks that never ran.
 - **F002** [shown] On one model, a coat-check ticket removed false done on never-ran logs after the do sentence.
-- **F003** [exploratory] On the benchmark models, a ticket plus a settling line cut never-ran false done to nearly none.
 - **F004** [exploratory] A ticket that names only the check, not the answer, also took false done to none.
 - **F005** [shown] On coding jobs, a ticket plus the real check result and one fix cut false done left at the end.
 - **F006** [shown] Forced yes or no made models guess; allowing not shown nearly stopped it.
@@ -114,35 +113,6 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 *Limits.* One model through a command line; versions differ in several ways. Public logs: a first attempt, planned for Gemini 3.8 Flash, searched the web and 4 answers were set aside; the rerun used Gemini 3.7 Flash with tools denied.
 
 *Seal.* FreeTSA 2026-10-07; Bitcoin 970359 to 970373 (Appendix C).
-
-### F003. Kaggle tasks t5 and t6: the ticket on the benchmark's models
-
-**Status: exploratory** (since 1.0.0).
-
-*Question.* Does a ticket written before the work remove the false done that the do sentence produced?
-
-**Result.** After the do sentence the models called 11, 5, 10 and 16 never-ran logs done. With the ticket (t6) they called 0, 0, 0 and 1 shown, of 16.
-
-**Scenarios (never-ran called done or shown; failed called done) (of 16)**
-
-| | Gemini 3.7 Flash | Gemini 3.8 Flash | Claude Haiku 4.5 | GPT-5.4 nano |
-|---|---|---|---|---|
-| T3 do the work, never-ran called done | 11 | 5 | 10 | 16 |
-| t6 ticket and do sentence, never-ran called shown | 0 | 0 | 0 | 1 |
-| T1 plain report, failed called done | 7 | 5 | 0 | 0 |
-| t5 ticket and report sentence, failed called done | 0 | 0 | 0 | 0 |
-
-**Mean receipt score, t6 (share of jobs with every log right)**
-
-| | Gemini 3.7 Flash | Gemini 3.8 Flash | Claude Haiku 4.5 | GPT-5.4 nano |
-|---|---|---|---|---|
-| t6 | 1.000 | 1.000 | 1.000 | 0.958 |
-
-*Meaning.* A ticket naming the check and the agreed result turned most false done into not shown, but it hands over the answer.
-
-*Limits.* Not like-for-like: the ticket states the expected value. Counts come from the findings note; the sealed analysis file is not on disk.
-
-*Seal.* FreeTSA 2026-10-07; Bitcoin 970376 to 970415 (Appendix C).
 
 ### F004. Blind coat-check, tasks t7 and t8: the ticket names the check, not the answer
 
@@ -326,6 +296,10 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 - **Withheld.** Forecasts and some run records are not published.
 - **AI assistance.** Claude helped write designs, scorers and this report.
 
+### Interests and independence
+
+The author develops the coat-check method and receipt tools, and may offer paid services built on them. Evaluations here of the author's own methods and tools are developer-led, not independent validation. Outside review and replication are invited: a replication kit exists and will be published, with its link added here. The author holds no investments in AI companies.
+
 ## 5. What's next
 
 - **Q001** [open] Replicate on fresh items, held back until they run.
@@ -339,4 +313,4 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 - **Q009** [open] A second bench on messy real logs, with an imperfect checker that is not handed the test line.
 - **Q010** [open] Replicate the bench with other models and fresh jobs. The sealed code is in the public record.
 
-**Acknowledgement.** Built with Claude (Anthropic) as research assistant.
+**Acknowledgement.** Built with Claude (Anthropic) as research assistant. Version 1.3.0 was revised after AI-generated methods reviews by ChatGPT (GPT-6.1 Sol in Work, which reviewed F010 and F011, re-ran the scorer and checked the seals; GPT-6 Pro in Chat, which reviewed the plan for the next bench and the public wording), 8 October 2026. These are AI methods feedback, not human peer review.

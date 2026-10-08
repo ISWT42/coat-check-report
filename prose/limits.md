@@ -6,3 +6,7 @@
 - **Local checks only.** Quotes were checked against local copies, not live public copies.
 - **Withheld.** Forecasts and some run records are not published.
 - **AI assistance.** Claude helped write designs, scorers and this report.
+
+### Interests and independence
+
+The author develops the coat-check method and receipt tools, and may offer paid services built on them. Evaluations here of the author's own methods and tools are developer-led, not independent validation. Outside review and replication are invited: a replication kit exists and will be published, with its link added here. The author holds no investments in AI companies.

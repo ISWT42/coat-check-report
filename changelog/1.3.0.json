@@ -1,0 +1,22 @@
+{
+ "version": "1.3.0",
+ "date": "2026-10-08",
+ "summary": "Wording, limits and disclosure, after outside AI methods reviews (ChatGPT, 8 October 2026; AI feedback, not human peer review). No existing count changed and no finding was added; the new counts come from the score file, the bench config and the record's first addendum. F010 and F011: narrower claims (a benefit from the ticket alone was not shown; no false done was handed on in this run, in the easy case; forecasts overconfident in aggregate), the exact certifier counts including the one invalid verdict, the relative cost of checking every job, the limits the full design states, statistics wording (the sign-flip test is exact but not assumption-free), the paired differences per game for each test, and reproducibility notes (sealed before the scored run, not before any paid call; the resumed run; the one failing unit test in the record's public package). The summary no longer ranks heterogeneous studies. New: an Interests and independence note, and a credit to the reviews.",
+ "added": [],
+ "changed": [
+  {
+   "id": "F010",
+   "what": "title, summary line, headline and plain meaning narrowed; limits expanded; paired differences added; the seal role and seal note corrected (sealed before the scored run, not before any paid call)"
+  },
+  {
+   "id": "F011",
+   "what": "status note, summary line, headline, plain meaning and setup narrowed; limits expanded; paired differences added; the seal role and seal note corrected"
+  },
+  {
+   "id": "F003",
+   "what": "left out of the paper extract (paper: false) to keep the extract under the word cap after the new disclosure and acknowledgement; the full report keeps the card unchanged"
+  }
+ ],
+ "superseded": [],
+ "retracted": []
+}

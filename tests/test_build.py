@@ -62,6 +62,43 @@ class Clean(unittest.TestCase):
         self.assertEqual(pos, sorted(pos))
 
 
+class Disclosure(unittest.TestCase):
+    """Version 1.3.0: the disclosure, the credit to the reviews and the narrowed bench wording must stay in."""
+
+    def test_interests_section_is_in_the_report_and_the_paper_extract(self):
+        P = project()
+        full = build.compose_md(P)
+        paper = "\n\n".join(md for _, md in build.paper_sections(P))
+        for md in (full, paper):
+            self.assertIn("### Interests and independence", md)
+            self.assertIn("developer-led, not independent validation", md)
+            self.assertIn("holds no investments in AI companies", md)
+
+    def test_reviews_are_credited_as_ai_feedback(self):
+        ack = project()["config"]["acknowledgement"]
+        self.assertIn("not human peer review", ack)
+        self.assertIn("GPT-6.1 Sol", ack)
+        self.assertIn("GPT-6 Pro", ack)
+
+    def test_bench_cards_keep_their_narrowed_claims_and_limits(self):
+        P = project()
+        for fid in ("F010", "F011"):
+            md = build.render_card(P, P["by_id"][fid])
+            for phrase in ("not assumption-free", "exchangeability", "combined policy" if fid == "F011" else "deterministic-gate control",
+                           "easy case", "privileged information"):
+                self.assertIn(phrase, md, "%s lost %r" % (fid, phrase))
+            for old in ("did not know", "found every failing job", "stopped false done", "ticket alone did not help", "before any model call"):
+                self.assertNotIn(old, md, "%s still says %r" % (fid, old))
+        self.assertIn("a benefit from the ticket alone was not shown", build.render_card(P, P["by_id"]["F010"]).lower())
+
+    def test_bench_seals_say_before_the_scored_run(self):
+        P = project()
+        for fid in ("F010", "F011"):
+            for s in P["by_id"][fid]["seal"]:
+                self.assertNotIn("before any model call", s["role"])
+            self.assertIn("sealed before the scored run", P["by_id"][fid]["seal"][0]["role"])
+
+
 class PlantedFaults(unittest.TestCase):
     def test_raw_digit_in_prose_fails(self):
         P = project()

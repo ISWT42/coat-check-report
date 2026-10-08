@@ -7,18 +7,24 @@
  "paper": false,
  "id": "F010",
  "slug": "earned-agency-bench-certify-all",
- "title": "Earned Agency Bench: certifying every job against the record stopped false done being handed on",
+ "title": "Earned Agency Bench: with every job certified against the record, no false done was handed on in this run",
  "question": "When finished coding jobs are handed on, does a second agent that certifies each one against a record the agent cannot change cut the false done that gets through? Does a ticket alone?",
  "status": "shown",
- "status_note": "A secondary test fixed in advance (Holm-adjusted) showed it. The primary tests of the bench were not shown (F011).",
- "summary_line": "On small-model coding jobs, certifying every job against the record handed on no false done; a ticket alone did not help.",
- "headline": "On this bench ({{F010.c.models}} small models, {{F010.c.games.n}} games, one run) the agents in the baseline arm said done on {{F010.c.a_done}} jobs, and {{F010.c.a_false}} jobs were false done: the hidden tests failed. Their mean forecast was {{F010.c.a_forecast.n}} against a pass rate of {{F010.c.a_pass_rate.n}}. When a second agent certified every job against the record, a false done was handed on in {{F010.c.c_false_late}} jobs in the later rounds, against {{F010.c.a_false_late}} in the baseline arm. The certifier caught {{F010.c.c_caught}} failing jobs, let {{F010.c.c_assure.n}} through, and raised {{F010.c.c_alarm.n}} false alarms on passing work; it was exactly right on {{F010.c.c_right}} valid verdicts ({{F010.c.c_invalid}} verdicts were invalid). Certifying every job against the ticket-only arm: mean difference {{F010.t.s3.a}} per game, Holm-adjusted p = {{F010.t.s3.p}}. The ticket alone did not help: {{F010.t.s2.a}}, Holm-adjusted p = {{F010.t.s2.p}}. Cost per delivered good job, in US dollars: {{F010.c.cost_a_good.n}} baseline, {{F010.c.cost_c_good.n}} certified.",
- "plain_meaning": "The agents often said done when the hidden tests failed, and they were far too sure of themselves. A second agent that read the record found every failing job, so none was handed on. A ticket written before the work did not change that. Checking cost a fraction of a cent more per job here.",
- "setup": "Each game plays one arm for several rounds on a bank of {{F010.c.bank.n}} small coding jobs with hidden tests the agents never see. Before each job the agent seals a forecast that its work will pass. In arm A the agent's own word is handed on. Arm B adds a ticket written before the work. In arm C a second agent, from another model family, certifies every job and cannot change the work. Arms D and E certify a share of the jobs, D by track record and E at random (F011).",
+ "status_note": "A secondary test fixed in advance (Holm-adjusted) showed it, in the easy case where the certifier was handed the grading line. The primary tests of the bench were not shown (F011).",
+ "summary_line": "On small-model coding jobs, certifying every job against the grading result handed on no false done in this run (the easy case: the checker was given the result); a benefit from the ticket alone was not shown.",
+ "headline": "On this bench ({{F010.c.models}} small models, {{F010.c.games.n}} games, one run) the agents in the baseline arm said done on {{F010.c.a_done}} jobs, and {{F010.c.a_false}} jobs were false done: the hidden tests failed. Their mean forecast was {{F010.c.a_forecast.n}} against a pass rate of {{F010.c.a_pass_rate.n}}, so their forecasts were overconfident in aggregate. When a second agent certified every job against the record, no false done was handed on in this run: a false done was handed on in {{F010.c.c_false_late}} jobs in the later rounds, against {{F010.c.a_false_late}} in the baseline arm. In that arm {{F010.c.c_pass}} jobs passed the hidden tests and {{F010.c.c_fail.n}} failed. On {{F010.c.c_caught.n}} of the failing jobs the certifier returned contradicted; on the other failing job its verdict was invalid and the job was blocked ({{F010.c.c_invalid}} invalid verdicts in all). It let {{F010.c.c_assure.n}} failing jobs through and raised {{F010.c.c_alarm.n}} false alarms on passing work; among valid verdicts it was exactly right on {{F010.c.c_right}}. Certifying every job against the ticket-only arm: mean difference {{F010.t.s3.a}} per game, Holm-adjusted p = {{F010.t.s3.p}}. A benefit from the ticket alone was not shown: {{F010.t.s2.a}}, Holm-adjusted p = {{F010.t.s2.p}}, which is neither equivalence nor proof of no effect. Cost per delivered good job, in US dollars: {{F010.c.cost_a_good.n}} baseline, {{F010.c.cost_c_good.n}} certified, about {{F010.c.cost_rise.n}}% more. These are estimates from token counts at listed prices, not checked against billing, and they leave out grading compute, infrastructure and human handling.",
+ "plain_meaning": "The agents often said done when the hidden tests failed, and their forecasts were overconfident in aggregate. A second agent that was handed the record's own test line returned contradicted on every failing job it gave a valid verdict on, and none was handed on in this run. That is the easy case, so it says little about messy real logs. No deterministic-gate control was run: a plain program reading the same pass or fail line might have done as well, and this bench cannot tell. A benefit from the ticket alone was not shown. Checking every job cost about {{F010.c.cost_rise.n}}% more model-call cost per delivered good job here, not counting grading, infrastructure or human handling.",
+ "setup": "Each game plays one arm for several rounds on a bank of {{F010.c.bank.n}} small coding jobs with hidden tests the agents never see. Before each job the agent seals a forecast that its work will pass. In arm A the agent's own word is handed on. Arm B adds a ticket written before the work. In arm C a second agent, from another model family, certifies every job and cannot change the work. Arms D and E certify a share of the jobs, D by track record and E at random (F011). The runner ran the hidden tests on every job in every arm; the arms differ in what the certifier was shown and what was handed on.",
  "limits": [
-  "The record clearly settled each job here: the certifier was handed the runner's own line from the hidden-test run. That likely made its job easy, so a perfect certifier is not expected on messy real logs. In an earlier checker study (local pair) the rule \"shown needs both\" let {{F010.c.r2_false}} false \"shown\" answers through and kept {{F010.c.r2_true}} true ones.",
-  "{{F010.c.models}} small cheap models; {{F010.c.games.n}} games; one run; not replicated.",
-  "The comparison with the baseline arm is by counts. The sealed test of the certifier is against the ticket-only arm (S3), a secondary test."
+  "The record clearly settled each job here: by design the certifier was handed the runner's own line from the hidden-test run. That is privileged information, and it was never given missing, conflicting or misleading evidence. That made its job easy, so a perfect certifier is not expected on messy real logs. In an earlier checker study (local pair) the rule \"shown needs both\" let {{F010.c.r2_false}} false \"shown\" answers through and kept {{F010.c.r2_true}} true ones.",
+  "There was no deterministic-gate control. A plain program that read the same pass or fail line could have gated the same way, so this bench does not show that a model reviewer adds anything over such a gate. No false done in {{F010.c.c_false.d}} jobs is what was seen in this run; it does not show that the underlying chance is nil.",
+  "{{F010.c.models}} small cheap models, reasoning off, temperature {{F010.c.temperature.n}}, seed {{F010.c.seed.n}}, work replies capped at {{F010.c.work_cap.n}} tokens, no tools. These are code-generation trials of models answering without thinking. {{F010.c.games.n}} games; one run; not replicated.",
+  "The inference unit is the {{F011.c.pairs}} paired games, on one bank of {{F010.c.bank.n}} jobs and one pool of {{F010.c.models}} models. A repetition repeats the same jobs and models; it is not a new sample of agents or tasks, and verdicts in different arms reuse the same jobs, so they are not independent cases. The sign-flip test is exact over all sign patterns but not assumption-free: it needs the per-game difference to be symmetric about no difference if nothing differs (exchangeability) and the games to be independent, and the arms were not run in a randomised order within a repetition.",
+  "Part of the baseline's false done is a construct problem. {{F010.c.a_missing_pkg.n}} of the {{F010.c.a_false.n}} baseline false done came from the missing-package jobs ({{F010.c.a_missing_pkg}} of that kind were false done). A missing-package job's specification tells the agent to use a package that the grading sandbox lacks (job j31 names fastcount), and the passing reference does not use it. Passing the hidden tests is then not the same as doing what the specification said.",
+  "The hidden tests were run on every job in every arm, so partial checking saves no test runs here; it only limits what the certifier sees. Feedback and the routing ranks use outcomes of jobs that were not certified. The bench does not show savings from verifying less.",
+  "The Brier score is overall forecast error. It mixes task difficulty with how well forecasts separate passes from failures, so it is not calibration alone.",
+  "The comparison with the baseline arm is by counts. The sealed test of the certifier is against the ticket-only arm (S3), a secondary test. Each test has {{F011.c.pairs}} paired games, which resolve only coarsely. No interval is reported because the sealed scorer does not compute one; the per-game differences are listed above.",
+  "Sealed before the scored run, not before any paid call: the design records a first paid smoke run before the seal. The scored record began as one repetition and was resumed to complete the predeclared {{F011.c.pairs}}, read from the room log. One unit test fails in the record's public package for a packaging reason. Both are explained in Appendix C and in the record's addendum."
  ],
  "counts": [
   {
@@ -416,6 +422,92 @@
     "public": "Public research record, bundle 3, deciding-line-2026-10-06/design-tables.md"
    },
    "quote": "| R2 (shown needs both) | 2/68 | 23/32 | - | - |"
+  },
+  {
+   "key": "c_fail",
+   "label": "arm C certify every job: jobs that failed the hidden tests",
+   "n": "123",
+   "d": "320",
+   "d_basis": "jobs per arm (score file: jobs 320); the failing jobs are the jobs that did not pass",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md",
+    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567)"
+   },
+   "quote": "Arm C had 197 passes and 123 failures."
+  },
+  {
+   "key": "c_invalid_failing",
+   "label": "arm C certifier: failing jobs with an invalid verdict (blocked)",
+   "n": "1",
+   "d": "123",
+   "d_basis": "failing jobs in arm C (123)",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md",
+    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567)"
+   },
+   "quote": "ARM C VERDICT invalid on a job whose hidden tests failed : 1"
+  },
+  {
+   "key": "cost_rise",
+   "label": "arm C against arm A: percent more estimated model-call cost per delivered good job",
+   "n": "58",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md",
+    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567)"
+   },
+   "quote": "That is about 58% more (1.58 times; from the unrounded totals, US$0.075394 over 197 jobs against US$0.047824 over 198 jobs, 58.4%)."
+  },
+  {
+   "key": "a_missing_pkg",
+   "label": "arm A baseline: false done among the missing-package jobs",
+   "n": "73",
+   "d": "80",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "    cost per passing job: 0.000242; per delivered good job: 0.000242\n    forecasts: n 319, Brier 0.322, mean forecast 0.92, pass rate 0.62\n    accepted false done by kind: clean 21/160 (0.13), ambiguous 22/80 (0.28), missing_package 73/80 (0.91)"
+  },
+  {
+   "key": "temperature",
+   "label": "model setting: temperature",
+   "n": "0",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/config.json",
+    "public": "Public research record, bundle 7, config.json (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "send reasoning OFF, temperature 0, seed 42 and a fixed reply limit (openrouter-plain 400 tokens, openrouter-plain-long 1200)"
+  },
+  {
+   "key": "seed",
+   "label": "model setting: seed",
+   "n": "42",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/config.json",
+    "public": "Public research record, bundle 7, config.json (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "send reasoning OFF, temperature 0, seed 42 and a fixed reply limit (openrouter-plain 400 tokens, openrouter-plain-long 1200)"
+  },
+  {
+   "key": "work_cap",
+   "label": "model setting: cap on a work reply, in tokens",
+   "n": "1200",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/config.json",
+    "public": "Public research record, bundle 7, config.json (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "\"max_out_tokens_by_role\": {\"forecast\": 400, \"certify\": 400, \"work\": 1200},"
   }
  ],
  "tables": [
@@ -504,11 +596,43 @@
    },
    "quote": "  S2 [secondary] n = 8, mean difference +0.0219, p = 0.1250, Holm-adjusted p = 0.2500\n      ticket: B minus A, false done handed on, all rounds",
    "line": "{name}: mean difference {a} per game, p = {b}, Holm-adjusted p = {p}"
+  },
+  {
+   "key": "s2_diffs",
+   "name": "paired differences per game, ticket (B) minus baseline (A), false done per job, all rounds, repetitions in order",
+   "kind": "exploratory (the per-game differences from the sealed scorer; the score file prints only their mean)",
+   "a": "+0.00000, +0.00000, +0.00000, +0.02500, +0.05000, +0.02500, +0.07500, +0.00000",
+   "b": "n/a",
+   "p": "n/a",
+   "verdict": "exploratory",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md",
+    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567)"
+   },
+   "quote": "PAIRED S2 (B minus A, accepted_false_done) mean +0.0219, p = 0.1250; per-rep differences: +0.00000, +0.00000, +0.00000, +0.02500, +0.05000, +0.02500, +0.07500, +0.00000; smallest +0.00000, largest +0.07500",
+   "line": "{name}: {a}"
+  },
+  {
+   "key": "s3_diffs",
+   "name": "paired differences per game, certify every job (C) minus ticket only (B), false done per job, all rounds, repetitions in order",
+   "kind": "exploratory (the per-game differences from the sealed scorer; the score file prints only their mean)",
+   "a": "-0.32500, -0.40000, -0.35000, -0.35000, -0.40000, -0.45000, -0.40000, -0.40000",
+   "b": "n/a",
+   "p": "n/a",
+   "verdict": "exploratory",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md",
+    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567)"
+   },
+   "quote": "PAIRED S3 (C minus B, accepted_false_done) mean -0.3844, p = 0.0078; per-rep differences: -0.32500, -0.40000, -0.35000, -0.35000, -0.40000, -0.45000, -0.40000, -0.40000; smallest -0.45000, largest -0.32500",
+   "line": "{name}: {a}"
   }
  ],
  "seal": [
   {
-   "role": "design, code, job bank and forecasts, before any model call",
+   "role": "design, code, job bank and forecasts, sealed before the scored run (a first paid smoke run came earlier, as the design records)",
    "list_file": "EAB-SEAL-SHA256.txt",
    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/EAB-SEAL-SHA256.txt",
    "sha256": "8c7f00d9ef8bd08e9e7f2c2117e917ecc2b3cfa5e03f565741e62f6ec19491b2",
@@ -540,8 +664,16 @@
   {
    "label": "Research record, version with the bench",
    "url": "https://doi.org/10.5281/zenodo.23235648"
+  },
+  {
+   "label": "Addendum 1 to the bench bundle (8 October 2026)",
+   "url": "https://github.com/ISWT42/iswt-research-record/blob/v2026.10.08.3/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md"
+  },
+  {
+   "label": "Research record, version with the addendum",
+   "url": "https://doi.org/10.5281/zenodo.23237567"
   }
  ],
  "record_corrections": [],
- "seal_note": "The score file was written by the sealed scorer after the results seal; it is not itself in a seal list. Running the scorer again on the raw run gave the same text. The proof for the results seal got its Bitcoin block after the first release of the record; the copy in the record now holds it."
+ "seal_note": "The score file was written by the sealed scorer after the results seal; it is not itself in a seal list. Running the scorer again on the raw run gave the same text. The proof for the results seal got its Bitcoin block after the first release of the record; the copy in the record now holds it. Reproducibility notes (the record's first addendum, written 8 October 2026): the design was sealed before the scored run began, not before any paid call, because the design itself records a first paid smoke run before the seal. The raw record began as a run of one repetition with a low spend cap, ended, and was resumed within a minute with a larger cap to complete the predeclared {{F011.c.pairs}} repetitions; the first repetition is one of the scored {{F011.c.pairs}}, and the hash chain is unbroken across the resume. The record's public package has one failing unit test (test_every_design_code_and_source_file_is_in_the_seal_list), because the public README, the redacted copies of withheld originals and the addendum are outside the original seal manifest. No scored file is outside the seal, and no sealed file was edited."
 }

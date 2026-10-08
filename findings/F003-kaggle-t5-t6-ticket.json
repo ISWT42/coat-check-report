@@ -4,7 +4,7 @@
  "lifecycle": "active",
  "superseded_by": null,
  "retraction": null,
- "paper": true,
+ "paper": false,
  "id": "F003",
  "slug": "kaggle-t5-t6-ticket",
  "title": "Kaggle tasks t5 and t6: the ticket on the benchmark's models",
