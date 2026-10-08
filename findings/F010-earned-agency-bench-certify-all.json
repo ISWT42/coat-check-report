@@ -18,7 +18,6 @@
  "limits": [
   "The record clearly settled each job here: the certifier was handed the runner's own line from the hidden-test run. That likely made its job easy, so a perfect certifier is not expected on messy real logs. In an earlier checker study (local pair) the rule \"shown needs both\" let {{F010.c.r2_false}} false \"shown\" answers through and kept {{F010.c.r2_true}} true ones.",
   "{{F010.c.models}} small cheap models; {{F010.c.games.n}} games; one run; not replicated.",
-  "The Bitcoin proof of the results seal was still waiting for a block when this version was built (Appendix C).",
   "The comparison with the baseline arm is by counts. The sealed test of the certifier is against the ticket-only arm (S3), a secondary test."
  ],
  "counts": [
@@ -525,7 +524,11 @@
    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/RESULTS-SEAL-SHA256.txt",
    "sha256": "4f9059d697ce29bf16571c13644bc3a0002f62acc0c12ad63bb3dee28848b30a",
    "freetsa_utc": "2026-10-08T05:45:21Z",
-   "bitcoin_blocks": [],
+   "bitcoin_blocks": [
+    970449,
+    970464,
+    970467
+   ],
    "pending_calendar": 4
   }
  ],
@@ -540,5 +543,5 @@
   }
  ],
  "record_corrections": [],
- "seal_note": "The score file was written by the sealed scorer after the results seal; it is not itself in a seal list. Running the scorer again on the raw run gave the same text. The Bitcoin proof for the results seal was still waiting when this version was built."
+ "seal_note": "The score file was written by the sealed scorer after the results seal; it is not itself in a seal list. Running the scorer again on the raw run gave the same text. The proof for the results seal got its Bitcoin block after the first release of the record; the copy in the record now holds it."
 }

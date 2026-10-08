@@ -354,9 +354,9 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Setup.* Each game plays one arm for several rounds on a bank of 40 small coding jobs with hidden tests the agents never see. Before each job the agent seals a forecast that its work will pass. In arm A the agent's own word is handed on. Arm B adds a ticket written before the work. In arm C a second agent, from another model family, certifies every job and cannot change the work. Arms D and E certify a share of the jobs, D by track record and E at random (F011).
 
-*Limits.* The record clearly settled each job here: the certifier was handed the runner's own line from the hidden-test run. That likely made its job easy, so a perfect certifier is not expected on messy real logs. In an earlier checker study (local pair) the rule "shown needs both" let 2 of 68 false "shown" answers through and kept 23 of 32 true ones. 4 small cheap models; 40 games; one run; not replicated. The Bitcoin proof of the results seal was still waiting for a block when this version was built (Appendix C). The comparison with the baseline arm is by counts. The sealed test of the certifier is against the ticket-only arm (S3), a secondary test.
+*Limits.* The record clearly settled each job here: the certifier was handed the runner's own line from the hidden-test run. That likely made its job easy, so a perfect certifier is not expected on messy real logs. In an earlier checker study (local pair) the rule "shown needs both" let 2 of 68 false "shown" answers through and kept 23 of 32 true ones. 4 small cheap models; 40 games; one run; not replicated. The comparison with the baseline arm is by counts. The sealed test of the certifier is against the ticket-only arm (S3), a secondary test.
 
-*Seal.* FreeTSA 2026-10-08; Bitcoin 970432 (Appendix C).
+*Seal.* FreeTSA 2026-10-08; Bitcoin 970432 to 970467 (Appendix C).
 
 ### F011. Earned agency: routing checks by track record is not shown, and it handed on more false done than checking everything
 
@@ -385,7 +385,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Limits.* 8 paired games for each test, so a small difference could not be told from nothing. Every check here was right, because the certifier was handed the test line. With an imperfect checker the balance between checking and trusting could change. 4 small cheap models; a short record to learn from; one run; not replicated. The earned-routing test and the forecast test were the primary tests. The comparison with checking everything is secondary.
 
-*Seal.* FreeTSA 2026-10-08; Bitcoin 970432 (Appendix C).
+*Seal.* FreeTSA 2026-10-08; Bitcoin 970432 to 970467 (Appendix C).
 
 ## 4. Limits and threats to validity
 
@@ -1838,15 +1838,15 @@ A first results list holds the hash of an empty input; the second list is the re
 | Role | List file | SHA-256 | FreeTSA (UTC) | Bitcoin blocks |
 |---|---|---|---|---|
 | design, code, job bank and forecasts, before any model call | `EAB-SEAL-SHA256.txt` | `8c7f00d9ef8bd08e9e7f2c2117e917ecc2b3cfa5e03f565741e62f6ec19491b2` | 2026-10-08 03:14:29Z | 970432 |
-| raw run, before any count | `RESULTS-SEAL-SHA256.txt` | `4f9059d697ce29bf16571c13644bc3a0002f62acc0c12ad63bb3dee28848b30a` | 2026-10-08 05:45:21Z | pending |
+| raw run, before any count | `RESULTS-SEAL-SHA256.txt` | `4f9059d697ce29bf16571c13644bc3a0002f62acc0c12ad63bb3dee28848b30a` | 2026-10-08 05:45:21Z | 970449, 970464, 970467 |
 
-The score file was written by the sealed scorer after the results seal; it is not itself in a seal list. Running the scorer again on the raw run gave the same text. The Bitcoin proof for the results seal was still waiting when this version was built.
+The score file was written by the sealed scorer after the results seal; it is not itself in a seal list. Running the scorer again on the raw run gave the same text. The proof for the results seal got its Bitcoin block after the first release of the record; the copy in the record now holds it.
 
 ### Seals for F011
 
 | Role | List file | SHA-256 | FreeTSA (UTC) | Bitcoin blocks |
 |---|---|---|---|---|
 | design, code, job bank and forecasts, before any model call | `EAB-SEAL-SHA256.txt` | `8c7f00d9ef8bd08e9e7f2c2117e917ecc2b3cfa5e03f565741e62f6ec19491b2` | 2026-10-08 03:14:29Z | 970432 |
-| raw run, before any count | `RESULTS-SEAL-SHA256.txt` | `4f9059d697ce29bf16571c13644bc3a0002f62acc0c12ad63bb3dee28848b30a` | 2026-10-08 05:45:21Z | pending |
+| raw run, before any count | `RESULTS-SEAL-SHA256.txt` | `4f9059d697ce29bf16571c13644bc3a0002f62acc0c12ad63bb3dee28848b30a` | 2026-10-08 05:45:21Z | 970449, 970464, 970467 |
 
-The score file was written by the sealed scorer after the results seal; it is not itself in a seal list. Running the scorer again on the raw run gave the same text. The Bitcoin proof for the results seal was still waiting when this version was built.
+The score file was written by the sealed scorer after the results seal; it is not itself in a seal list. Running the scorer again on the raw run gave the same text. The proof for the results seal got its Bitcoin block after the first release of the record; the copy in the record now holds it.

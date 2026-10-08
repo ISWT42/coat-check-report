@@ -216,7 +216,11 @@
    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/RESULTS-SEAL-SHA256.txt",
    "sha256": "4f9059d697ce29bf16571c13644bc3a0002f62acc0c12ad63bb3dee28848b30a",
    "freetsa_utc": "2026-10-08T05:45:21Z",
-   "bitcoin_blocks": [],
+   "bitcoin_blocks": [
+    970449,
+    970464,
+    970467
+   ],
    "pending_calendar": 4
   }
  ],
@@ -231,5 +235,5 @@
   }
  ],
  "record_corrections": [],
- "seal_note": "The score file was written by the sealed scorer after the results seal; it is not itself in a seal list. Running the scorer again on the raw run gave the same text. The Bitcoin proof for the results seal was still waiting when this version was built."
+ "seal_note": "The score file was written by the sealed scorer after the results seal; it is not itself in a seal list. Running the scorer again on the raw run gave the same text. The proof for the results seal got its Bitcoin block after the first release of the record; the copy in the record now holds it."
 }
