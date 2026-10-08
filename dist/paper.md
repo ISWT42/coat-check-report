@@ -1,6 +1,6 @@
 # The Coat Check: a living technical report on whether an agent's "done" can be trusted (paper extract)
 
-Joshua Bauer (ISWT42), independent researcher · version 1.1.0
+Joshua Bauer (ISWT42), independent researcher · version 1.2.0
 
 ## 1. Summary
 
@@ -8,7 +8,7 @@ Can an AI agent's report of "done" be trusted? This report answers one finding a
 
 **Short version.** Small and mid-sized models often quoted the failing line and still marked the job done, or marked it done when the check never ran. What helped most was the coat check: a ticket written before the work, matched at pickup against a record the agent cannot change.
 
-Version 1.1.0: 9 findings, 5 shown, 1 not shown, 3 exploratory.
+Version 1.2.0: 9 findings, 5 shown, 1 not shown, 3 exploratory.
 
 - **F001** [exploratory] Models quoted the failing line yet said done; rewording the task moved false done onto checks that never ran.
 - **F002** [shown] On one model, a coat-check ticket removed false done on never-ran logs after the do sentence.
@@ -335,6 +335,8 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 - **Q005** [open] Compare the binding gate with a told reviewer on enough claims to see a modest gap.
 - **Q006** [open] Recompute the pooled forced-choice test with the audited Gemini 3.8 Flash count.
 - **Q007** [closed] The harness comparison ended as the OpenAI pair only: too few errors to show a difference; the Claude pair was closed by the owner on 8 October.
-- **Q008** [registered, running] Earned Agency Bench: registered and running. No results yet.
+- **Q008** [answered by a finding] Earned Agency Bench: run once on small models; the results are in the findings listed here.
+- **Q009** [open] A second bench on messy real logs, with an imperfect checker that is not handed the test line.
+- **Q010** [open] Replicate the bench with other models and fresh jobs. The sealed code is in the public record.
 
 **Acknowledgement.** Built with Claude (Anthropic) as research assistant.

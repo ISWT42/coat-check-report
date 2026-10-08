@@ -61,9 +61,30 @@
     },
     {
       "id": "Q008",
-      "status": "registered, running",
-      "related": [],
-      "text": "Earned Agency Bench: registered and running. No results yet."
+      "status": "answered by a finding",
+      "related": [
+        "F010",
+        "F011"
+      ],
+      "text": "Earned Agency Bench: run once on small models; the results are in the findings listed here."
+    },
+    {
+      "id": "Q009",
+      "status": "open",
+      "related": [
+        "F010",
+        "F011"
+      ],
+      "text": "A second bench on messy real logs, with an imperfect checker that is not handed the test line."
+    },
+    {
+      "id": "Q010",
+      "status": "open",
+      "related": [
+        "F010",
+        "F011"
+      ],
+      "text": "Replicate the bench with other models and fresh jobs. The sealed code is in the public record."
     }
   ]
 }

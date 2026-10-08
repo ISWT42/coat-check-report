@@ -1,0 +1,12 @@
+{
+  "version": "1.2.0",
+  "date": "2026-10-08",
+  "summary": "Adds the findings from the first real run of the Earned Agency Bench: F010, certifying every job against the record, shown; F011, earned routing, not shown. It is one run of small models, held in the public research record. No earlier finding changed.",
+  "added": [
+    "F010",
+    "F011"
+  ],
+  "changed": [],
+  "superseded": [],
+  "retracted": []
+}

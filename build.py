@@ -437,8 +437,13 @@ def render_card(P, f):
     if f.get("tests"):
         L.append("")
         for t in f["tests"]:
+            suffix = "" if t["verdict"] == "shown" else " (%s)" % t["verdict"]
+            if t.get("line"):
+                # optional wording for tests that are not a pair of counts: a template over name, a, b and p
+                L.append("- %s%s." % (t["line"].format(name=t["name"], a=t["a"], b=t["b"], p=t["p"]), suffix))
+                continue
             pv = ("p %s" % t["p"]) if t["p"][:1] in "<>" else ("p = %s" % t["p"])
-            L.append("- %s: %s against %s, %s%s." % (t["name"], t["a"], t["b"], pv, "" if t["verdict"] == "shown" else " (%s)" % t["verdict"]))
+            L.append("- %s: %s against %s, %s%s." % (t["name"], t["a"], t["b"], pv, suffix))
     L.append("")
     L.append("*Meaning.* " + R(f["plain_meaning"]))
     if f.get("setup"):

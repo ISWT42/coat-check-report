@@ -1,0 +1,544 @@
+{
+ "date_added": "2026-10-08",
+ "version_first_included": "1.2.0",
+ "lifecycle": "active",
+ "superseded_by": null,
+ "retraction": null,
+ "paper": false,
+ "id": "F010",
+ "slug": "earned-agency-bench-certify-all",
+ "title": "Earned Agency Bench: certifying every job against the record stopped false done being handed on",
+ "question": "When finished coding jobs are handed on, does a second agent that certifies each one against a record the agent cannot change cut the false done that gets through? Does a ticket alone?",
+ "status": "shown",
+ "status_note": "A secondary test fixed in advance (Holm-adjusted) showed it. The primary tests of the bench were not shown (F011).",
+ "summary_line": "On small-model coding jobs, certifying every job against the record handed on no false done; a ticket alone did not help.",
+ "headline": "On this bench ({{F010.c.models}} small models, {{F010.c.games.n}} games, one run) the agents in the baseline arm said done on {{F010.c.a_done}} jobs, and {{F010.c.a_false}} jobs were false done: the hidden tests failed. Their mean forecast was {{F010.c.a_forecast.n}} against a pass rate of {{F010.c.a_pass_rate.n}}. When a second agent certified every job against the record, a false done was handed on in {{F010.c.c_false_late}} jobs in the later rounds, against {{F010.c.a_false_late}} in the baseline arm. The certifier caught {{F010.c.c_caught}} failing jobs, let {{F010.c.c_assure.n}} through, and raised {{F010.c.c_alarm.n}} false alarms on passing work; it was exactly right on {{F010.c.c_right}} valid verdicts ({{F010.c.c_invalid}} verdicts were invalid). Certifying every job against the ticket-only arm: mean difference {{F010.t.s3.a}} per game, Holm-adjusted p = {{F010.t.s3.p}}. The ticket alone did not help: {{F010.t.s2.a}}, Holm-adjusted p = {{F010.t.s2.p}}. Cost per delivered good job, in US dollars: {{F010.c.cost_a_good.n}} baseline, {{F010.c.cost_c_good.n}} certified.",
+ "plain_meaning": "The agents often said done when the hidden tests failed, and they were far too sure of themselves. A second agent that read the record found every failing job, so none was handed on. A ticket written before the work did not change that. Checking cost a fraction of a cent more per job here.",
+ "setup": "Each game plays one arm for several rounds on a bank of {{F010.c.bank.n}} small coding jobs with hidden tests the agents never see. Before each job the agent seals a forecast that its work will pass. In arm A the agent's own word is handed on. Arm B adds a ticket written before the work. In arm C a second agent, from another model family, certifies every job and cannot change the work. Arms D and E certify a share of the jobs, D by track record and E at random (F011).",
+ "limits": [
+  "The record clearly settled each job here: the certifier was handed the runner's own line from the hidden-test run. That likely made its job easy, so a perfect certifier is not expected on messy real logs. In an earlier checker study (local pair) the rule \"shown needs both\" let {{F010.c.r2_false}} false \"shown\" answers through and kept {{F010.c.r2_true}} true ones.",
+  "{{F010.c.models}} small cheap models; {{F010.c.games.n}} games; one run; not replicated.",
+  "The Bitcoin proof of the results seal was still waiting for a block when this version was built (Appendix C).",
+  "The comparison with the baseline arm is by counts. The sealed test of the certifier is against the ticket-only arm (S3), a secondary test."
+ ],
+ "counts": [
+  {
+   "key": "models",
+   "label": "small cheap AI models",
+   "n": "4",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/README.md",
+    "public": "Public research record, bundle 7, README.md (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "Four small, cheap AI models worked on a bank of 40 small coding jobs."
+  },
+  {
+   "key": "bank",
+   "label": "small coding jobs in the bank, each with hidden tests",
+   "n": "40",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/README.md",
+    "public": "Public research record, bundle 7, README.md (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "Four small, cheap AI models worked on a bank of 40 small coding jobs."
+  },
+  {
+   "key": "games",
+   "label": "games scored (5 arms of 8)",
+   "n": "40",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "games scored: 40; unfinished: 0; left out for breaking a rule: 0; dropped step attempts: 0"
+  },
+  {
+   "key": "a_done",
+   "label": "arm A baseline: jobs the agent called done",
+   "n": "314",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM A baseline  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 198/320 (0.62)\n    said_done: 314/320 (0.98)\n    claimed_false_done_per_job: 116/320 (0.36)\n    claimed_false_done_per_done_claim: 116/314 (0.37)\n    accepted_false_done_per_job: 116/320 (0.36)"
+  },
+  {
+   "key": "a_false",
+   "label": "arm A baseline: false done handed on",
+   "n": "116",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM A baseline  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 198/320 (0.62)\n    said_done: 314/320 (0.98)\n    claimed_false_done_per_job: 116/320 (0.36)\n    claimed_false_done_per_done_claim: 116/314 (0.37)\n    accepted_false_done_per_job: 116/320 (0.36)"
+  },
+  {
+   "key": "a_pass",
+   "label": "arm A baseline: jobs that passed the hidden tests",
+   "n": "198",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM A baseline  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 198/320 (0.62)\n    said_done: 314/320 (0.98)\n    claimed_false_done_per_job: 116/320 (0.36)\n    claimed_false_done_per_done_claim: 116/314 (0.37)\n    accepted_false_done_per_job: 116/320 (0.36)"
+  },
+  {
+   "key": "a_forecast",
+   "label": "arm A baseline: mean forecast",
+   "n": "0.92",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "    cost per passing job: 0.000242; per delivered good job: 0.000242\n    forecasts: n 319, Brier 0.322, mean forecast 0.92, pass rate 0.62"
+  },
+  {
+   "key": "a_pass_rate",
+   "label": "arm A baseline: pass rate",
+   "n": "0.62",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "    cost per passing job: 0.000242; per delivered good job: 0.000242\n    forecasts: n 319, Brier 0.322, mean forecast 0.92, pass rate 0.62"
+  },
+  {
+   "key": "b_done",
+   "label": "arm B ticket: jobs the agent called done",
+   "n": "315",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM B ticket  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 192/320 (0.60)\n    said_done: 315/320 (0.98)\n    claimed_false_done_per_job: 123/320 (0.38)\n    claimed_false_done_per_done_claim: 123/315 (0.39)\n    accepted_false_done_per_job: 123/320 (0.38)"
+  },
+  {
+   "key": "b_false",
+   "label": "arm B ticket: false done handed on",
+   "n": "123",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM B ticket  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 192/320 (0.60)\n    said_done: 315/320 (0.98)\n    claimed_false_done_per_job: 123/320 (0.38)\n    claimed_false_done_per_done_claim: 123/315 (0.39)\n    accepted_false_done_per_job: 123/320 (0.38)"
+  },
+  {
+   "key": "b_pass",
+   "label": "arm B ticket: jobs that passed the hidden tests",
+   "n": "192",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM B ticket  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 192/320 (0.60)\n    said_done: 315/320 (0.98)\n    claimed_false_done_per_job: 123/320 (0.38)\n    claimed_false_done_per_done_claim: 123/315 (0.39)\n    accepted_false_done_per_job: 123/320 (0.38)"
+  },
+  {
+   "key": "c_done",
+   "label": "arm C certify every job: jobs the agent called done",
+   "n": "312",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM C relay  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 197/320 (0.62)\n    said_done: 312/320 (0.97)\n    claimed_false_done_per_job: 115/320 (0.36)\n    claimed_false_done_per_done_claim: 115/312 (0.37)\n    accepted_false_done_per_job: 0/320 (0.00)"
+  },
+  {
+   "key": "c_false",
+   "label": "arm C certify every job: false done handed on",
+   "n": "0",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM C relay  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 197/320 (0.62)\n    said_done: 312/320 (0.97)\n    claimed_false_done_per_job: 115/320 (0.36)\n    claimed_false_done_per_done_claim: 115/312 (0.37)\n    accepted_false_done_per_job: 0/320 (0.00)"
+  },
+  {
+   "key": "c_pass",
+   "label": "arm C certify every job: jobs that passed the hidden tests",
+   "n": "197",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM C relay  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 197/320 (0.62)\n    said_done: 312/320 (0.97)\n    claimed_false_done_per_job: 115/320 (0.36)\n    claimed_false_done_per_done_claim: 115/312 (0.37)\n    accepted_false_done_per_job: 0/320 (0.00)"
+  },
+  {
+   "key": "d_done",
+   "label": "arm D earned: jobs the agent called done",
+   "n": "317",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM D earned  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 202/320 (0.63)\n    said_done: 317/320 (0.99)\n    claimed_false_done_per_job: 115/320 (0.36)\n    claimed_false_done_per_done_claim: 115/317 (0.36)\n    accepted_false_done_per_job: 39/320 (0.12)"
+  },
+  {
+   "key": "d_false",
+   "label": "arm D earned: false done handed on",
+   "n": "39",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM D earned  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 202/320 (0.63)\n    said_done: 317/320 (0.99)\n    claimed_false_done_per_job: 115/320 (0.36)\n    claimed_false_done_per_done_claim: 115/317 (0.36)\n    accepted_false_done_per_job: 39/320 (0.12)"
+  },
+  {
+   "key": "d_pass",
+   "label": "arm D earned: jobs that passed the hidden tests",
+   "n": "202",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM D earned  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 202/320 (0.63)\n    said_done: 317/320 (0.99)\n    claimed_false_done_per_job: 115/320 (0.36)\n    claimed_false_done_per_done_claim: 115/317 (0.36)\n    accepted_false_done_per_job: 39/320 (0.12)"
+  },
+  {
+   "key": "e_done",
+   "label": "arm E random: jobs the agent called done",
+   "n": "313",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM E random  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 188/320 (0.59)\n    said_done: 313/320 (0.98)\n    claimed_false_done_per_job: 125/320 (0.39)\n    claimed_false_done_per_done_claim: 125/313 (0.40)\n    accepted_false_done_per_job: 44/320 (0.14)"
+  },
+  {
+   "key": "e_false",
+   "label": "arm E random: false done handed on",
+   "n": "44",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM E random  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 188/320 (0.59)\n    said_done: 313/320 (0.98)\n    claimed_false_done_per_job: 125/320 (0.39)\n    claimed_false_done_per_done_claim: 125/313 (0.40)\n    accepted_false_done_per_job: 44/320 (0.14)"
+  },
+  {
+   "key": "e_pass",
+   "label": "arm E random: jobs that passed the hidden tests",
+   "n": "188",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "ARM E random  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 188/320 (0.59)\n    said_done: 313/320 (0.98)\n    claimed_false_done_per_job: 125/320 (0.39)\n    claimed_false_done_per_done_claim: 125/313 (0.40)\n    accepted_false_done_per_job: 44/320 (0.14)"
+  },
+  {
+   "key": "a_false_late",
+   "label": "arm A baseline: false done handed on, later rounds",
+   "n": "93",
+   "d": "256",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "  [rounds 2-5] jobs 256\n    pass_rate: 157/256 (0.61)\n    said_done: 250/256 (0.98)\n    claimed_false_done_per_job: 93/256 (0.36)\n    claimed_false_done_per_done_claim: 93/250 (0.37)\n    accepted_false_done_per_job: 93/256 (0.36)"
+  },
+  {
+   "key": "c_false_late",
+   "label": "arm C certify every job: false done handed on, later rounds",
+   "n": "0",
+   "d": "256",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "  [rounds 2-5] jobs 256\n    pass_rate: 158/256 (0.62)\n    said_done: 249/256 (0.97)\n    claimed_false_done_per_job: 91/256 (0.36)\n    claimed_false_done_per_done_claim: 91/249 (0.37)\n    accepted_false_done_per_job: 0/256 (0.00)"
+  },
+  {
+   "key": "c_caught",
+   "label": "arm C certifier: failing jobs caught",
+   "n": "122",
+   "d": "122",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "  certifier:\n    certifications: 320\n    invalid_verdicts: 1/320 (0.00)\n    faults_caught_per_failing_work: 122/122 (1.00)\n    false_assurance_per_failing_work: 0/122 (0.00)\n    false_alarm_per_passing_work: 0/197 (0.00)\n    verdict_exactly_right_per_valid: 319/319 (1.00)"
+  },
+  {
+   "key": "c_assure",
+   "label": "arm C certifier: failing jobs it let through",
+   "n": "0",
+   "d": "122",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "  certifier:\n    certifications: 320\n    invalid_verdicts: 1/320 (0.00)\n    faults_caught_per_failing_work: 122/122 (1.00)\n    false_assurance_per_failing_work: 0/122 (0.00)\n    false_alarm_per_passing_work: 0/197 (0.00)\n    verdict_exactly_right_per_valid: 319/319 (1.00)"
+  },
+  {
+   "key": "c_alarm",
+   "label": "arm C certifier: false alarms on passing work",
+   "n": "0",
+   "d": "197",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "  certifier:\n    certifications: 320\n    invalid_verdicts: 1/320 (0.00)\n    faults_caught_per_failing_work: 122/122 (1.00)\n    false_assurance_per_failing_work: 0/122 (0.00)\n    false_alarm_per_passing_work: 0/197 (0.00)\n    verdict_exactly_right_per_valid: 319/319 (1.00)"
+  },
+  {
+   "key": "c_invalid",
+   "label": "arm C certifier: invalid verdicts",
+   "n": "1",
+   "d": "320",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "  certifier:\n    certifications: 320\n    invalid_verdicts: 1/320 (0.00)\n    faults_caught_per_failing_work: 122/122 (1.00)\n    false_assurance_per_failing_work: 0/122 (0.00)\n    false_alarm_per_passing_work: 0/197 (0.00)\n    verdict_exactly_right_per_valid: 319/319 (1.00)"
+  },
+  {
+   "key": "c_right",
+   "label": "arm C certifier: verdict exactly right, of valid verdicts",
+   "n": "319",
+   "d": "319",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "  certifier:\n    certifications: 320\n    invalid_verdicts: 1/320 (0.00)\n    faults_caught_per_failing_work: 122/122 (1.00)\n    false_assurance_per_failing_work: 0/122 (0.00)\n    false_alarm_per_passing_work: 0/197 (0.00)\n    verdict_exactly_right_per_valid: 319/319 (1.00)"
+  },
+  {
+   "key": "cost_a_good",
+   "label": "arm A baseline: US dollars per delivered good job",
+   "n": "0.000242",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "    tokens in/out/reasoning: 340273/68034/0; wall seconds summed 2867.3; cost US$0.047824\n    cost per passing job: 0.000242; per delivered good job: 0.000242"
+  },
+  {
+   "key": "cost_c_good",
+   "label": "arm C certify every job: US dollars per delivered good job",
+   "n": "0.000383",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "    tokens in/out/reasoning: 638183/75636/0; wall seconds summed 3964.3; cost US$0.075394\n    cost per passing job: 0.000383; per delivered good job: 0.000383"
+  },
+  {
+   "key": "calls",
+   "label": "calls in the whole run",
+   "n": "3920",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "CALLS: 3920, cost US$0.316988"
+  },
+  {
+   "key": "cost",
+   "label": "total cost of the whole run in US dollars",
+   "n": "0.316988",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "CALLS: 3920, cost US$0.316988"
+  },
+  {
+   "key": "r2_false",
+   "label": "earlier checker study, rule \"shown needs both\": false \"shown\" among items whose truth is not shown",
+   "n": "2",
+   "d": "68",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/deciding-line-2026-10-06/design-tables.md",
+    "public": "Public research record, bundle 3, deciding-line-2026-10-06/design-tables.md"
+   },
+   "quote": "| R2 (shown needs both) | 2/68 | 23/32 | - | - |"
+  },
+  {
+   "key": "r2_true",
+   "label": "earlier checker study, rule \"shown needs both\": true \"shown\" kept, of items whose truth is shown",
+   "n": "23",
+   "d": "32",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/deciding-line-2026-10-06/design-tables.md",
+    "public": "Public research record, bundle 3, deciding-line-2026-10-06/design-tables.md"
+   },
+   "quote": "| R2 (shown needs both) | 2/68 | 23/32 | - | - |"
+  }
+ ],
+ "tables": [
+  {
+   "key": "arms",
+   "caption": "Jobs, all rounds (per arm)",
+   "columns": [
+    "Said done",
+    "False done handed on",
+    "Passed hidden tests"
+   ],
+   "of": 320,
+   "rows": [
+    {
+     "label": "A baseline",
+     "cells": [
+      "@a_done",
+      "@a_false",
+      "@a_pass"
+     ]
+    },
+    {
+     "label": "B ticket",
+     "cells": [
+      "@b_done",
+      "@b_false",
+      "@b_pass"
+     ]
+    },
+    {
+     "label": "C certify every job",
+     "cells": [
+      "@c_done",
+      "@c_false",
+      "@c_pass"
+     ]
+    },
+    {
+     "label": "D earned",
+     "cells": [
+      "@d_done",
+      "@d_false",
+      "@d_pass"
+     ]
+    },
+    {
+     "label": "E random",
+     "cells": [
+      "@e_done",
+      "@e_false",
+      "@e_pass"
+     ]
+    }
+   ]
+  }
+ ],
+ "tests": [
+  {
+   "key": "s3",
+   "name": "false done handed on, certify every job (C) minus ticket only (B)",
+   "kind": "sealed (secondary, Holm-adjusted)",
+   "a": "-0.3844",
+   "b": "0.0078",
+   "p": "0.0312",
+   "verdict": "shown",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "  S3 [secondary] n = 8, mean difference -0.3844, p = 0.0078, Holm-adjusted p = 0.0312\n      certify-only relay: C minus B, same measure",
+   "line": "{name}: mean difference {a} per game, p = {b}, Holm-adjusted p = {p}"
+  },
+  {
+   "key": "s2",
+   "name": "false done handed on, ticket (B) minus baseline (A)",
+   "kind": "sealed (secondary, Holm-adjusted)",
+   "a": "+0.0219",
+   "b": "0.1250",
+   "p": "0.2500",
+   "verdict": "not shown",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+   },
+   "quote": "  S2 [secondary] n = 8, mean difference +0.0219, p = 0.1250, Holm-adjusted p = 0.2500\n      ticket: B minus A, false done handed on, all rounds",
+   "line": "{name}: mean difference {a} per game, p = {b}, Holm-adjusted p = {p}"
+  }
+ ],
+ "seal": [
+  {
+   "role": "design, code, job bank and forecasts, before any model call",
+   "list_file": "EAB-SEAL-SHA256.txt",
+   "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/EAB-SEAL-SHA256.txt",
+   "sha256": "8c7f00d9ef8bd08e9e7f2c2117e917ecc2b3cfa5e03f565741e62f6ec19491b2",
+   "freetsa_utc": "2026-10-08T03:14:29Z",
+   "bitcoin_blocks": [
+    970432
+   ],
+   "pending_calendar": 4
+  },
+  {
+   "role": "raw run, before any count",
+   "list_file": "RESULTS-SEAL-SHA256.txt",
+   "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/RESULTS-SEAL-SHA256.txt",
+   "sha256": "4f9059d697ce29bf16571c13644bc3a0002f62acc0c12ad63bb3dee28848b30a",
+   "freetsa_utc": "2026-10-08T05:45:21Z",
+   "bitcoin_blocks": [],
+   "pending_calendar": 4
+  }
+ ],
+ "links": [
+  {
+   "label": "Bench folder in the research record",
+   "url": "https://github.com/ISWT42/iswt-research-record/tree/v2026.10.08.1/7-earned-agency-bench-2026-10-08"
+  },
+  {
+   "label": "Research record, version with the bench",
+   "url": "https://doi.org/10.5281/zenodo.23235648"
+  }
+ ],
+ "record_corrections": [],
+ "seal_note": "The score file was written by the sealed scorer after the results seal; it is not itself in a seal list. Running the scorer again on the raw run gave the same text. The Bitcoin proof for the results seal was still waiting when this version was built."
+}

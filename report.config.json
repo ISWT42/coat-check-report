@@ -6,7 +6,7 @@
   "contact": "joshua@iswt.ca",
   "acknowledgement": "Built with Claude (Anthropic) as research assistant.",
   "license": "Text and data CC BY 4.0; code MIT.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "date": "2026-10-08",
   "word_cap": 3000,
   "word_cap_scope": "Sections 1 to 5 and the acknowledgement. The changelog and the appendices are not counted.",
