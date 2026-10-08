@@ -1,661 +1,661 @@
 {
-  "date_added": "2026-10-08",
-  "version_first_included": "1.0.0",
-  "lifecycle": "active",
-  "superseded_by": null,
-  "retraction": null,
-  "paper": true,
-  "id": "F001",
-  "slug": "two-kinds-of-false-done",
-  "title": "Two kinds of false done: over a visible failure, and over a check that never ran",
-  "question": "Which wrong done do models give, and does rewording the task change it?",
-  "status": "exploratory",
-  "status_note": "The shift between prompts was not in the sealed predictions.",
-  "summary_line": "Models quoted the failing line yet said done; rewording the task moved false done onto checks that never ran.",
-  "headline": "Under the plain report sentence Gemini 3.7 Flash called {{F001.c.t1_g37_fail}} failed checks done. After the do sentence it called {{F001.c.t3_g37_absent}} never-ran logs done (GPT-5.4 nano: {{F001.c.t3_nano_absent}}). All {{F001.c.quoted_failing.n}} plain-report false done replies quoted the failing line.",
-  "plain_meaning": "Done covers different errors. Doing the work removed one and produced the other. A quoted line is not a receipt.",
-  "limits": [
-    "Invented logs; small and mid-sized models.",
-    "The sealed paired test did not survive correction over {{F001.c.sealed_tests.n}} tests."
-  ],
-  "counts": [
+ "date_added": "2026-10-08",
+ "version_first_included": "1.0.0",
+ "lifecycle": "active",
+ "superseded_by": null,
+ "retraction": null,
+ "paper": true,
+ "id": "F001",
+ "slug": "two-kinds-of-false-done",
+ "title": "Two kinds of false done: over a visible failure, and over a check that never ran",
+ "question": "Which wrong done do models give, and does rewording the task change it?",
+ "status": "exploratory",
+ "status_note": "The shift between prompts was not in the sealed predictions.",
+ "summary_line": "Models quoted the failing line yet said done; rewording the task moved false done onto checks that never ran.",
+ "headline": "Under the plain report sentence Gemini 3.7 Flash called {{F001.c.t1_g37_fail}} failed checks done. After the do sentence it called {{F001.c.t3_g37_absent}} never-ran logs done (GPT-5.4 nano: {{F001.c.t3_nano_absent}}). All {{F001.c.quoted_failing.n}} plain-report false done replies quoted the failing line.",
+ "plain_meaning": "Done covers different errors. Doing the work removed one and produced the other. A quoted line is not a receipt.",
+ "limits": [
+  "Invented logs; small and mid-sized models.",
+  "The sealed paired test did not survive correction over {{F001.c.sealed_tests.n}} tests."
+ ],
+ "counts": [
+  {
+   "key": "t1_g37_fail",
+   "label": "Gemini 3.7 Flash plain report, failed check called done, T1",
+   "n": "7",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T1 | gemini-3.7-flash | 3 | 7 / 6 / 4 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t1_g37_absent",
+   "label": "Gemini 3.7 Flash plain report, never-ran called done, T1",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T1 | gemini-3.7-flash | 3 | 7 / 6 / 4 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t1_g38_fail",
+   "label": "Gemini 3.8 Flash plain report, failed check called done, T1",
+   "n": "5",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T1 | gemini-3.8-flash | 3 | 5 / 5 / 3 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t1_g38_absent",
+   "label": "Gemini 3.8 Flash plain report, never-ran called done, T1",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T1 | gemini-3.8-flash | 3 | 5 / 5 / 3 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t1_hk_fail",
+   "label": "Claude Haiku 4.5 plain report, failed check called done, T1",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T1 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 1 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t1_hk_absent",
+   "label": "Claude Haiku 4.5 plain report, never-ran called done, T1",
+   "n": "1",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T1 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 1 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t1_nano_fail",
+   "label": "GPT-5.4 nano plain report, failed check called done, T1",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T1 | gpt-5.4-nano-2026-03-17 | 3 | 0 / 0 / 0 | 6 / 5 / 3 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t1_nano_absent",
+   "label": "GPT-5.4 nano plain report, never-ran called done, T1",
+   "n": "6",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T1 | gpt-5.4-nano-2026-03-17 | 3 | 0 / 0 / 0 | 6 / 5 / 3 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t2_g37_fail",
+   "label": "Gemini 3.7 Flash with definitions, failed check called done, T2",
+   "n": "3",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T2 | gemini-3.7-flash | 3 | 3 / 3 / 1 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t2_g37_absent",
+   "label": "Gemini 3.7 Flash with definitions, never-ran called done, T2",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T2 | gemini-3.7-flash | 3 | 3 / 3 / 1 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t2_g38_fail",
+   "label": "Gemini 3.8 Flash with definitions, failed check called done, T2",
+   "n": "2",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T2 | gemini-3.8-flash | 3 | 2 / 2 / 1 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t2_g38_absent",
+   "label": "Gemini 3.8 Flash with definitions, never-ran called done, T2",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T2 | gemini-3.8-flash | 3 | 2 / 2 / 1 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t2_hk_fail",
+   "label": "Claude Haiku 4.5 with definitions, failed check called done, T2",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T2 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t2_hk_absent",
+   "label": "Claude Haiku 4.5 with definitions, never-ran called done, T2",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T2 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t2_nano_fail",
+   "label": "GPT-5.4 nano with definitions, failed check called done, T2",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T2 | gpt-5.4-nano-2026-03-17 | 6 | 0 / 0 / 0 | 5 / 4 / 2 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t2_nano_absent",
+   "label": "GPT-5.4 nano with definitions, never-ran called done, T2",
+   "n": "5",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T2 | gpt-5.4-nano-2026-03-17 | 6 | 0 / 0 / 0 | 5 / 4 / 2 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t3_g37_fail",
+   "label": "Gemini 3.7 Flash do the work, failed check called done, T3",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T3 | gemini-3.7-flash | 3 | 0 / 0 / 0 | 11 / 9 / 7 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t3_g37_absent",
+   "label": "Gemini 3.7 Flash do the work, never-ran called done, T3",
+   "n": "11",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T3 | gemini-3.7-flash | 3 | 0 / 0 / 0 | 11 / 9 / 7 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t3_g38_fail",
+   "label": "Gemini 3.8 Flash do the work, failed check called done, T3",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T3 | gemini-3.8-flash | 3 | 0 / 0 / 0 | 5 / 5 / 4 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t3_g38_absent",
+   "label": "Gemini 3.8 Flash do the work, never-ran called done, T3",
+   "n": "5",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T3 | gemini-3.8-flash | 3 | 0 / 0 / 0 | 5 / 5 / 4 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t3_hk_fail",
+   "label": "Claude Haiku 4.5 do the work, failed check called done, T3",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T3 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 10 / 9 / 7 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t3_hk_absent",
+   "label": "Claude Haiku 4.5 do the work, never-ran called done, T3",
+   "n": "10",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T3 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 10 / 9 / 7 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t3_nano_fail",
+   "label": "GPT-5.4 nano do the work, failed check called done, T3",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T3 | gpt-5.4-nano-2026-03-17 | 3 | 0 / 0 / 0 | 16 / 13 / 10 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t3_nano_absent",
+   "label": "GPT-5.4 nano do the work, never-ran called done, T3",
+   "n": "16",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T3 | gpt-5.4-nano-2026-03-17 | 3 | 0 / 0 / 0 | 16 / 13 / 10 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t4_g37_fail",
+   "label": "Gemini 3.7 Flash with proof sentence, failed check called done, T4",
+   "n": "2",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T4 | gemini-3.7-flash | 3 | 2 / 2 / 1 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t4_g37_absent",
+   "label": "Gemini 3.7 Flash with proof sentence, never-ran called done, T4",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T4 | gemini-3.7-flash | 3 | 2 / 2 / 1 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t4_g38_fail",
+   "label": "Gemini 3.8 Flash with proof sentence, failed check called done, T4",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T4 | gemini-3.8-flash | 3 | 0 / 0 / 0 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t4_g38_absent",
+   "label": "Gemini 3.8 Flash with proof sentence, never-ran called done, T4",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T4 | gemini-3.8-flash | 3 | 0 / 0 / 0 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t4_hk_fail",
+   "label": "Claude Haiku 4.5 with proof sentence, failed check called done, T4",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T4 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t4_hk_absent",
+   "label": "Claude Haiku 4.5 with proof sentence, never-ran called done, T4",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T4 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t4_nano_fail",
+   "label": "GPT-5.4 nano with proof sentence, failed check called done, T4",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T4 | gpt-5.4-nano-2026-03-17 | 6 | 0 / 0 / 0 | 0 / 0 / 0 | 13 / 11 / 8 | 3 / 2 / 2 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t4_nano_absent",
+   "label": "GPT-5.4 nano with proof sentence, never-ran called done, T4",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T4 | gpt-5.4-nano-2026-03-17 | 6 | 0 / 0 / 0 | 0 / 0 / 0 | 13 / 11 / 8 | 3 / 2 / 2 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "t4_nano_pass",
+   "label": "GPT-5.4 nano, passed work called done, T4",
+   "n": "13",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| T4 | gpt-5.4-nano-2026-03-17 | 6 | 0 / 0 / 0 | 0 / 0 / 0 | 13 / 11 / 8 | 3 / 2 / 2 |",
+   "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+  },
+  {
+   "key": "logs",
+   "label": "logs in the benchmark",
+   "n": "48",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/README-start-here.md",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file README-start-here.md"
+   },
+   "quote": "| `the-48-logs.jsonl` | The 48 logs |"
+  },
+  {
+   "key": "scenarios",
+   "label": "scenarios (each written three ways)",
+   "n": "16",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/dataset-metadata.json",
+    "public": "Kaggle evidence dataset, dataset description"
+   },
+   "quote": "**48 logs:** 16 engineering scenarios"
+  },
+  {
+   "key": "quoted_failing",
+   "label": "failed-check done replies under the plain report that quoted the failing line",
+   "n": "35",
+   "d": "35",
+   "source": {
+    "root": "moonshots",
+    "path": "kaggle/claimed-vs-proven/ENTRY/SUBMISSION/POST-FINAL-2026-10-02-v6-FINAL.md",
+    "public": "DEV post https://dev.to/iswt42/it-quoted-the-failure-two-kinds-of-false-done-1ago (local file is the final draft; not compared with the live page)"
+   },
+   "quote": "gave 35 failed-check \"done\" replies between them: 20 for Gemini 3.7 Flash and 15 for Gemini 3.8 Flash, out of 48 replies each. **All 35 quoted the failing line.**"
+  },
+  {
+   "key": "sealed_tests",
+   "label": "sealed tests the one sealed paired test was corrected over",
+   "n": "12",
+   "d": null,
+   "source": {
+    "root": "moonshots",
+    "path": "kaggle/claimed-vs-proven/ENTRY/SUBMISSION/POST-FINAL-2026-10-02-v6-FINAL.md",
+    "public": "DEV post https://dev.to/iswt42/it-quoted-the-failure-two-kinds-of-false-done-1ago (local file is the final draft; not compared with the live page)"
+   },
+   "quote": "7 to 0, p = 0.016; not significant after correcting for the 12 sealed tests."
+  }
+ ],
+ "tables": [
+  {
+   "key": "failed",
+   "caption": "Failed check, model said done (scenarios)",
+   "columns": [
+    "Gemini 3.7 Flash",
+    "Gemini 3.8 Flash",
+    "Claude Haiku 4.5",
+    "GPT-5.4 nano"
+   ],
+   "of": 16,
+   "rows": [
     {
-      "key": "t1_g37_fail",
-      "label": "Gemini 3.7 Flash plain report, failed check called done, T1",
-      "n": "7",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T1 | gemini-3.7-flash | 3 | 7 / 6 / 4 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+     "label": "T1 plain report",
+     "cells": [
+      "@t1_g37_fail",
+      "@t1_g38_fail",
+      "@t1_hk_fail",
+      "@t1_nano_fail"
+     ]
     },
     {
-      "key": "t1_g37_absent",
-      "label": "Gemini 3.7 Flash plain report, never-ran called done, T1",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T1 | gemini-3.7-flash | 3 | 7 / 6 / 4 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+     "label": "T2 with definitions",
+     "cells": [
+      "@t2_g37_fail",
+      "@t2_g38_fail",
+      "@t2_hk_fail",
+      "@t2_nano_fail"
+     ]
     },
     {
-      "key": "t1_g38_fail",
-      "label": "Gemini 3.8 Flash plain report, failed check called done, T1",
-      "n": "5",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T1 | gemini-3.8-flash | 3 | 5 / 5 / 3 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
+     "label": "T3 do the work",
+     "cells": [
+      "@t3_g37_fail",
+      "@t3_g38_fail",
+      "@t3_hk_fail",
+      "@t3_nano_fail"
+     ]
     },
     {
-      "key": "t1_g38_absent",
-      "label": "Gemini 3.8 Flash plain report, never-ran called done, T1",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T1 | gemini-3.8-flash | 3 | 5 / 5 / 3 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t1_hk_fail",
-      "label": "Claude Haiku 4.5 plain report, failed check called done, T1",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T1 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 1 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t1_hk_absent",
-      "label": "Claude Haiku 4.5 plain report, never-ran called done, T1",
-      "n": "1",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T1 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 1 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t1_nano_fail",
-      "label": "GPT-5.4 nano plain report, failed check called done, T1",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T1 | gpt-5.4-nano-2026-03-17 | 3 | 0 / 0 / 0 | 6 / 5 / 3 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t1_nano_absent",
-      "label": "GPT-5.4 nano plain report, never-ran called done, T1",
-      "n": "6",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T1 | gpt-5.4-nano-2026-03-17 | 3 | 0 / 0 / 0 | 6 / 5 / 3 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t2_g37_fail",
-      "label": "Gemini 3.7 Flash with definitions, failed check called done, T2",
-      "n": "3",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T2 | gemini-3.7-flash | 3 | 3 / 3 / 1 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t2_g37_absent",
-      "label": "Gemini 3.7 Flash with definitions, never-ran called done, T2",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T2 | gemini-3.7-flash | 3 | 3 / 3 / 1 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t2_g38_fail",
-      "label": "Gemini 3.8 Flash with definitions, failed check called done, T2",
-      "n": "2",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T2 | gemini-3.8-flash | 3 | 2 / 2 / 1 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t2_g38_absent",
-      "label": "Gemini 3.8 Flash with definitions, never-ran called done, T2",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T2 | gemini-3.8-flash | 3 | 2 / 2 / 1 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t2_hk_fail",
-      "label": "Claude Haiku 4.5 with definitions, failed check called done, T2",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T2 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t2_hk_absent",
-      "label": "Claude Haiku 4.5 with definitions, never-ran called done, T2",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T2 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t2_nano_fail",
-      "label": "GPT-5.4 nano with definitions, failed check called done, T2",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T2 | gpt-5.4-nano-2026-03-17 | 6 | 0 / 0 / 0 | 5 / 4 / 2 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t2_nano_absent",
-      "label": "GPT-5.4 nano with definitions, never-ran called done, T2",
-      "n": "5",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T2 | gpt-5.4-nano-2026-03-17 | 6 | 0 / 0 / 0 | 5 / 4 / 2 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t3_g37_fail",
-      "label": "Gemini 3.7 Flash do the work, failed check called done, T3",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T3 | gemini-3.7-flash | 3 | 0 / 0 / 0 | 11 / 9 / 7 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t3_g37_absent",
-      "label": "Gemini 3.7 Flash do the work, never-ran called done, T3",
-      "n": "11",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T3 | gemini-3.7-flash | 3 | 0 / 0 / 0 | 11 / 9 / 7 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t3_g38_fail",
-      "label": "Gemini 3.8 Flash do the work, failed check called done, T3",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T3 | gemini-3.8-flash | 3 | 0 / 0 / 0 | 5 / 5 / 4 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t3_g38_absent",
-      "label": "Gemini 3.8 Flash do the work, never-ran called done, T3",
-      "n": "5",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T3 | gemini-3.8-flash | 3 | 0 / 0 / 0 | 5 / 5 / 4 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t3_hk_fail",
-      "label": "Claude Haiku 4.5 do the work, failed check called done, T3",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T3 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 10 / 9 / 7 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t3_hk_absent",
-      "label": "Claude Haiku 4.5 do the work, never-ran called done, T3",
-      "n": "10",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T3 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 10 / 9 / 7 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t3_nano_fail",
-      "label": "GPT-5.4 nano do the work, failed check called done, T3",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T3 | gpt-5.4-nano-2026-03-17 | 3 | 0 / 0 / 0 | 16 / 13 / 10 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t3_nano_absent",
-      "label": "GPT-5.4 nano do the work, never-ran called done, T3",
-      "n": "16",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T3 | gpt-5.4-nano-2026-03-17 | 3 | 0 / 0 / 0 | 16 / 13 / 10 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t4_g37_fail",
-      "label": "Gemini 3.7 Flash with proof sentence, failed check called done, T4",
-      "n": "2",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T4 | gemini-3.7-flash | 3 | 2 / 2 / 1 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t4_g37_absent",
-      "label": "Gemini 3.7 Flash with proof sentence, never-ran called done, T4",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T4 | gemini-3.7-flash | 3 | 2 / 2 / 1 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t4_g38_fail",
-      "label": "Gemini 3.8 Flash with proof sentence, failed check called done, T4",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T4 | gemini-3.8-flash | 3 | 0 / 0 / 0 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t4_g38_absent",
-      "label": "Gemini 3.8 Flash with proof sentence, never-ran called done, T4",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T4 | gemini-3.8-flash | 3 | 0 / 0 / 0 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t4_hk_fail",
-      "label": "Claude Haiku 4.5 with proof sentence, failed check called done, T4",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T4 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t4_hk_absent",
-      "label": "Claude Haiku 4.5 with proof sentence, never-ran called done, T4",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T4 | claude-haiku-4-5-20251001 | 3 | 0 / 0 / 0 | 0 / 0 / 0 | 16 / 13 / 10 | 0 / 0 / 0 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t4_nano_fail",
-      "label": "GPT-5.4 nano with proof sentence, failed check called done, T4",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T4 | gpt-5.4-nano-2026-03-17 | 6 | 0 / 0 / 0 | 0 / 0 / 0 | 13 / 11 / 8 | 3 / 2 / 2 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t4_nano_absent",
-      "label": "GPT-5.4 nano with proof sentence, never-ran called done, T4",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T4 | gpt-5.4-nano-2026-03-17 | 6 | 0 / 0 / 0 | 0 / 0 / 0 | 13 / 11 / 8 | 3 / 2 / 2 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "t4_nano_pass",
-      "label": "GPT-5.4 nano, passed work called done, T4",
-      "n": "13",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| T4 | gpt-5.4-nano-2026-03-17 | 6 | 0 / 0 / 0 | 0 / 0 / 0 | 13 / 11 / 8 | 3 / 2 / 2 |",
-      "d_basis": "Table 'Scenarios counted per measure (of 16 / of the 13 without a same-situation neighbour / of the 10 with none)': first figure of each triple is the count of the 16."
-    },
-    {
-      "key": "logs",
-      "label": "logs in the benchmark",
-      "n": "48",
-      "d": null,
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/README-start-here.md",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file README-start-here.md"
-      },
-      "quote": "| `the-48-logs.jsonl` | The 48 logs |"
-    },
-    {
-      "key": "scenarios",
-      "label": "scenarios (each written three ways)",
-      "n": "16",
-      "d": null,
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/dataset-metadata.json",
-        "public": "Kaggle evidence dataset, dataset description"
-      },
-      "quote": "**48 logs:** 16 engineering scenarios"
-    },
-    {
-      "key": "quoted_failing",
-      "label": "failed-check done replies under the plain report that quoted the failing line",
-      "n": "35",
-      "d": "35",
-      "source": {
-        "root": "moonshots",
-        "path": "kaggle/claimed-vs-proven/ENTRY/SUBMISSION/POST-FINAL-2026-10-02-v6-FINAL.md",
-        "public": "DEV post https://dev.to/iswt42/it-quoted-the-failure-two-kinds-of-false-done-1ago (local file is the final draft; not compared with the live page)"
-      },
-      "quote": "gave 35 failed-check \"done\" replies between them: 20 for Gemini 3.7 Flash and 15 for Gemini 3.8 Flash, out of 48 replies each. **All 35 quoted the failing line.**"
-    },
-    {
-      "key": "sealed_tests",
-      "label": "sealed tests the one sealed paired test was corrected over",
-      "n": "12",
-      "d": null,
-      "source": {
-        "root": "moonshots",
-        "path": "kaggle/claimed-vs-proven/ENTRY/SUBMISSION/POST-FINAL-2026-10-02-v6-FINAL.md",
-        "public": "DEV post https://dev.to/iswt42/it-quoted-the-failure-two-kinds-of-false-done-1ago (local file is the final draft; not compared with the live page)"
-      },
-      "quote": "7 to 0, p = 0.016; not significant after correcting for the 12 sealed tests."
+     "label": "T4 with proof sentence",
+     "cells": [
+      "@t4_g37_fail",
+      "@t4_g38_fail",
+      "@t4_hk_fail",
+      "@t4_nano_fail"
+     ]
     }
-  ],
-  "tables": [
+   ]
+  },
+  {
+   "key": "absent",
+   "caption": "Check never ran, model said done (scenarios)",
+   "columns": [
+    "Gemini 3.7 Flash",
+    "Gemini 3.8 Flash",
+    "Claude Haiku 4.5",
+    "GPT-5.4 nano"
+   ],
+   "of": 16,
+   "rows": [
     {
-      "key": "failed",
-      "caption": "Failed check, model said done (scenarios)",
-      "columns": [
-        "Gemini 3.7 Flash",
-        "Gemini 3.8 Flash",
-        "Claude Haiku 4.5",
-        "GPT-5.4 nano"
-      ],
-      "of": 16,
-      "rows": [
-        {
-          "label": "T1 plain report",
-          "cells": [
-            "@t1_g37_fail",
-            "@t1_g38_fail",
-            "@t1_hk_fail",
-            "@t1_nano_fail"
-          ]
-        },
-        {
-          "label": "T2 with definitions",
-          "cells": [
-            "@t2_g37_fail",
-            "@t2_g38_fail",
-            "@t2_hk_fail",
-            "@t2_nano_fail"
-          ]
-        },
-        {
-          "label": "T3 do the work",
-          "cells": [
-            "@t3_g37_fail",
-            "@t3_g38_fail",
-            "@t3_hk_fail",
-            "@t3_nano_fail"
-          ]
-        },
-        {
-          "label": "T4 with proof sentence",
-          "cells": [
-            "@t4_g37_fail",
-            "@t4_g38_fail",
-            "@t4_hk_fail",
-            "@t4_nano_fail"
-          ]
-        }
-      ]
+     "label": "T1 plain report",
+     "cells": [
+      "@t1_g37_absent",
+      "@t1_g38_absent",
+      "@t1_hk_absent",
+      "@t1_nano_absent"
+     ]
     },
     {
-      "key": "absent",
-      "caption": "Check never ran, model said done (scenarios)",
-      "columns": [
-        "Gemini 3.7 Flash",
-        "Gemini 3.8 Flash",
-        "Claude Haiku 4.5",
-        "GPT-5.4 nano"
-      ],
-      "of": 16,
-      "rows": [
-        {
-          "label": "T1 plain report",
-          "cells": [
-            "@t1_g37_absent",
-            "@t1_g38_absent",
-            "@t1_hk_absent",
-            "@t1_nano_absent"
-          ]
-        },
-        {
-          "label": "T2 with definitions",
-          "cells": [
-            "@t2_g37_absent",
-            "@t2_g38_absent",
-            "@t2_hk_absent",
-            "@t2_nano_absent"
-          ]
-        },
-        {
-          "label": "T3 do the work",
-          "cells": [
-            "@t3_g37_absent",
-            "@t3_g38_absent",
-            "@t3_hk_absent",
-            "@t3_nano_absent"
-          ]
-        },
-        {
-          "label": "T4 with proof sentence",
-          "cells": [
-            "@t4_g37_absent",
-            "@t4_g38_absent",
-            "@t4_hk_absent",
-            "@t4_nano_absent"
-          ]
-        }
-      ]
+     "label": "T2 with definitions",
+     "cells": [
+      "@t2_g37_absent",
+      "@t2_g38_absent",
+      "@t2_hk_absent",
+      "@t2_nano_absent"
+     ]
+    },
+    {
+     "label": "T3 do the work",
+     "cells": [
+      "@t3_g37_absent",
+      "@t3_g38_absent",
+      "@t3_hk_absent",
+      "@t3_nano_absent"
+     ]
+    },
+    {
+     "label": "T4 with proof sentence",
+     "cells": [
+      "@t4_g37_absent",
+      "@t4_g38_absent",
+      "@t4_hk_absent",
+      "@t4_nano_absent"
+     ]
     }
-  ],
-  "tests": [
-    {
-      "key": "t1_t3_g37",
-      "name": "Gemini 3.7 Flash, plain report against do sentence",
-      "kind": "sealed",
-      "a": "7",
-      "b": "0",
-      "p": "0.01562",
-      "verdict": "not shown",
-      "note": "Not significant after correction over the sealed tests.",
-      "source": {
-        "root": "workbench",
-        "path": "kaggle-v3/analysis-results.txt",
-        "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
-      },
-      "quote": "| gemini-3.7-flash | fail_done | T1 vs T3 | 7 | 0 | 0.01562 |"
-    }
-  ],
-  "seal": [
-    {
-      "role": "sealed manifest (logs, prompts, scorer, run plan, predictions); first counted run came after it",
-      "list_file": "sealed-manifest.json",
-      "path": "kaggle-v3/sealed-manifest.json",
-      "sha256": "3928d5249adb224ec621d8dad757ac623421c1eaa65f58be4f960beec6b96553",
-      "freetsa_utc": null,
-      "bitcoin_blocks": [
-        969401
-      ],
-      "pending_calendar": 4
-    },
-    {
-      "role": "sealed addendum",
-      "list_file": "sealed-predictions-addendum.md",
-      "path": "kaggle-v3/sealed-predictions-addendum.md",
-      "sha256": "9cf308ce46d4aad0149d7c387488ddbaf209641d7950b84c0cb1225339064fb8",
-      "freetsa_utc": null,
-      "bitcoin_blocks": [
-        969403
-      ],
-      "pending_calendar": 4
-    }
-  ],
-  "links": [
-    {
-      "label": "DEV post",
-      "url": "https://dev.to/iswt42/it-quoted-the-failure-two-kinds-of-false-done-1ago"
-    },
-    {
-      "label": "Benchmark",
-      "url": "https://www.kaggle.com/benchmarks/iswt42/two-kinds-of-false-done"
-    },
-    {
-      "label": "Benchmark DOI",
-      "url": "https://doi.org/10.34740/kaggle/w/116515"
-    },
-    {
-      "label": "Evidence dataset",
-      "url": "https://www.kaggle.com/datasets/iswt42/it-quoted-the-failure-evidence"
-    }
-  ],
-  "record_corrections": []
+   ]
+  }
+ ],
+ "tests": [
+  {
+   "key": "t1_t3_g37",
+   "name": "Gemini 3.7 Flash, plain report against do sentence",
+   "kind": "sealed",
+   "a": "7",
+   "b": "0",
+   "p": "0.01562",
+   "verdict": "not shown",
+   "note": "Not significant after correction over the sealed tests.",
+   "source": {
+    "root": "workbench",
+    "path": "kaggle-v3/analysis-results.txt",
+    "public": "Kaggle evidence dataset it-quoted-the-failure-evidence, file analysis-results.txt"
+   },
+   "quote": "| gemini-3.7-flash | fail_done | T1 vs T3 | 7 | 0 | 0.01562 |"
+  }
+ ],
+ "seal": [
+  {
+   "role": "sealed manifest (logs, prompts, scorer, run plan, predictions); first counted run came after it",
+   "list_file": "sealed-manifest.json",
+   "path": "kaggle-v3/sealed-manifest.json",
+   "sha256": "3928d5249adb224ec621d8dad757ac623421c1eaa65f58be4f960beec6b96553",
+   "freetsa_utc": null,
+   "bitcoin_blocks": [
+    969401
+   ],
+   "pending_calendar": 4
+  },
+  {
+   "role": "sealed addendum",
+   "list_file": "sealed-predictions-addendum.md",
+   "path": "kaggle-v3/sealed-predictions-addendum.md",
+   "sha256": "9cf308ce46d4aad0149d7c387488ddbaf209641d7950b84c0cb1225339064fb8",
+   "freetsa_utc": null,
+   "bitcoin_blocks": [
+    969403
+   ],
+   "pending_calendar": 4
+  }
+ ],
+ "links": [
+  {
+   "label": "DEV post",
+   "url": "https://dev.to/iswt42/it-quoted-the-failure-two-kinds-of-false-done-1ago"
+  },
+  {
+   "label": "Benchmark",
+   "url": "https://www.kaggle.com/benchmarks/iswt42/two-kinds-of-false-done"
+  },
+  {
+   "label": "Benchmark DOI",
+   "url": "https://doi.org/10.34740/kaggle/w/116515"
+  },
+  {
+   "label": "Evidence dataset",
+   "url": "https://www.kaggle.com/datasets/iswt42/it-quoted-the-failure-evidence"
+  }
+ ],
+ "record_corrections": []
 }

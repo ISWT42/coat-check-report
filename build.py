@@ -394,7 +394,7 @@ def seal_summary(f):
     if times:
         d0, d1 = times[0][:10], times[-1][:10]
         out.append("FreeTSA %s" % (d0 if d0 == d1 else "%s to %s" % (d0, d1)))
-    out.append(("Bitcoin %s" % (str(blocks[0]) if len(blocks) == 1 else "%s to %s" % (blocks[0], blocks[-1]))) if blocks else "Bitcoin pending")
+    out.append(("Bitcoin %s" % (str(blocks[0]) if len(blocks) == 1 else "%s to %s" % (blocks[0], blocks[-1]))) if blocks else ("FreeTSA only, no Bitcoin proof" if all(x.get("ots") == "none" for x in s) else "Bitcoin pending"))
     return "; ".join(out) + " (Appendix C)."
 
 
@@ -568,7 +568,7 @@ def appendix_c(P):
         L.append("|---|---|---|---|---|")
         for s in f["seal"]:
             L.append("| %s | `%s` | `%s` | %s | %s |" % (s["role"], s["list_file"], s["sha256"], (s["freetsa_utc"] or "none").replace("T", " "),
-                                                      ", ".join(str(b) for b in s.get("bitcoin_blocks", [])) or "pending"))
+                                                      ", ".join(str(b) for b in s.get("bitcoin_blocks", [])) or ("none (FreeTSA only)" if s.get("ots") == "none" else "pending")))
         L.append("")
         if f.get("seal_note"):
             L.append(resolve(f["seal_note"], P, f["id"], []))

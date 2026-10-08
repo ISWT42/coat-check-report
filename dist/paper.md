@@ -113,7 +113,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Limits.* One model through a command line; versions differ in several ways. Public logs: a first attempt, planned for Gemini 3.8 Flash, searched the web and 4 answers were set aside; the rerun used Gemini 3.7 Flash with tools denied.
 
-*Seal.* FreeTSA 2026-10-07; Bitcoin pending (Appendix C).
+*Seal.* FreeTSA 2026-10-07; Bitcoin 970359 to 970373 (Appendix C).
 
 ### F003. Kaggle tasks t5 and t6: the ticket on the benchmark's models
 
@@ -142,7 +142,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Limits.* Not like-for-like: the ticket states the expected value. Counts come from the findings note; the sealed analysis file is not on disk.
 
-*Seal.* FreeTSA 2026-10-07; Bitcoin 970376 (Appendix C).
+*Seal.* FreeTSA 2026-10-07; Bitcoin 970376 to 970415 (Appendix C).
 
 ### F004. Blind coat-check, tasks t7 and t8: the ticket names the check, not the answer
 
@@ -167,7 +167,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Limits.* The job sentence still states the target in 10 of 16 jobs. Known public logs; small models.
 
-*Seal.* FreeTSA 2026-10-07; Bitcoin 970397 (Appendix C).
+*Seal.* FreeTSA 2026-10-07; Bitcoin 970397 to 970415 (Appendix C).
 
 ### F005. The coat-check relay: a false done travelling down a chain of coding jobs
 
@@ -194,7 +194,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Limits.* One run of 12 jobs; cheap models, 56 of 280 invalid replies.
 
-*Seal.* FreeTSA 2026-10-07; Bitcoin pending (Appendix C).
+*Seal.* FreeTSA 2026-10-07; Bitcoin 970397 to 970415 (Appendix C).
 
 ### F006. Forced yes or no against "not shown", across models
 
@@ -287,7 +287,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Limits.* Small models; the sentence was written after F007.
 
-*Seal.* FreeTSA 2026-10-06 to 2026-10-07; Bitcoin 970187 to 970194 (Appendix C).
+*Seal.* FreeTSA 2026-10-06 to 2026-10-07; Bitcoin 970187 to 970333 (Appendix C).
 
 ### F009. A binding gate against a reviewer told the rule: not shown
 
@@ -313,7 +313,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Limits.* Small models; claims written by Claude; the key is withheld. Each held-back true claim is a job for a person.
 
-*Seal.* FreeTSA 2026-10-07; Bitcoin pending (Appendix C).
+*Seal.* FreeTSA 2026-10-07; Bitcoin 970271 to 970333 (Appendix C).
 
 ## 4. Limits and threats to validity
 
@@ -334,7 +334,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 - **Q004** [open] Why did a certifier that rewrote the work add errors? Test certify-only.
 - **Q005** [open] Compare the binding gate with a told reviewer on enough claims to see a modest gap.
 - **Q006** [open] Recompute the pooled forced-choice test with the audited Gemini 3.8 Flash count.
-- **Q007** [open] Run the Claude pair of the harness comparison; only the OpenAI pair is scored.
+- **Q007** [closed] The harness comparison ended as the OpenAI pair only: too few errors to show a difference; the Claude pair was closed by the owner on 8 October.
 - **Q008** [registered, running] Earned Agency Bench: registered and running. No results yet.
 
 **Acknowledgement.** Built with Claude (Anthropic) as research assistant.

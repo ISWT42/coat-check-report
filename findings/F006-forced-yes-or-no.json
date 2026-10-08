@@ -1,384 +1,387 @@
 {
-  "date_added": "2026-10-08",
-  "version_first_included": "1.0.0",
-  "lifecycle": "active",
-  "superseded_by": null,
-  "retraction": null,
-  "paper": true,
-  "id": "F006",
-  "slug": "forced-yes-or-no",
-  "title": "Forced yes or no against \"not shown\", across models",
-  "question": "Does forcing yes or no make models guess when evidence is missing, and does allowing \"not shown\" stop it?",
-  "status": "shown",
-  "status_note": "A later parser audit moved one count (below).",
-  "summary_line": "Forced yes or no made models guess; allowing not shown nearly stopped it.",
-  "headline": "Across {{F006.c.models.n}} models and {{F006.c.calls.n}} calls, Claude Opus 5.5 guessed on {{F006.c.opus_forced}} logs missing their evidence when forced, and on {{F006.c.opus_allowed}} when \"not shown\" was allowed. The {{F006.c.newer.n}} newer models pooled: {{F006.t.pooled.a}} guesses only when forced, {{F006.t.pooled.b}} only when allowed (p = {{F006.t.pooled.p}}).",
-  "plain_meaning": "A forced binary answer manufactures guesses. Offering not shown removed most of them at no cost on intact logs.",
-  "limits": [
-    "One call per item; one author's items.",
-    "A guess is defined by the forced format."
-  ],
-  "counts": [
+ "date_added": "2026-10-08",
+ "version_first_included": "1.0.0",
+ "lifecycle": "active",
+ "superseded_by": null,
+ "retraction": null,
+ "paper": true,
+ "id": "F006",
+ "slug": "forced-yes-or-no",
+ "title": "Forced yes or no against \"not shown\", across models",
+ "question": "Does forcing yes or no make models guess when evidence is missing, and does allowing \"not shown\" stop it?",
+ "status": "shown",
+ "status_note": "A later parser audit moved one count (below).",
+ "summary_line": "Forced yes or no made models guess; allowing not shown nearly stopped it.",
+ "headline": "Across {{F006.c.models.n}} models and {{F006.c.calls.n}} calls, Claude Opus 5.5 guessed on {{F006.c.opus_forced}} logs missing their evidence when forced, and on {{F006.c.opus_allowed}} when \"not shown\" was allowed. The {{F006.c.newer.n}} newer models pooled: {{F006.t.pooled.a}} guesses only when forced, {{F006.t.pooled.b}} only when allowed (p = {{F006.t.pooled.p}}).",
+ "plain_meaning": "A forced binary answer manufactures guesses. Offering not shown removed most of them at no cost on intact logs.",
+ "limits": [
+  "One call per item; one author's items.",
+  "A guess is defined by the forced format."
+ ],
+ "counts": [
+  {
+   "key": "opus_forced",
+   "label": "Claude Opus 5.5 guesses on logs missing their evidence, forced",
+   "n": "27",
+   "d": "27",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+    "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+   },
+   "quote": "| claude-opus-5.5 | 27 | 1 | 27 | 27 | 27 | 27 | 0 |",
+   "d_basis": "Records: 27 logs missing their deciding evidence, 27 intact."
+  },
+  {
+   "key": "opus_allowed",
+   "label": "Claude Opus 5.5 guesses on logs missing their evidence, not shown allowed",
+   "n": "1",
+   "d": "27",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+    "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+   },
+   "quote": "| claude-opus-5.5 | 27 | 1 | 27 | 27 | 27 | 27 | 0 |",
+   "d_basis": "Records: 27 logs missing their deciding evidence, 27 intact."
+  },
+  {
+   "key": "calls",
+   "label": "calls",
+   "n": "972",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+    "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+   },
+   "quote": "972 rows for 972 distinct calls"
+  },
+  {
+   "key": "newer",
+   "label": "newer models pooled",
+   "n": "7",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+    "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+   },
+   "quote": "The seven newer models together",
+   "note": "The record writes the count as a word."
+  },
+  {
+   "key": "gem_sealed",
+   "label": "Gemini 3.8 Flash forced guesses, sealed count",
+   "n": "20",
+   "d": "27",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+    "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+   },
+   "quote": "| gemini-3.8-flash | 20 | 3 | 27 | 26 | 27 | 26 | 7 |",
+   "d_basis": "Records: 27 logs missing their deciding evidence, 27 intact."
+  },
+  {
+   "key": "gem_audit",
+   "label": "Gemini 3.8 Flash forced guesses after the parser audit",
+   "n": "25",
+   "d": "27",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/README.md",
+    "public": "Public research record, bundle 3, README.md"
+   },
+   "quote": "S12 Gemini forced guesses 20 to 25 of 27"
+  },
+  {
+   "key": "models",
+   "label": "models",
+   "n": "9",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/S12-FORCED-SWEEP.redacted.md",
+    "public": "Public research record, bundle 3, gemini-pack-s1-s12/S12-FORCED-SWEEP.redacted.md"
+   },
+   "quote": "# S12: Forced yes-or-no, on nine models",
+   "note": "The record writes the count as a word."
+  }
+ ],
+ "tables": [
+  {
+   "key": "models",
+   "caption": "Logs: guesses where evidence is missing; right answers on intact logs",
+   "columns": [
+    "Guesses, forced",
+    "Guesses, allowed",
+    "Right, forced",
+    "Right, allowed"
+   ],
+   "of": 27,
+   "rows": [
     {
-      "key": "opus_forced",
-      "label": "Claude Opus 5.5 guesses on logs missing their evidence, forced",
-      "n": "27",
-      "d": "27",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-      },
-      "quote": "| claude-opus-5.5 | 27 | 1 | 27 | 27 | 27 | 27 | 0 |",
-      "d_basis": "Records: 27 logs missing their deciding evidence, 27 intact."
+     "label": "Qwen 3.5 9B",
+     "cells": [
+      "19",
+      "9",
+      "24",
+      "26"
+     ],
+     "source": {
+      "root": "workbench",
+      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+      "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+     },
+     "quote": "| qwen3.5-9b | 19 | 9 | 24 | 26 | 24 | 25 | 2 |"
     },
     {
-      "key": "opus_allowed",
-      "label": "Claude Opus 5.5 guesses on logs missing their evidence, not shown allowed",
-      "n": "1",
-      "d": "27",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-      },
-      "quote": "| claude-opus-5.5 | 27 | 1 | 27 | 27 | 27 | 27 | 0 |",
-      "d_basis": "Records: 27 logs missing their deciding evidence, 27 intact."
+     "label": "Gemma 4 26B",
+     "cells": [
+      "10",
+      "4",
+      "25",
+      "25"
+     ],
+     "source": {
+      "root": "workbench",
+      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+      "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+     },
+     "quote": "| gemma-4-26b-a4b-it | 10 | 4 | 25 | 25 | 24 | 24 | 2 |"
     },
     {
-      "key": "calls",
-      "label": "calls",
-      "n": "972",
-      "d": null,
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-      },
-      "quote": "972 rows for 972 distinct calls"
+     "label": "deepseek-v4.1-flash",
+     "cells": [
+      "26",
+      "2",
+      "27",
+      "27"
+     ],
+     "source": {
+      "root": "workbench",
+      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+      "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+     },
+     "quote": "| deepseek-v4.1-flash | 26 | 2 | 27 | 27 | 27 | 27 | 0 |"
     },
     {
-      "key": "newer",
-      "label": "newer models pooled",
-      "n": "7",
-      "d": null,
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-      },
-      "quote": "The seven newer models together",
-      "note": "The record writes the count as a word."
+     "label": "kimi-k3",
+     "cells": [
+      "27",
+      "4",
+      "27",
+      "26"
+     ],
+     "source": {
+      "root": "workbench",
+      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+      "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+     },
+     "quote": "| kimi-k3 | 27 | 4 | 27 | 26 | 27 | 26 | 2 |"
     },
     {
-      "key": "gem_sealed",
-      "label": "Gemini 3.8 Flash forced guesses, sealed count",
-      "n": "20",
-      "d": "27",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-      },
-      "quote": "| gemini-3.8-flash | 20 | 3 | 27 | 26 | 27 | 26 | 7 |",
-      "d_basis": "Records: 27 logs missing their deciding evidence, 27 intact."
+     "label": "GPT-6.1 Sol",
+     "cells": [
+      "27",
+      "2",
+      "26",
+      "25"
+     ],
+     "source": {
+      "root": "workbench",
+      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+      "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+     },
+     "quote": "| gpt-6.1-sol | 27 | 2 | 26 | 25 | 26 | 25 | 0 |"
     },
     {
-      "key": "gem_audit",
-      "label": "Gemini 3.8 Flash forced guesses after the parser audit",
-      "n": "25",
-      "d": "27",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/README.md",
-        "public": "Public research record, bundle 3, README.md"
-      },
-      "quote": "S12 Gemini forced guesses 20 to 25 of 27"
+     "label": "Gemini 3.8 Flash",
+     "cells": [
+      "20",
+      "3",
+      "27",
+      "26"
+     ],
+     "source": {
+      "root": "workbench",
+      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+      "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+     },
+     "quote": "| gemini-3.8-flash | 20 | 3 | 27 | 26 | 27 | 26 | 7 |"
     },
     {
-      "key": "models",
-      "label": "models",
-      "n": "9",
-      "d": null,
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/S12-FORCED-SWEEP.redacted.md",
-        "public": "Public research record, bundle 3, gemini-pack-s1-s12/S12-FORCED-SWEEP.redacted.md"
-      },
-      "quote": "# S12: Forced yes-or-no, on nine models",
-      "note": "The record writes the count as a word."
+     "label": "grok-4.7",
+     "cells": [
+      "27",
+      "2",
+      "27",
+      "26"
+     ],
+     "source": {
+      "root": "workbench",
+      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+      "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+     },
+     "quote": "| grok-4.7 | 27 | 2 | 27 | 26 | 27 | 26 | 0 |"
+    },
+    {
+     "label": "glm-5.3",
+     "cells": [
+      "20",
+      "5",
+      "27",
+      "27"
+     ],
+     "source": {
+      "root": "workbench",
+      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+      "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+     },
+     "quote": "| glm-5.3 | 20 | 5 | 27 | 27 | 27 | 27 | 0 |"
+    },
+    {
+     "label": "Claude Opus 5.5",
+     "cells": [
+      "27",
+      "1",
+      "27",
+      "27"
+     ],
+     "source": {
+      "root": "workbench",
+      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+      "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+     },
+     "quote": "| claude-opus-5.5 | 27 | 1 | 27 | 27 | 27 | 27 | 0 |"
     }
-  ],
-  "tables": [
-    {
-      "key": "models",
-      "caption": "Logs: guesses where evidence is missing; right answers on intact logs",
-      "columns": [
-        "Guesses, forced",
-        "Guesses, allowed",
-        "Right, forced",
-        "Right, allowed"
-      ],
-      "of": 27,
-      "rows": [
-        {
-          "label": "Qwen 3.5 9B",
-          "cells": [
-            "19",
-            "9",
-            "24",
-            "26"
-          ],
-          "source": {
-            "root": "workbench",
-            "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-            "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-          },
-          "quote": "| qwen3.5-9b | 19 | 9 | 24 | 26 | 24 | 25 | 2 |"
-        },
-        {
-          "label": "Gemma 4 26B",
-          "cells": [
-            "10",
-            "4",
-            "25",
-            "25"
-          ],
-          "source": {
-            "root": "workbench",
-            "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-            "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-          },
-          "quote": "| gemma-4-26b-a4b-it | 10 | 4 | 25 | 25 | 24 | 24 | 2 |"
-        },
-        {
-          "label": "deepseek-v4.1-flash",
-          "cells": [
-            "26",
-            "2",
-            "27",
-            "27"
-          ],
-          "source": {
-            "root": "workbench",
-            "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-            "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-          },
-          "quote": "| deepseek-v4.1-flash | 26 | 2 | 27 | 27 | 27 | 27 | 0 |"
-        },
-        {
-          "label": "kimi-k3",
-          "cells": [
-            "27",
-            "4",
-            "27",
-            "26"
-          ],
-          "source": {
-            "root": "workbench",
-            "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-            "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-          },
-          "quote": "| kimi-k3 | 27 | 4 | 27 | 26 | 27 | 26 | 2 |"
-        },
-        {
-          "label": "GPT-6.1 Sol",
-          "cells": [
-            "27",
-            "2",
-            "26",
-            "25"
-          ],
-          "source": {
-            "root": "workbench",
-            "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-            "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-          },
-          "quote": "| gpt-6.1-sol | 27 | 2 | 26 | 25 | 26 | 25 | 0 |"
-        },
-        {
-          "label": "Gemini 3.8 Flash",
-          "cells": [
-            "20",
-            "3",
-            "27",
-            "26"
-          ],
-          "source": {
-            "root": "workbench",
-            "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-            "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-          },
-          "quote": "| gemini-3.8-flash | 20 | 3 | 27 | 26 | 27 | 26 | 7 |"
-        },
-        {
-          "label": "grok-4.7",
-          "cells": [
-            "27",
-            "2",
-            "27",
-            "26"
-          ],
-          "source": {
-            "root": "workbench",
-            "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-            "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-          },
-          "quote": "| grok-4.7 | 27 | 2 | 27 | 26 | 27 | 26 | 0 |"
-        },
-        {
-          "label": "glm-5.3",
-          "cells": [
-            "20",
-            "5",
-            "27",
-            "27"
-          ],
-          "source": {
-            "root": "workbench",
-            "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-            "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-          },
-          "quote": "| glm-5.3 | 20 | 5 | 27 | 27 | 27 | 27 | 0 |"
-        },
-        {
-          "label": "Claude Opus 5.5",
-          "cells": [
-            "27",
-            "1",
-            "27",
-            "27"
-          ],
-          "source": {
-            "root": "workbench",
-            "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-            "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-          },
-          "quote": "| claude-opus-5.5 | 27 | 1 | 27 | 27 | 27 | 27 | 0 |"
-        }
-      ]
-    }
-  ],
-  "tests": [
-    {
-      "key": "pooled",
-      "name": "newer models pooled",
-      "kind": "sealed",
-      "a": "155",
-      "b": "0",
-      "p": "4.38e-47",
-      "verdict": "shown",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-      },
-      "quote": "- The seven newer models together: guesses on missing 155 / 0, p = 4.38e-47"
-    },
-    {
-      "key": "opus",
-      "name": "Claude Opus 5.5",
-      "kind": "sealed",
-      "a": "26",
-      "b": "0",
-      "p": "2.98e-08",
-      "verdict": "shown",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-      },
-      "quote": "- claude-opus-5.5: guesses on missing 26 / 0, p = 2.98e-08; right on intact 0 / 0, p = 1"
-    },
-    {
-      "key": "qwen",
-      "name": "Qwen 3.5 9B",
-      "kind": "sealed",
-      "a": "10",
-      "b": "0",
-      "p": "0.00195",
-      "verdict": "shown",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-      },
-      "quote": "- qwen3.5-9b: guesses on missing 10 / 0, p = 0.00195; right on intact 0 / 2, p = 0.5"
-    },
-    {
-      "key": "gemma",
-      "name": "Gemma 4 26B",
-      "kind": "sealed",
-      "a": "6",
-      "b": "0",
-      "p": "0.0312",
-      "verdict": "shown",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
-        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
-      },
-      "quote": "- gemma-4-26b-a4b-it: guesses on missing 6 / 0, p = 0.0312; right on intact 0 / 0, p = 1"
-    }
-  ],
-  "record_corrections": [
-    {
-      "date": "2026-10-07",
-      "text": "Parser audit, 7 October: Gemini 3.8 Flash forced guesses {{F006.c.gem_sealed}} became {{F006.c.gem_audit}}; the pooled test was not recomputed.",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/README.md",
-        "public": "Public research record, bundle 3, README.md"
-      }
-    }
-  ],
-  "seal": [
-    {
-      "role": "addendum that added S11 and S12 to the sealed pack",
-      "list_file": "ADDENDUM-7-SHA256.txt",
-      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/ADDENDUM-7-SHA256.txt",
-      "sha256": "c182f2299d1f260daa9508cff43791a8c9ded582f3bf7a2c39b24f4d56683a4d",
-      "freetsa_utc": "2026-10-06T13:55:58Z",
-      "bitcoin_blocks": [],
-      "pending_calendar": 0
-    },
-    {
-      "role": "answer keys, before the results",
-      "list_file": "KEYS-S12-SHA256.txt",
-      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/KEYS-S12-SHA256.txt",
-      "sha256": "677db634439fd9d2c3dedbbb5aeac988aa0190b34e3d35ffd6de8a8cacd720bb",
-      "freetsa_utc": "2026-10-06T13:55:59Z",
-      "bitcoin_blocks": [],
-      "pending_calendar": 0
-    },
-    {
-      "role": "raw results, before any count",
-      "list_file": "RESULTS-S12-SHA256.txt",
-      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/RESULTS-S12-SHA256.txt",
-      "sha256": "cb5c0e8fb62001983a255cef588f0847fd41599e2a6d08aa411746e427d143ba",
-      "freetsa_utc": "2026-10-06T15:59:18Z",
-      "bitcoin_blocks": [
-        970198,
-        970200,
-        970214,
-        970275
-      ],
-      "pending_calendar": 4
-    },
-    {
-      "role": "scorer, written after the results seal and before the results were read",
-      "list_file": "SCORER-S12-SHA256.txt",
-      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/SCORER-S12-SHA256.txt",
-      "sha256": "d653da0e0a510f128b330fd901af429633004b783651339262800abf1f806ca3",
-      "freetsa_utc": "2026-10-06T16:01:06Z",
-      "bitcoin_blocks": [],
-      "pending_calendar": 0
-    }
-  ],
-  "links": [
-    {
-      "label": "Research record",
-      "url": "https://doi.org/10.5281/zenodo.23227858"
-    }
-  ]
+   ]
+  }
+ ],
+ "tests": [
+  {
+   "key": "pooled",
+   "name": "newer models pooled",
+   "kind": "sealed",
+   "a": "155",
+   "b": "0",
+   "p": "4.38e-47",
+   "verdict": "shown",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+    "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+   },
+   "quote": "- The seven newer models together: guesses on missing 155 / 0, p = 4.38e-47"
+  },
+  {
+   "key": "opus",
+   "name": "Claude Opus 5.5",
+   "kind": "sealed",
+   "a": "26",
+   "b": "0",
+   "p": "2.98e-08",
+   "verdict": "shown",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+    "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+   },
+   "quote": "- claude-opus-5.5: guesses on missing 26 / 0, p = 2.98e-08; right on intact 0 / 0, p = 1"
+  },
+  {
+   "key": "qwen",
+   "name": "Qwen 3.5 9B",
+   "kind": "sealed",
+   "a": "10",
+   "b": "0",
+   "p": "0.00195",
+   "verdict": "shown",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+    "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+   },
+   "quote": "- qwen3.5-9b: guesses on missing 10 / 0, p = 0.00195; right on intact 0 / 2, p = 0.5"
+  },
+  {
+   "key": "gemma",
+   "name": "Gemma 4 26B",
+   "kind": "sealed",
+   "a": "6",
+   "b": "0",
+   "p": "0.0312",
+   "verdict": "shown",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md",
+    "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md"
+   },
+   "quote": "- gemma-4-26b-a4b-it: guesses on missing 6 / 0, p = 0.0312; right on intact 0 / 0, p = 1"
+  }
+ ],
+ "record_corrections": [
+  {
+   "date": "2026-10-07",
+   "text": "Parser audit, 7 October: Gemini 3.8 Flash forced guesses {{F006.c.gem_sealed}} became {{F006.c.gem_audit}}; the pooled test was not recomputed.",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/README.md",
+    "public": "Public research record, bundle 3, README.md"
+   }
+  }
+ ],
+ "seal": [
+  {
+   "role": "addendum that added S11 and S12 to the sealed pack",
+   "list_file": "ADDENDUM-7-SHA256.txt",
+   "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/ADDENDUM-7-SHA256.txt",
+   "sha256": "c182f2299d1f260daa9508cff43791a8c9ded582f3bf7a2c39b24f4d56683a4d",
+   "freetsa_utc": "2026-10-06T13:55:58Z",
+   "bitcoin_blocks": [],
+   "pending_calendar": 0,
+   "ots": "none"
+  },
+  {
+   "role": "answer keys, before the results",
+   "list_file": "KEYS-S12-SHA256.txt",
+   "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/KEYS-S12-SHA256.txt",
+   "sha256": "677db634439fd9d2c3dedbbb5aeac988aa0190b34e3d35ffd6de8a8cacd720bb",
+   "freetsa_utc": "2026-10-06T13:55:59Z",
+   "bitcoin_blocks": [],
+   "pending_calendar": 0,
+   "ots": "none"
+  },
+  {
+   "role": "raw results, before any count",
+   "list_file": "RESULTS-S12-SHA256.txt",
+   "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/RESULTS-S12-SHA256.txt",
+   "sha256": "cb5c0e8fb62001983a255cef588f0847fd41599e2a6d08aa411746e427d143ba",
+   "freetsa_utc": "2026-10-06T15:59:18Z",
+   "bitcoin_blocks": [
+    970198,
+    970200,
+    970214,
+    970275
+   ],
+   "pending_calendar": 4
+  },
+  {
+   "role": "scorer, written after the results seal and before the results were read",
+   "list_file": "SCORER-S12-SHA256.txt",
+   "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/SCORER-S12-SHA256.txt",
+   "sha256": "d653da0e0a510f128b330fd901af429633004b783651339262800abf1f806ca3",
+   "freetsa_utc": "2026-10-06T16:01:06Z",
+   "bitcoin_blocks": [],
+   "pending_calendar": 0,
+   "ots": "none"
+  }
+ ],
+ "links": [
+  {
+   "label": "Research record",
+   "url": "https://doi.org/10.5281/zenodo.23227858"
+  }
+ ]
 }

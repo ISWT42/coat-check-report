@@ -55,9 +55,9 @@
     },
     {
       "id": "Q007",
-      "status": "open",
+      "status": "closed",
       "related": [],
-      "text": "Run the Claude pair of the harness comparison; only the OpenAI pair is scored."
+      "text": "The harness comparison ended as the OpenAI pair only: too few errors to show a difference; the Claude pair was closed by the owner on 8 October."
     },
     {
       "id": "Q008",

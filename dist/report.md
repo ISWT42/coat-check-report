@@ -125,7 +125,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Limits.* One model through a command line; versions differ in several ways. Public logs: a first attempt, planned for Gemini 3.8 Flash, searched the web and 4 answers were set aside; the rerun used Gemini 3.7 Flash with tools denied.
 
-*Seal.* FreeTSA 2026-10-07; Bitcoin pending (Appendix C).
+*Seal.* FreeTSA 2026-10-07; Bitcoin 970359 to 970373 (Appendix C).
 
 ### F003. Kaggle tasks t5 and t6: the ticket on the benchmark's models
 
@@ -154,7 +154,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Limits.* Not like-for-like: the ticket states the expected value. Counts come from the findings note; the sealed analysis file is not on disk.
 
-*Seal.* FreeTSA 2026-10-07; Bitcoin 970376 (Appendix C).
+*Seal.* FreeTSA 2026-10-07; Bitcoin 970376 to 970415 (Appendix C).
 
 ### F004. Blind coat-check, tasks t7 and t8: the ticket names the check, not the answer
 
@@ -179,7 +179,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Limits.* The job sentence still states the target in 10 of 16 jobs. Known public logs; small models.
 
-*Seal.* FreeTSA 2026-10-07; Bitcoin 970397 (Appendix C).
+*Seal.* FreeTSA 2026-10-07; Bitcoin 970397 to 970415 (Appendix C).
 
 ### F005. The coat-check relay: a false done travelling down a chain of coding jobs
 
@@ -206,7 +206,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Limits.* One run of 12 jobs; cheap models, 56 of 280 invalid replies.
 
-*Seal.* FreeTSA 2026-10-07; Bitcoin pending (Appendix C).
+*Seal.* FreeTSA 2026-10-07; Bitcoin 970397 to 970415 (Appendix C).
 
 ### F006. Forced yes or no against "not shown", across models
 
@@ -299,7 +299,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Limits.* Small models; the sentence was written after F007.
 
-*Seal.* FreeTSA 2026-10-06 to 2026-10-07; Bitcoin 970187 to 970194 (Appendix C).
+*Seal.* FreeTSA 2026-10-06 to 2026-10-07; Bitcoin 970187 to 970333 (Appendix C).
 
 ### F009. A binding gate against a reviewer told the rule: not shown
 
@@ -325,7 +325,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Limits.* Small models; claims written by Claude; the key is withheld. Each held-back true claim is a job for a person.
 
-*Seal.* FreeTSA 2026-10-07; Bitcoin pending (Appendix C).
+*Seal.* FreeTSA 2026-10-07; Bitcoin 970271 to 970333 (Appendix C).
 
 ## 4. Limits and threats to validity
 
@@ -346,7 +346,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 - **Q004** [open] Why did a certifier that rewrote the work add errors? Test certify-only.
 - **Q005** [open] Compare the binding gate with a told reviewer on enough claims to see a modest gap.
 - **Q006** [open] Recompute the pooled forced-choice test with the audited Gemini 3.8 Flash count.
-- **Q007** [open] Run the Claude pair of the harness comparison; only the OpenAI pair is scored.
+- **Q007** [closed] The harness comparison ended as the OpenAI pair only: too few errors to show a difference; the Claude pair was closed by the owner on 8 October.
 - **Q008** [registered, running] Earned Agency Bench: registered and running. No results yet.
 
 **Acknowledgement.** Built with Claude (Anthropic) as research assistant.
@@ -1367,19 +1367,19 @@ Seal lists as read from the local files by `tools/seal_info.py` (no network). Fr
 
 | Role | List file | SHA-256 | FreeTSA (UTC) | Bitcoin blocks |
 |---|---|---|---|---|
-| design, prompts, runner and anonymous key, before any model call | `RUN-SHA256.txt` | `eee5dd8c013baf4915ac676a9bee9f1a0f2ba659e86d04dbba377f6ca560a504` | 2026-10-07 15:35:33Z | pending |
-| scorer | `SCORER-SHA256.txt` | `54e2ba621accadd1cb1945f3674e322696ad5d350e251c1d23b71db54424bf87` | 2026-10-07 15:38:45Z | pending |
-| addendum: no tools, Gemini 3.7 Flash | `ADDENDUM-1-SHA256.txt` | `4ab224e275b6c1330399e41e1412114565d711ecb9b80a85c1f3e8682014b567` | 2026-10-07 15:56:07Z | pending |
-| raw results, before any count | `RESULTS-SHA256.txt` | `e9c2219a82b4f36406c45dc9eafb507638e2d350e41a368e3067c4c9d82c776c` | 2026-10-07 16:43:06Z | pending |
-| scored output | `SCORED-SHA256.txt` | `cb9a778475a764965f13e5284c0b576f45de64a21566882280306b4ca298427d` | 2026-10-07 16:43:10Z | pending |
+| design, prompts, runner and anonymous key, before any model call | `RUN-SHA256.txt` | `eee5dd8c013baf4915ac676a9bee9f1a0f2ba659e86d04dbba377f6ca560a504` | 2026-10-07 15:35:33Z | 970359, 970360, 970366, 970373 |
+| scorer | `SCORER-SHA256.txt` | `54e2ba621accadd1cb1945f3674e322696ad5d350e251c1d23b71db54424bf87` | 2026-10-07 15:38:45Z | 970359, 970360, 970366, 970373 |
+| addendum: no tools, Gemini 3.7 Flash | `ADDENDUM-1-SHA256.txt` | `4ab224e275b6c1330399e41e1412114565d711ecb9b80a85c1f3e8682014b567` | 2026-10-07 15:56:07Z | 970359, 970360, 970366, 970373 |
+| raw results, before any count | `RESULTS-SHA256.txt` | `e9c2219a82b4f36406c45dc9eafb507638e2d350e41a368e3067c4c9d82c776c` | 2026-10-07 16:43:06Z | 970366, 970373 |
+| scored output | `SCORED-SHA256.txt` | `cb9a778475a764965f13e5284c0b576f45de64a21566882280306b4ca298427d` | 2026-10-07 16:43:10Z | 970366, 970373 |
 
 ### Seals for F003
 
 | Role | List file | SHA-256 | FreeTSA (UTC) | Bitcoin blocks |
 |---|---|---|---|---|
 | tasks, scorer, run plan and sealed forecasts, before any counted run | `FILES-SHA256.txt` | `66ceac12bf0fe143c0961af6c77517c9543c7ce76e409d30f9db1708831ff0a1` | 2026-10-07 18:11:00Z | 970376 |
-| addendum: each Kaggle push also ran the task once | `ADDENDUM-1-SHA256.txt` | `fd95c7ecd99cf36a7cd6db39462e30e8c5c24587eec8ee6358449838a963dc55` | 2026-10-07 19:08:25Z | pending |
-| results, before any count | `RESULTS-2-SHA256.txt` | `72c1813d1e57dd9a174d68f159f04b0e693ab624d089586c79d30fee5ec9932c` | 2026-10-07 20:19:19Z | pending |
+| addendum: each Kaggle push also ran the task once | `ADDENDUM-1-SHA256.txt` | `fd95c7ecd99cf36a7cd6db39462e30e8c5c24587eec8ee6358449838a963dc55` | 2026-10-07 19:08:25Z | 970383, 970387, 970412, 970415 |
+| results, before any count | `RESULTS-2-SHA256.txt` | `72c1813d1e57dd9a174d68f159f04b0e693ab624d089586c79d30fee5ec9932c` | 2026-10-07 20:19:19Z | 970387, 970388, 970412, 970415 |
 
 A first results list holds the hash of an empty input; the second list is the real one. Each Kaggle push also ran its task once (sealed addendum).
 
@@ -1388,33 +1388,33 @@ A first results list holds the hash of an empty input; the second list is the re
 | Role | List file | SHA-256 | FreeTSA (UTC) | Bitcoin blocks |
 |---|---|---|---|---|
 | tasks, scorer, run plan and sealed forecasts, before any counted run | `FILES-SHA256.txt` | `c68aa45ef06568bfb4e3d26a4d94b2a9ac15243dd6cbac1a2df7905432e37a16` | 2026-10-07 20:54:59Z | 970397 |
-| addendum: three tests pinned | `ADDENDUM-1-SHA256.txt` | `09cf24f91dfa852bd776a551d7759342164c236f8cdacd879e12a74f66f790bf` | 2026-10-07 20:57:03Z | pending |
-| results, before any count | `RESULTS-SHA256.txt` | `ddf978a7ba0c6dfa4fd724394861deecb907353eb508b845ba6d7eed644cf5f0` | 2026-10-07 23:47:51Z | pending |
+| addendum: three tests pinned | `ADDENDUM-1-SHA256.txt` | `09cf24f91dfa852bd776a551d7759342164c236f8cdacd879e12a74f66f790bf` | 2026-10-07 20:57:03Z | 970397, 970401, 970412, 970415 |
+| results, before any count | `RESULTS-SHA256.txt` | `ddf978a7ba0c6dfa4fd724394861deecb907353eb508b845ba6d7eed644cf5f0` | 2026-10-07 23:47:51Z | 970409, 970411, 970412, 970415 |
 
 ### Seals for F005
 
 | Role | List file | SHA-256 | FreeTSA (UTC) | Bitcoin blocks |
 |---|---|---|---|---|
-| design, code, jobs and forecasts, before any model call | `RELAY-SEAL-SHA256.txt` | `8bc219ed043c62ce6823591db3c9bb4ba059d2001937eaff74177cf7cb68eed4` | 2026-10-07 21:29:16Z | pending |
-| raw results, before any count | `RESULTS-SHA256.txt` | `b005ce266b52a61e1fbb6a9296bbc5bbfb8a6fd7af34431cfb1ff589cc58a290` | 2026-10-07 23:45:35Z | pending |
-| scored output | `SCORED-SHA256.txt` | `81c76c6a31ca5d92ff4189b9a95b222dca78db3503ed2dc92e19ef59493686d2` | 2026-10-07 23:46:01Z | pending |
+| design, code, jobs and forecasts, before any model call | `RELAY-SEAL-SHA256.txt` | `8bc219ed043c62ce6823591db3c9bb4ba059d2001937eaff74177cf7cb68eed4` | 2026-10-07 21:29:16Z | 970397, 970401, 970412, 970415 |
+| raw results, before any count | `RESULTS-SHA256.txt` | `b005ce266b52a61e1fbb6a9296bbc5bbfb8a6fd7af34431cfb1ff589cc58a290` | 2026-10-07 23:45:35Z | 970409, 970411, 970412, 970415 |
+| scored output | `SCORED-SHA256.txt` | `81c76c6a31ca5d92ff4189b9a95b222dca78db3503ed2dc92e19ef59493686d2` | 2026-10-07 23:46:01Z | none (FreeTSA only) |
 
 ### Seals for F006
 
 | Role | List file | SHA-256 | FreeTSA (UTC) | Bitcoin blocks |
 |---|---|---|---|---|
-| addendum that added S11 and S12 to the sealed pack | `ADDENDUM-7-SHA256.txt` | `c182f2299d1f260daa9508cff43791a8c9ded582f3bf7a2c39b24f4d56683a4d` | 2026-10-06 13:55:58Z | pending |
-| answer keys, before the results | `KEYS-S12-SHA256.txt` | `677db634439fd9d2c3dedbbb5aeac988aa0190b34e3d35ffd6de8a8cacd720bb` | 2026-10-06 13:55:59Z | pending |
+| addendum that added S11 and S12 to the sealed pack | `ADDENDUM-7-SHA256.txt` | `c182f2299d1f260daa9508cff43791a8c9ded582f3bf7a2c39b24f4d56683a4d` | 2026-10-06 13:55:58Z | none (FreeTSA only) |
+| answer keys, before the results | `KEYS-S12-SHA256.txt` | `677db634439fd9d2c3dedbbb5aeac988aa0190b34e3d35ffd6de8a8cacd720bb` | 2026-10-06 13:55:59Z | none (FreeTSA only) |
 | raw results, before any count | `RESULTS-S12-SHA256.txt` | `cb5c0e8fb62001983a255cef588f0847fd41599e2a6d08aa411746e427d143ba` | 2026-10-06 15:59:18Z | 970198, 970200, 970214, 970275 |
-| scorer, written after the results seal and before the results were read | `SCORER-S12-SHA256.txt` | `d653da0e0a510f128b330fd901af429633004b783651339262800abf1f806ca3` | 2026-10-06 16:01:06Z | pending |
+| scorer, written after the results seal and before the results were read | `SCORER-S12-SHA256.txt` | `d653da0e0a510f128b330fd901af429633004b783651339262800abf1f806ca3` | 2026-10-06 16:01:06Z | none (FreeTSA only) |
 
 ### Seals for F007
 
 | Role | List file | SHA-256 | FreeTSA (UTC) | Bitcoin blocks |
 |---|---|---|---|---|
-| hosted test pack: specs, models, rules, item files | `PACK-SHA256.txt` | `1a6c3f28319333cbbc70372a8df25b5a04347ec3717443d2d98833145f585971` | 2026-10-06 03:07:46Z | pending |
-| answer keys, before the hosted results | `KEYS-SHA256.txt` | `88d766355e9ec2558b5514c68ae8302ea598ec6b8783ce2f24a81a0ed9d31a1c` | 2026-10-06 03:07:47Z | pending |
-| hosted results | `S2-RESULTS-SHA256.txt` | `ee452cb46489da860c1fd5f1e7abed56e4f1ed780ad4c83147875352cf127bc5` | 2026-10-06 04:10:43Z | pending |
+| hosted test pack: specs, models, rules, item files | `PACK-SHA256.txt` | `1a6c3f28319333cbbc70372a8df25b5a04347ec3717443d2d98833145f585971` | 2026-10-06 03:07:46Z | none (FreeTSA only) |
+| answer keys, before the hosted results | `KEYS-SHA256.txt` | `88d766355e9ec2558b5514c68ae8302ea598ec6b8783ce2f24a81a0ed9d31a1c` | 2026-10-06 03:07:47Z | none (FreeTSA only) |
+| hosted results | `S2-RESULTS-SHA256.txt` | `ee452cb46489da860c1fd5f1e7abed56e4f1ed780ad4c83147875352cf127bc5` | 2026-10-06 04:10:43Z | none (FreeTSA only) |
 | local chain design | `DESIGN-SHA256.txt` | `dbf4c73410b9d3f8784f0adf19d99957b03eaf8667cea92c63abbba7e2384985` | 2026-10-06 09:08:24Z | 970158, 970162 |
 | local chain raw results | `RESULTS-SHA256.txt` | `7804aef2bcd021adca2fdf1bf227127f1d22857ab8e373f515f6ff2e6d79400f` | 2026-10-06 13:30:22Z | 970180, 970184, 970187 |
 
@@ -1422,19 +1422,19 @@ A first results list holds the hash of an empty input; the second list is the re
 
 | Role | List file | SHA-256 | FreeTSA (UTC) | Bitcoin blocks |
 |---|---|---|---|---|
-| addendum that added S11 to the sealed pack | `ADDENDUM-7-SHA256.txt` | `c182f2299d1f260daa9508cff43791a8c9ded582f3bf7a2c39b24f4d56683a4d` | 2026-10-06 13:55:58Z | pending |
+| addendum that added S11 to the sealed pack | `ADDENDUM-7-SHA256.txt` | `c182f2299d1f260daa9508cff43791a8c9ded582f3bf7a2c39b24f4d56683a4d` | 2026-10-06 13:55:58Z | none (FreeTSA only) |
 | S11 raw results | `RESULTS-S11-SHA256.txt` | `5659ceefd3854824954a48d8033582ae0d464511618932f94e92b0df25b37060` | 2026-10-06 15:45:12Z | 970194 |
-| S11 scorer, after the results seal and before reading | `SCORER-S11-SHA256.txt` | `b723b0e2a367e728cdce1da64a4fb0fa0dcb79da02a6a3961c02205a71a5964f` | 2026-10-06 15:48:48Z | pending |
+| S11 scorer, after the results seal and before reading | `SCORER-S11-SHA256.txt` | `b723b0e2a367e728cdce1da64a4fb0fa0dcb79da02a6a3961c02205a71a5964f` | 2026-10-06 15:48:48Z | none (FreeTSA only) |
 | S11L design | `DESIGN-SHA256.txt` | `69007d45c5b34b7c45dbdb0c58c5d445580030a056f27a6bcece402bff06d18b` | 2026-10-06 14:45:36Z | 970187, 970194 |
-| S11L raw results | `RESULTS-SHA256.txt` | `5469ae0c1019a862357a0f36d0c0f9785b3ef84ec159d296c4e6dacec6fe7cd8` | 2026-10-06 19:15:17Z | pending |
-| gate test design, before any claim existed | `DESIGN-SHA256.txt` | `ba82a325aa0f4096a93dcebbcf39ca44fd6b316053b0fe6404647d7ddc752a92` | 2026-10-07 01:58:13Z | pending |
-| gate test raw results | `RESULTS-SHA256.txt` | `053754e8522a7b9644ea53708d307163e7f89ded2d3bf4cfd4cd469bc137c12b` | 2026-10-07 09:45:44Z | pending |
+| S11L raw results | `RESULTS-SHA256.txt` | `5469ae0c1019a862357a0f36d0c0f9785b3ef84ec159d296c4e6dacec6fe7cd8` | 2026-10-06 19:15:17Z | 970219, 970221, 970258, 970275 |
+| gate test design, before any claim existed | `DESIGN-SHA256.txt` | `ba82a325aa0f4096a93dcebbcf39ca44fd6b316053b0fe6404647d7ddc752a92` | 2026-10-07 01:58:13Z | 970271, 970275, 970294 |
+| gate test raw results | `RESULTS-SHA256.txt` | `053754e8522a7b9644ea53708d307163e7f89ded2d3bf4cfd4cd469bc137c12b` | 2026-10-07 09:45:44Z | 970326, 970327, 970332, 970333 |
 
 ### Seals for F009
 
 | Role | List file | SHA-256 | FreeTSA (UTC) | Bitcoin blocks |
 |---|---|---|---|---|
-| design, before any claim existed | `DESIGN-SHA256.txt` | `ba82a325aa0f4096a93dcebbcf39ca44fd6b316053b0fe6404647d7ddc752a92` | 2026-10-07 01:58:13Z | pending |
-| claims, keys and runner, before any model call | `RUN-SHA256.txt` | `f19d55df787324a4f41e2846cd834a2531cf7ddfb201bee0a537571b4ae7a827` | 2026-10-07 02:15:14Z | pending |
-| raw results, before any count | `RESULTS-SHA256.txt` | `053754e8522a7b9644ea53708d307163e7f89ded2d3bf4cfd4cd469bc137c12b` | 2026-10-07 09:45:44Z | pending |
-| scored output | `SCORED-SHA256.txt` | `b6ea07f21a36c1c6f04b94158c945770312961f4681120d9eba70714dc59e32d` | 2026-10-07 09:46:16Z | pending |
+| design, before any claim existed | `DESIGN-SHA256.txt` | `ba82a325aa0f4096a93dcebbcf39ca44fd6b316053b0fe6404647d7ddc752a92` | 2026-10-07 01:58:13Z | 970271, 970275, 970294 |
+| claims, keys and runner, before any model call | `RUN-SHA256.txt` | `f19d55df787324a4f41e2846cd834a2531cf7ddfb201bee0a537571b4ae7a827` | 2026-10-07 02:15:14Z | 970273, 970275, 970294 |
+| raw results, before any count | `RESULTS-SHA256.txt` | `053754e8522a7b9644ea53708d307163e7f89ded2d3bf4cfd4cd469bc137c12b` | 2026-10-07 09:45:44Z | 970326, 970327, 970332, 970333 |
+| scored output | `SCORED-SHA256.txt` | `b6ea07f21a36c1c6f04b94158c945770312961f4681120d9eba70714dc59e32d` | 2026-10-07 09:46:16Z | none (FreeTSA only) |

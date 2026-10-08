@@ -1,388 +1,398 @@
 {
-  "date_added": "2026-10-08",
-  "version_first_included": "1.0.0",
-  "lifecycle": "active",
-  "superseded_by": null,
-  "retraction": null,
-  "paper": true,
-  "id": "F003",
-  "slug": "kaggle-t5-t6-ticket",
-  "title": "Kaggle tasks t5 and t6: the ticket on the benchmark's models",
-  "question": "Does a ticket written before the work remove the false done that the do sentence produced?",
-  "status": "exploratory",
-  "status_note": "",
-  "summary_line": "On the benchmark models, a ticket plus a settling line cut never-ran false done to nearly none.",
-  "headline": "After the do sentence the models called {{F003.c.t3_g37.n}}, {{F003.c.t3_g38.n}}, {{F003.c.t3_hk.n}} and {{F003.c.t3_nano.n}} never-ran logs done. With the ticket (t6) they called {{F003.c.t6_g37.n}}, {{F003.c.t6_g38.n}}, {{F003.c.t6_hk.n}} and {{F003.c.t6_nano.n}} shown, of {{F003.c.t6_g37.d}}.",
-  "plain_meaning": "A ticket naming the check and the agreed result turned most false done into not shown, but it hands over the answer.",
-  "limits": [
-    "Not like-for-like: the ticket states the expected value.",
-    "Counts come from the findings note; the sealed analysis file is not on disk."
-  ],
-  "counts": [
+ "date_added": "2026-10-08",
+ "version_first_included": "1.0.0",
+ "lifecycle": "active",
+ "superseded_by": null,
+ "retraction": null,
+ "paper": true,
+ "id": "F003",
+ "slug": "kaggle-t5-t6-ticket",
+ "title": "Kaggle tasks t5 and t6: the ticket on the benchmark's models",
+ "question": "Does a ticket written before the work remove the false done that the do sentence produced?",
+ "status": "exploratory",
+ "status_note": "",
+ "summary_line": "On the benchmark models, a ticket plus a settling line cut never-ran false done to nearly none.",
+ "headline": "After the do sentence the models called {{F003.c.t3_g37.n}}, {{F003.c.t3_g38.n}}, {{F003.c.t3_hk.n}} and {{F003.c.t3_nano.n}} never-ran logs done. With the ticket (t6) they called {{F003.c.t6_g37.n}}, {{F003.c.t6_g38.n}}, {{F003.c.t6_hk.n}} and {{F003.c.t6_nano.n}} shown, of {{F003.c.t6_g37.d}}.",
+ "plain_meaning": "A ticket naming the check and the agreed result turned most false done into not shown, but it hands over the answer.",
+ "limits": [
+  "Not like-for-like: the ticket states the expected value.",
+  "Counts come from the findings note; the sealed analysis file is not on disk."
+ ],
+ "counts": [
+  {
+   "key": "t3_g37",
+   "label": "Gemini 3.7 Flash, never-ran called done after the do sentence (T3)",
+   "n": "11",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "never-ran logs called \"done\" after the do sentence (T3, published 2 Oct): Gemini 3.7 Flash 11 of 16, Gemini 3.8 Flash 5, Claude Haiku 4.5 10, GPT-5.4 nano 16"
+  },
+  {
+   "key": "t3_g38",
+   "label": "Gemini 3.8 Flash, never-ran called done after the do sentence (T3)",
+   "n": "5",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "never-ran logs called \"done\" after the do sentence (T3, published 2 Oct): Gemini 3.7 Flash 11 of 16, Gemini 3.8 Flash 5, Claude Haiku 4.5 10, GPT-5.4 nano 16"
+  },
+  {
+   "key": "t3_hk",
+   "label": "Claude Haiku 4.5, never-ran called done after the do sentence (T3)",
+   "n": "10",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "never-ran logs called \"done\" after the do sentence (T3, published 2 Oct): Gemini 3.7 Flash 11 of 16, Gemini 3.8 Flash 5, Claude Haiku 4.5 10, GPT-5.4 nano 16"
+  },
+  {
+   "key": "t3_nano",
+   "label": "GPT-5.4 nano, never-ran called done after the do sentence (T3)",
+   "n": "16",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "never-ran logs called \"done\" after the do sentence (T3, published 2 Oct): Gemini 3.7 Flash 11 of 16, Gemini 3.8 Flash 5, Claude Haiku 4.5 10, GPT-5.4 nano 16"
+  },
+  {
+   "key": "t6_g37",
+   "label": "Gemini 3.7 Flash, never-ran called shown with the ticket and the do sentence (t6)",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "With a coat-check ticket (t6): 0, 0, 0 and 1 of 16 called \"shown\""
+  },
+  {
+   "key": "t6_g38",
+   "label": "Gemini 3.8 Flash, never-ran called shown with the ticket and the do sentence (t6)",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "With a coat-check ticket (t6): 0, 0, 0 and 1 of 16 called \"shown\""
+  },
+  {
+   "key": "t6_hk",
+   "label": "Claude Haiku 4.5, never-ran called shown with the ticket and the do sentence (t6)",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "With a coat-check ticket (t6): 0, 0, 0 and 1 of 16 called \"shown\""
+  },
+  {
+   "key": "t6_nano",
+   "label": "GPT-5.4 nano, never-ran called shown with the ticket and the do sentence (t6)",
+   "n": "1",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "With a coat-check ticket (t6): 0, 0, 0 and 1 of 16 called \"shown\""
+  },
+  {
+   "key": "t1_g37",
+   "label": "Gemini 3.7 Flash, failed check called done under the plain report (T1)",
+   "n": "7",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "Failed checks under the plain report sentence (T1): 7, 5, 0, 0",
+   "d_basis": "Scenarios of 16 (sixteen jobs, each written with a failed-check log); the same bullet states of 16 for t6."
+  },
+  {
+   "key": "t1_g38",
+   "label": "Gemini 3.8 Flash, failed check called done under the plain report (T1)",
+   "n": "5",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "Failed checks under the plain report sentence (T1): 7, 5, 0, 0",
+   "d_basis": "Scenarios of 16 (sixteen jobs, each written with a failed-check log); the same bullet states of 16 for t6."
+  },
+  {
+   "key": "t1_hk",
+   "label": "Claude Haiku 4.5, failed check called done under the plain report (T1)",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "Failed checks under the plain report sentence (T1): 7, 5, 0, 0",
+   "d_basis": "Scenarios of 16 (sixteen jobs, each written with a failed-check log); the same bullet states of 16 for t6."
+  },
+  {
+   "key": "t1_nano",
+   "label": "GPT-5.4 nano, failed check called done under the plain report (T1)",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "Failed checks under the plain report sentence (T1): 7, 5, 0, 0",
+   "d_basis": "Scenarios of 16 (sixteen jobs, each written with a failed-check log); the same bullet states of 16 for t6."
+  },
+  {
+   "key": "t5_g37",
+   "label": "Gemini 3.7 Flash, failed check called done with the ticket and the report sentence (t5)",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "with the ticket (t5): 0, 0, 0, 0",
+   "d_basis": "Scenarios of 16, as for t6 in the same bullet."
+  },
+  {
+   "key": "t5_g38",
+   "label": "Gemini 3.8 Flash, failed check called done with the ticket and the report sentence (t5)",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "with the ticket (t5): 0, 0, 0, 0",
+   "d_basis": "Scenarios of 16, as for t6 in the same bullet."
+  },
+  {
+   "key": "t5_hk",
+   "label": "Claude Haiku 4.5, failed check called done with the ticket and the report sentence (t5)",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "with the ticket (t5): 0, 0, 0, 0",
+   "d_basis": "Scenarios of 16, as for t6 in the same bullet."
+  },
+  {
+   "key": "t5_nano",
+   "label": "GPT-5.4 nano, failed check called done with the ticket and the report sentence (t5)",
+   "n": "0",
+   "d": "16",
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "with the ticket (t5): 0, 0, 0, 0",
+   "d_basis": "Scenarios of 16, as for t6 in the same bullet."
+  },
+  {
+   "key": "r6_g37",
+   "label": "Gemini 3.7 Flash, mean receipt score, t6",
+   "n": "1.000",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "Mean receipts t6: 1.000, 1.000, 1.000, 0.958"
+  },
+  {
+   "key": "r6_g38",
+   "label": "Gemini 3.8 Flash, mean receipt score, t6",
+   "n": "1.000",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "Mean receipts t6: 1.000, 1.000, 1.000, 0.958"
+  },
+  {
+   "key": "r6_hk",
+   "label": "Claude Haiku 4.5, mean receipt score, t6",
+   "n": "1.000",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "Mean receipts t6: 1.000, 1.000, 1.000, 0.958"
+  },
+  {
+   "key": "r6_nano",
+   "label": "GPT-5.4 nano, mean receipt score, t6",
+   "n": "0.958",
+   "d": null,
+   "source": {
+    "root": "workbench",
+    "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+    "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+   },
+   "quote": "Mean receipts t6: 1.000, 1.000, 1.000, 0.958"
+  }
+ ],
+ "tables": [
+  {
+   "key": "ticket",
+   "caption": "Scenarios (never-ran called done or shown; failed called done)",
+   "columns": [
+    "Gemini 3.7 Flash",
+    "Gemini 3.8 Flash",
+    "Claude Haiku 4.5",
+    "GPT-5.4 nano"
+   ],
+   "of": 16,
+   "rows": [
     {
-      "key": "t3_g37",
-      "label": "Gemini 3.7 Flash, never-ran called done after the do sentence (T3)",
-      "n": "11",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "never-ran logs called \"done\" after the do sentence (T3, published 2 Oct): Gemini 3.7 Flash 11 of 16, Gemini 3.8 Flash 5, Claude Haiku 4.5 10, GPT-5.4 nano 16"
+     "label": "T3 do the work, never-ran called done",
+     "cells": [
+      "@t3_g37",
+      "@t3_g38",
+      "@t3_hk",
+      "@t3_nano"
+     ]
     },
     {
-      "key": "t3_g38",
-      "label": "Gemini 3.8 Flash, never-ran called done after the do sentence (T3)",
-      "n": "5",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "never-ran logs called \"done\" after the do sentence (T3, published 2 Oct): Gemini 3.7 Flash 11 of 16, Gemini 3.8 Flash 5, Claude Haiku 4.5 10, GPT-5.4 nano 16"
+     "label": "t6 ticket and do sentence, never-ran called shown",
+     "cells": [
+      "@t6_g37",
+      "@t6_g38",
+      "@t6_hk",
+      "@t6_nano"
+     ]
     },
     {
-      "key": "t3_hk",
-      "label": "Claude Haiku 4.5, never-ran called done after the do sentence (T3)",
-      "n": "10",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "never-ran logs called \"done\" after the do sentence (T3, published 2 Oct): Gemini 3.7 Flash 11 of 16, Gemini 3.8 Flash 5, Claude Haiku 4.5 10, GPT-5.4 nano 16"
+     "label": "T1 plain report, failed called done",
+     "cells": [
+      "@t1_g37",
+      "@t1_g38",
+      "@t1_hk",
+      "@t1_nano"
+     ]
     },
     {
-      "key": "t3_nano",
-      "label": "GPT-5.4 nano, never-ran called done after the do sentence (T3)",
-      "n": "16",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "never-ran logs called \"done\" after the do sentence (T3, published 2 Oct): Gemini 3.7 Flash 11 of 16, Gemini 3.8 Flash 5, Claude Haiku 4.5 10, GPT-5.4 nano 16"
-    },
-    {
-      "key": "t6_g37",
-      "label": "Gemini 3.7 Flash, never-ran called shown with the ticket and the do sentence (t6)",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "With a coat-check ticket (t6): 0, 0, 0 and 1 of 16 called \"shown\""
-    },
-    {
-      "key": "t6_g38",
-      "label": "Gemini 3.8 Flash, never-ran called shown with the ticket and the do sentence (t6)",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "With a coat-check ticket (t6): 0, 0, 0 and 1 of 16 called \"shown\""
-    },
-    {
-      "key": "t6_hk",
-      "label": "Claude Haiku 4.5, never-ran called shown with the ticket and the do sentence (t6)",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "With a coat-check ticket (t6): 0, 0, 0 and 1 of 16 called \"shown\""
-    },
-    {
-      "key": "t6_nano",
-      "label": "GPT-5.4 nano, never-ran called shown with the ticket and the do sentence (t6)",
-      "n": "1",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "With a coat-check ticket (t6): 0, 0, 0 and 1 of 16 called \"shown\""
-    },
-    {
-      "key": "t1_g37",
-      "label": "Gemini 3.7 Flash, failed check called done under the plain report (T1)",
-      "n": "7",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "Failed checks under the plain report sentence (T1): 7, 5, 0, 0",
-      "d_basis": "Scenarios of 16 (sixteen jobs, each written with a failed-check log); the same bullet states of 16 for t6."
-    },
-    {
-      "key": "t1_g38",
-      "label": "Gemini 3.8 Flash, failed check called done under the plain report (T1)",
-      "n": "5",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "Failed checks under the plain report sentence (T1): 7, 5, 0, 0",
-      "d_basis": "Scenarios of 16 (sixteen jobs, each written with a failed-check log); the same bullet states of 16 for t6."
-    },
-    {
-      "key": "t1_hk",
-      "label": "Claude Haiku 4.5, failed check called done under the plain report (T1)",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "Failed checks under the plain report sentence (T1): 7, 5, 0, 0",
-      "d_basis": "Scenarios of 16 (sixteen jobs, each written with a failed-check log); the same bullet states of 16 for t6."
-    },
-    {
-      "key": "t1_nano",
-      "label": "GPT-5.4 nano, failed check called done under the plain report (T1)",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "Failed checks under the plain report sentence (T1): 7, 5, 0, 0",
-      "d_basis": "Scenarios of 16 (sixteen jobs, each written with a failed-check log); the same bullet states of 16 for t6."
-    },
-    {
-      "key": "t5_g37",
-      "label": "Gemini 3.7 Flash, failed check called done with the ticket and the report sentence (t5)",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "with the ticket (t5): 0, 0, 0, 0",
-      "d_basis": "Scenarios of 16, as for t6 in the same bullet."
-    },
-    {
-      "key": "t5_g38",
-      "label": "Gemini 3.8 Flash, failed check called done with the ticket and the report sentence (t5)",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "with the ticket (t5): 0, 0, 0, 0",
-      "d_basis": "Scenarios of 16, as for t6 in the same bullet."
-    },
-    {
-      "key": "t5_hk",
-      "label": "Claude Haiku 4.5, failed check called done with the ticket and the report sentence (t5)",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "with the ticket (t5): 0, 0, 0, 0",
-      "d_basis": "Scenarios of 16, as for t6 in the same bullet."
-    },
-    {
-      "key": "t5_nano",
-      "label": "GPT-5.4 nano, failed check called done with the ticket and the report sentence (t5)",
-      "n": "0",
-      "d": "16",
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "with the ticket (t5): 0, 0, 0, 0",
-      "d_basis": "Scenarios of 16, as for t6 in the same bullet."
-    },
-    {
-      "key": "r6_g37",
-      "label": "Gemini 3.7 Flash, mean receipt score, t6",
-      "n": "1.000",
-      "d": null,
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "Mean receipts t6: 1.000, 1.000, 1.000, 0.958"
-    },
-    {
-      "key": "r6_g38",
-      "label": "Gemini 3.8 Flash, mean receipt score, t6",
-      "n": "1.000",
-      "d": null,
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "Mean receipts t6: 1.000, 1.000, 1.000, 0.958"
-    },
-    {
-      "key": "r6_hk",
-      "label": "Claude Haiku 4.5, mean receipt score, t6",
-      "n": "1.000",
-      "d": null,
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "Mean receipts t6: 1.000, 1.000, 1.000, 0.958"
-    },
-    {
-      "key": "r6_nano",
-      "label": "GPT-5.4 nano, mean receipt score, t6",
-      "n": "0.958",
-      "d": null,
-      "source": {
-        "root": "workbench",
-        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
-        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
-      },
-      "quote": "Mean receipts t6: 1.000, 1.000, 1.000, 0.958"
+     "label": "t5 ticket and report sentence, failed called done",
+     "cells": [
+      "@t5_g37",
+      "@t5_g38",
+      "@t5_hk",
+      "@t5_nano"
+     ]
     }
-  ],
-  "tables": [
+   ]
+  },
+  {
+   "key": "receipt",
+   "caption": "Mean receipt score, t6 (share of jobs with every log right)",
+   "columns": [
+    "Gemini 3.7 Flash",
+    "Gemini 3.8 Flash",
+    "Claude Haiku 4.5",
+    "GPT-5.4 nano"
+   ],
+   "of": null,
+   "rows": [
     {
-      "key": "ticket",
-      "caption": "Scenarios (never-ran called done or shown; failed called done)",
-      "columns": [
-        "Gemini 3.7 Flash",
-        "Gemini 3.8 Flash",
-        "Claude Haiku 4.5",
-        "GPT-5.4 nano"
-      ],
-      "of": 16,
-      "rows": [
-        {
-          "label": "T3 do the work, never-ran called done",
-          "cells": [
-            "@t3_g37",
-            "@t3_g38",
-            "@t3_hk",
-            "@t3_nano"
-          ]
-        },
-        {
-          "label": "t6 ticket and do sentence, never-ran called shown",
-          "cells": [
-            "@t6_g37",
-            "@t6_g38",
-            "@t6_hk",
-            "@t6_nano"
-          ]
-        },
-        {
-          "label": "T1 plain report, failed called done",
-          "cells": [
-            "@t1_g37",
-            "@t1_g38",
-            "@t1_hk",
-            "@t1_nano"
-          ]
-        },
-        {
-          "label": "t5 ticket and report sentence, failed called done",
-          "cells": [
-            "@t5_g37",
-            "@t5_g38",
-            "@t5_hk",
-            "@t5_nano"
-          ]
-        }
-      ]
-    },
-    {
-      "key": "receipt",
-      "caption": "Mean receipt score, t6 (share of jobs with every log right)",
-      "columns": [
-        "Gemini 3.7 Flash",
-        "Gemini 3.8 Flash",
-        "Claude Haiku 4.5",
-        "GPT-5.4 nano"
-      ],
-      "of": null,
-      "rows": [
-        {
-          "label": "t6",
-          "cells": [
-            "@r6_g37",
-            "@r6_g38",
-            "@r6_hk",
-            "@r6_nano"
-          ]
-        }
-      ]
+     "label": "t6",
+     "cells": [
+      "@r6_g37",
+      "@r6_g38",
+      "@r6_hk",
+      "@r6_nano"
+     ]
     }
-  ],
-  "tests": [],
-  "seal": [
-    {
-      "role": "tasks, scorer, run plan and sealed forecasts, before any counted run",
-      "list_file": "FILES-SHA256.txt",
-      "path": "kaggle-coat-check-update-2026-10-07/FILES-SHA256.txt",
-      "sha256": "66ceac12bf0fe143c0961af6c77517c9543c7ce76e409d30f9db1708831ff0a1",
-      "freetsa_utc": "2026-10-07T18:11:00Z",
-      "bitcoin_blocks": [
-        970376
-      ],
-      "pending_calendar": 4
-    },
-    {
-      "role": "addendum: each Kaggle push also ran the task once",
-      "list_file": "ADDENDUM-1-SHA256.txt",
-      "path": "kaggle-coat-check-update-2026-10-07/ADDENDUM-1-SHA256.txt",
-      "sha256": "fd95c7ecd99cf36a7cd6db39462e30e8c5c24587eec8ee6358449838a963dc55",
-      "freetsa_utc": "2026-10-07T19:08:25Z",
-      "bitcoin_blocks": [],
-      "pending_calendar": 4
-    },
-    {
-      "role": "results, before any count",
-      "list_file": "RESULTS-2-SHA256.txt",
-      "path": "kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
-      "sha256": "72c1813d1e57dd9a174d68f159f04b0e693ab624d089586c79d30fee5ec9932c",
-      "freetsa_utc": "2026-10-07T20:19:19Z",
-      "bitcoin_blocks": [],
-      "pending_calendar": 4
-    }
-  ],
-  "links": [
-    {
-      "label": "Benchmark",
-      "url": "https://www.kaggle.com/benchmarks/iswt42/two-kinds-of-false-done"
-    },
-    {
-      "label": "Research record",
-      "url": "https://doi.org/10.5281/zenodo.23227858"
-    }
-  ],
-  "record_corrections": [],
-  "seal_note": "A first results list holds the hash of an empty input; the second list is the real one. Each Kaggle push also ran its task once (sealed addendum)."
+   ]
+  }
+ ],
+ "tests": [],
+ "seal": [
+  {
+   "role": "tasks, scorer, run plan and sealed forecasts, before any counted run",
+   "list_file": "FILES-SHA256.txt",
+   "path": "kaggle-coat-check-update-2026-10-07/FILES-SHA256.txt",
+   "sha256": "66ceac12bf0fe143c0961af6c77517c9543c7ce76e409d30f9db1708831ff0a1",
+   "freetsa_utc": "2026-10-07T18:11:00Z",
+   "bitcoin_blocks": [
+    970376
+   ],
+   "pending_calendar": 4
+  },
+  {
+   "role": "addendum: each Kaggle push also ran the task once",
+   "list_file": "ADDENDUM-1-SHA256.txt",
+   "path": "kaggle-coat-check-update-2026-10-07/ADDENDUM-1-SHA256.txt",
+   "sha256": "fd95c7ecd99cf36a7cd6db39462e30e8c5c24587eec8ee6358449838a963dc55",
+   "freetsa_utc": "2026-10-07T19:08:25Z",
+   "bitcoin_blocks": [
+    970383,
+    970387,
+    970412,
+    970415
+   ],
+   "pending_calendar": 4
+  },
+  {
+   "role": "results, before any count",
+   "list_file": "RESULTS-2-SHA256.txt",
+   "path": "kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "sha256": "72c1813d1e57dd9a174d68f159f04b0e693ab624d089586c79d30fee5ec9932c",
+   "freetsa_utc": "2026-10-07T20:19:19Z",
+   "bitcoin_blocks": [
+    970387,
+    970388,
+    970412,
+    970415
+   ],
+   "pending_calendar": 4
+  }
+ ],
+ "links": [
+  {
+   "label": "Benchmark",
+   "url": "https://www.kaggle.com/benchmarks/iswt42/two-kinds-of-false-done"
+  },
+  {
+   "label": "Research record",
+   "url": "https://doi.org/10.5281/zenodo.23227858"
+  }
+ ],
+ "record_corrections": [],
+ "seal_note": "A first results list holds the hash of an empty input; the second list is the real one. Each Kaggle push also ran its task once (sealed addendum)."
 }
