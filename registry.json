@@ -1,0 +1,4 @@
+{
+  "comment": "Append-only. Every finding id ever issued. The build fails if a finding file is missing (a deleted card) or not listed here. Ids are never reused.",
+  "issued": ["F001", "F002", "F003", "F004", "F005", "F006", "F007", "F008", "F009"]
+}

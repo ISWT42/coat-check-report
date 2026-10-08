@@ -1,0 +1,59 @@
+{
+  "title": "The Coat Check: a living technical report on whether an agent's \"done\" can be trusted",
+  "short_title": "The Coat Check",
+  "author": "Joshua Bauer",
+  "author_line": "Joshua Bauer (ISWT42), independent researcher",
+  "contact": "joshua@iswt.ca",
+  "acknowledgement": "Built with Claude (Anthropic) as research assistant.",
+  "license": "Text and data CC BY 4.0; code MIT.",
+  "version": "1.0.0",
+  "date": "2026-10-08",
+  "word_cap": 3000,
+  "word_cap_scope": "Sections 1 to 5 and the acknowledgement. The changelog and the appendices are not counted.",
+  "citation": {
+    "doi": "PENDING-version-doi-set-at-release",
+    "concept_doi": "PENDING-concept-doi-set-at-release",
+    "pdf_url": "PENDING-pdf-url-set-at-release",
+    "keywords": "AI agents; verification; false completion; receipts; timestamps; preregistration"
+  },
+  "public_links": [
+    {
+      "label": "Public research record (Zenodo DOI)",
+      "url": "https://doi.org/10.5281/zenodo.23227858"
+    },
+    {
+      "label": "Coat-check receipts dataset (Kaggle)",
+      "url": "https://www.kaggle.com/datasets/iswt42/coat-check-receipts-2026-10-07"
+    },
+    {
+      "label": "Benchmark: Two Kinds of False Done (Kaggle)",
+      "url": "https://www.kaggle.com/benchmarks/iswt42/two-kinds-of-false-done"
+    },
+    {
+      "label": "Benchmark DOI",
+      "url": "https://doi.org/10.34740/kaggle/w/116515"
+    }
+  ],
+  "allowed_literals": [
+    {
+      "text": "10.5281/zenodo",
+      "reason": "DOI prefix, not a claim"
+    },
+    {
+      "text": "Two kinds of false done",
+      "reason": "name of the benchmark and the first finding"
+    },
+    {
+      "text": "Two Kinds of False Done",
+      "reason": "name of the benchmark"
+    },
+    {
+      "text": "two kinds",
+      "reason": "names the concept of F001 (a category, not a result)"
+    },
+    {
+      "text": "three outcomes",
+      "reason": "the coat check is defined by its three answers: shown, contradicted, not shown"
+    }
+  ]
+}

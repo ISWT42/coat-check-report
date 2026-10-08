@@ -1,0 +1,239 @@
+{
+  "date_added": "2026-10-08",
+  "version_first_included": "1.0.0",
+  "lifecycle": "active",
+  "superseded_by": null,
+  "retraction": null,
+  "paper": true,
+  "id": "F009",
+  "slug": "binding-gate",
+  "title": "A binding gate against a reviewer told the rule: not shown",
+  "question": "On fresh claims, does a binding gate let fewer false claims through than a told reviewer?",
+  "status": "not shown",
+  "status_note": "The sealed primary comparison was not shown; gate against advice-only was secondary.",
+  "summary_line": "A binding gate let few false claims through, but did not beat a told reviewer on the primary test.",
+  "headline": "On {{F009.c.claims.n}} fresh claims the binding gate released {{F009.c.qwen_g3.n}} and {{F009.c.gemma_g3.n}} of {{F009.c.qwen_g3.d}} false claims; the told reviewer {{F008.c.gate_qwen_g1t.n}} and {{F008.c.gate_gemma_g1t.n}}. The primary comparison gave p = {{F009.t.g1t_g3_qwen.p}} for both models: not shown. The gate held back {{F009.c.held_back}} true claims.",
+  "plain_meaning": "The gate let few through, but this size cannot show a modest gap over a told reviewer; advice alone was much weaker.",
+  "limits": [
+    "Small models; claims written by Claude; the key is withheld.",
+    "Each held-back true claim is a job for a person."
+  ],
+  "counts": [
+    {
+      "key": "qwen_g2",
+      "label": "gate test qwen false release, G2",
+      "n": "14",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gate-test-2026-10-07/results/GATE-RESULTS.redacted.md",
+        "public": "Public research record, bundle 3, gate-test-2026-10-07/results/GATE-RESULTS.redacted.md"
+      },
+      "quote": "| Qwen3-4B | G2 | 14 | 27 | 3 / 23 | 14 / 25 | 0, 0 |",
+      "d_basis": "The 60 claims the log does not back; stated in the results file heading ('False release (of 60)' or 'Items ... 60 not')."
+    },
+    {
+      "key": "qwen_g3",
+      "label": "gate test qwen false release, G3",
+      "n": "5",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gate-test-2026-10-07/results/GATE-RESULTS.redacted.md",
+        "public": "Public research record, bundle 3, gate-test-2026-10-07/results/GATE-RESULTS.redacted.md"
+      },
+      "quote": "| Qwen3-4B | G3 | 5 | 28 | 4 / 26 | 4 / 21 | no calls |",
+      "d_basis": "The 60 claims the log does not back; stated in the results file heading ('False release (of 60)' or 'Items ... 60 not')."
+    },
+    {
+      "key": "gemma_g2",
+      "label": "gate test gemma false release, G2",
+      "n": "20",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gate-test-2026-10-07/results/GATE-RESULTS.redacted.md",
+        "public": "Public research record, bundle 3, gate-test-2026-10-07/results/GATE-RESULTS.redacted.md"
+      },
+      "quote": "| Gemma-4-E4B | G2 | 20 | 29 | 6 / 23 | 16 / 25 | 0, 0 |",
+      "d_basis": "The 60 claims the log does not back; stated in the results file heading ('False release (of 60)' or 'Items ... 60 not')."
+    },
+    {
+      "key": "gemma_g3",
+      "label": "gate test gemma false release, G3",
+      "n": "5",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gate-test-2026-10-07/results/GATE-RESULTS.redacted.md",
+        "public": "Public research record, bundle 3, gate-test-2026-10-07/results/GATE-RESULTS.redacted.md"
+      },
+      "quote": "| Gemma-4-E4B | G3 | 5 | 28 | 4 / 26 | 4 / 21 | no calls |",
+      "d_basis": "The 60 claims the log does not back; stated in the results file heading ('False release (of 60)' or 'Items ... 60 not')."
+    },
+    {
+      "key": "held_back",
+      "label": "true claims the binding gate held back",
+      "n": "2",
+      "d": "30",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gate-test-2026-10-07/results/GATE-RESULTS.redacted.md",
+        "public": "Public research record, bundle 3, gate-test-2026-10-07/results/GATE-RESULTS.redacted.md"
+      },
+      "quote": "- The gate (G3) holds back 2 of 30 true claims: each is a job a person must look at."
+    },
+    {
+      "key": "claims",
+      "label": "claims, written and keyed before any run",
+      "n": "90",
+      "d": null,
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gate-test-2026-10-07/results/GATE-RESULTS.redacted.md",
+        "public": "Public research record, bundle 3, gate-test-2026-10-07/results/GATE-RESULTS.redacted.md"
+      },
+      "quote": "Claims: 90 (30 backed by their log; 60 not"
+    }
+  ],
+  "tables": [
+    {
+      "key": "gate",
+      "caption": "False release: G1 log, G1T told rule, G2 advice, G3 gate",
+      "columns": [
+        "G1",
+        "G1T",
+        "G2",
+        "G3"
+      ],
+      "of": 60,
+      "rows": [
+        {
+          "label": "Qwen3-4B",
+          "cells": [
+            "@F008.gate_qwen_g1",
+            "@F008.gate_qwen_g1t",
+            "@qwen_g2",
+            "@qwen_g3"
+          ]
+        },
+        {
+          "label": "Gemma-4-E4B",
+          "cells": [
+            "@F008.gate_gemma_g1",
+            "@F008.gate_gemma_g1t",
+            "@gemma_g2",
+            "@gemma_g3"
+          ]
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "key": "g1t_g3_qwen",
+      "name": "primary, Qwen3-4B, G1T against G3",
+      "kind": "sealed (primary)",
+      "a": "6",
+      "b": "1",
+      "p": "0.125",
+      "verdict": "not shown",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gate-test-2026-10-07/results/GATE-RESULTS.redacted.md",
+        "public": "Public research record, bundle 3, gate-test-2026-10-07/results/GATE-RESULTS.redacted.md"
+      },
+      "quote": "- Qwen3-4B, G1T to G3 (primary): 6 / 1, p = 0.125"
+    },
+    {
+      "key": "g1t_g3_gemma",
+      "name": "primary, Gemma-4-E4B, G1T against G3",
+      "kind": "sealed (primary)",
+      "a": "4",
+      "b": "0",
+      "p": "0.125",
+      "verdict": "not shown",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gate-test-2026-10-07/results/GATE-RESULTS.redacted.md",
+        "public": "Public research record, bundle 3, gate-test-2026-10-07/results/GATE-RESULTS.redacted.md"
+      },
+      "quote": "- Gemma-4-E4B, G1T to G3 (primary): 4 / 0, p = 0.125"
+    },
+    {
+      "key": "g2_g3_qwen",
+      "name": "Qwen3-4B, G2 against G3",
+      "kind": "secondary",
+      "a": "9",
+      "b": "0",
+      "p": "0.00391",
+      "verdict": "exploratory",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gate-test-2026-10-07/results/GATE-RESULTS.redacted.md",
+        "public": "Public research record, bundle 3, gate-test-2026-10-07/results/GATE-RESULTS.redacted.md"
+      },
+      "quote": "- Qwen3-4B, G2 to G3: 9 / 0, p = 0.00391"
+    },
+    {
+      "key": "g2_g3_gemma",
+      "name": "Gemma-4-E4B, G2 against G3",
+      "kind": "secondary",
+      "a": "15",
+      "b": "0",
+      "p": "6.1e-05",
+      "verdict": "exploratory",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gate-test-2026-10-07/results/GATE-RESULTS.redacted.md",
+        "public": "Public research record, bundle 3, gate-test-2026-10-07/results/GATE-RESULTS.redacted.md"
+      },
+      "quote": "- Gemma-4-E4B, G2 to G3: 15 / 0, p = 6.1e-05"
+    }
+  ],
+  "record_corrections": [],
+  "seal": [
+    {
+      "role": "design, before any claim existed",
+      "list_file": "DESIGN-SHA256.txt",
+      "path": "gate-test-2026-10-07/DESIGN-SHA256.txt",
+      "sha256": "ba82a325aa0f4096a93dcebbcf39ca44fd6b316053b0fe6404647d7ddc752a92",
+      "freetsa_utc": "2026-10-07T01:58:13Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 4
+    },
+    {
+      "role": "claims, keys and runner, before any model call",
+      "list_file": "RUN-SHA256.txt",
+      "path": "gate-test-2026-10-07/RUN-SHA256.txt",
+      "sha256": "f19d55df787324a4f41e2846cd834a2531cf7ddfb201bee0a537571b4ae7a827",
+      "freetsa_utc": "2026-10-07T02:15:14Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 4
+    },
+    {
+      "role": "raw results, before any count",
+      "list_file": "RESULTS-SHA256.txt",
+      "path": "gate-test-2026-10-07/RESULTS-SHA256.txt",
+      "sha256": "053754e8522a7b9644ea53708d307163e7f89ded2d3bf4cfd4cd469bc137c12b",
+      "freetsa_utc": "2026-10-07T09:45:44Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 4
+    },
+    {
+      "role": "scored output",
+      "list_file": "SCORED-SHA256.txt",
+      "path": "gate-test-2026-10-07/SCORED-SHA256.txt",
+      "sha256": "b6ea07f21a36c1c6f04b94158c945770312961f4681120d9eba70714dc59e32d",
+      "freetsa_utc": "2026-10-07T09:46:16Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 0
+    }
+  ],
+  "links": [
+    {
+      "label": "Research record",
+      "url": "https://doi.org/10.5281/zenodo.23227858"
+    }
+  ]
+}

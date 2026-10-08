@@ -1,0 +1,392 @@
+{
+  "date_added": "2026-10-08",
+  "version_first_included": "1.0.0",
+  "lifecycle": "active",
+  "superseded_by": null,
+  "retraction": null,
+  "paper": true,
+  "id": "F007",
+  "slug": "chain-of-agents",
+  "title": "A false done travels down a chain of agents; a receipt check stops most of it",
+  "question": "If a build agent says done on an unbacked claim, does the next agent question it?",
+  "status": "shown",
+  "status_note": "",
+  "summary_line": "A reviewer agent followed the build agent's word; a receipt check from an unchangeable record cut false release most.",
+  "headline": "Of {{F007.c.claims.n}} claims, {{F007.c.qwen_g0_hosted.d}} had no backing. On the build agent's word alone, a false done reached release on {{F007.c.qwen_g0_hosted}} (Qwen 3.5 9B) and {{F007.c.gemma_g0_hosted}} (Gemma 4 26B); with a receipt check as advice, {{F007.c.qwen_g2_hosted.n}} and {{F007.c.gemma_g2_hosted.n}}. Local pair: {{F007.c.qwen_g0_local.n}} and {{F007.c.gemma_g0_local.n}} down to {{F007.c.qwen_g2_local.n}} and {{F007.c.gemma_g2_local.n}}.",
+  "plain_meaning": "The next agent never questioned the one before: after a hold, release happened {{F007.c.hold_released.n}} times. A check against a record the agent cannot change helped most.",
+  "limits": [
+    "One scripted build message; run records withheld, so seals cannot be checked against content.",
+    "The audit moved the hosted gate's false pass from {{F007.c.gate_false}} to {{F007.c.gate_false_audit}}."
+  ],
+  "counts": [
+    {
+      "key": "qwen_g0_local",
+      "label": "qwen false release of unbacked claims, local pair, G0",
+      "n": "59",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md",
+        "public": "Public research record, bundle 3, findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md (finding F15)"
+      },
+      "quote": "On the build agent's word alone: 59 / 58 (hosted run: 56 / 58)",
+      "d_basis": "The 60 unbacked claims; the same finding says 'false releases of the 60 unbacked claims'."
+    },
+    {
+      "key": "qwen_g0_hosted",
+      "label": "qwen false release of unbacked claims, hosted pair, G0",
+      "n": "56",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md",
+        "public": "Public research record, bundle 3, findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md (finding F15)"
+      },
+      "quote": "On the build agent's word alone: 59 / 58 (hosted run: 56 / 58)",
+      "d_basis": "The 60 unbacked claims; the same finding says 'false releases of the 60 unbacked claims'."
+    },
+    {
+      "key": "qwen_g1_local",
+      "label": "qwen false release of unbacked claims, local pair, G1",
+      "n": "20",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md",
+        "public": "Public research record, bundle 3, findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md (finding F15)"
+      },
+      "quote": "With the log in front of the reviewer: 20 / 17",
+      "d_basis": "The 60 unbacked claims; the same finding says 'false releases of the 60 unbacked claims'."
+    },
+    {
+      "key": "qwen_g1_hosted",
+      "label": "qwen false release of unbacked claims, hosted pair, G1",
+      "n": "16",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s2/S2-FIRST-LOOK.md",
+        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s2/S2-FIRST-LOOK.md"
+      },
+      "quote": "| Qwen | G1, the word plus the log | 16 | 22 |",
+      "d_basis": "The 60 unbacked claims; the same finding says 'false releases of the 60 unbacked claims'."
+    },
+    {
+      "key": "qwen_g2_local",
+      "label": "qwen false release of unbacked claims, local pair, G2",
+      "n": "14",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md",
+        "public": "Public research record, bundle 3, findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md (finding F15)"
+      },
+      "quote": "With the receipt check as advice to the reviewer: 14 / 16 (hosted: 3 / 7)",
+      "d_basis": "The 60 unbacked claims; the same finding says 'false releases of the 60 unbacked claims'."
+    },
+    {
+      "key": "qwen_g2_hosted",
+      "label": "qwen false release of unbacked claims, hosted pair, G2",
+      "n": "3",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md",
+        "public": "Public research record, bundle 3, findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md (finding F15)"
+      },
+      "quote": "With the receipt check as advice to the reviewer: 14 / 16 (hosted: 3 / 7)",
+      "d_basis": "The 60 unbacked claims; the same finding says 'false releases of the 60 unbacked claims'."
+    },
+    {
+      "key": "gemma_g0_local",
+      "label": "gemma false release of unbacked claims, local pair, G0",
+      "n": "58",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md",
+        "public": "Public research record, bundle 3, findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md (finding F15)"
+      },
+      "quote": "On the build agent's word alone: 59 / 58 (hosted run: 56 / 58)",
+      "d_basis": "The 60 unbacked claims; the same finding says 'false releases of the 60 unbacked claims'."
+    },
+    {
+      "key": "gemma_g0_hosted",
+      "label": "gemma false release of unbacked claims, hosted pair, G0",
+      "n": "58",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md",
+        "public": "Public research record, bundle 3, findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md (finding F15)"
+      },
+      "quote": "On the build agent's word alone: 59 / 58 (hosted run: 56 / 58)",
+      "d_basis": "The 60 unbacked claims; the same finding says 'false releases of the 60 unbacked claims'."
+    },
+    {
+      "key": "gemma_g1_local",
+      "label": "gemma false release of unbacked claims, local pair, G1",
+      "n": "17",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md",
+        "public": "Public research record, bundle 3, findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md (finding F15)"
+      },
+      "quote": "With the log in front of the reviewer: 20 / 17",
+      "d_basis": "The 60 unbacked claims; the same finding says 'false releases of the 60 unbacked claims'."
+    },
+    {
+      "key": "gemma_g1_hosted",
+      "label": "gemma false release of unbacked claims, hosted pair, G1",
+      "n": "14",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s2/S2-FIRST-LOOK.md",
+        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s2/S2-FIRST-LOOK.md"
+      },
+      "quote": "| Gemma | G1 | 14 | 22 |",
+      "d_basis": "The 60 unbacked claims; the same finding says 'false releases of the 60 unbacked claims'."
+    },
+    {
+      "key": "gemma_g2_local",
+      "label": "gemma false release of unbacked claims, local pair, G2",
+      "n": "16",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md",
+        "public": "Public research record, bundle 3, findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md (finding F15)"
+      },
+      "quote": "With the receipt check as advice to the reviewer: 14 / 16 (hosted: 3 / 7)",
+      "d_basis": "The 60 unbacked claims; the same finding says 'false releases of the 60 unbacked claims'."
+    },
+    {
+      "key": "gemma_g2_hosted",
+      "label": "gemma false release of unbacked claims, hosted pair, G2",
+      "n": "7",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md",
+        "public": "Public research record, bundle 3, findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md (finding F15)"
+      },
+      "quote": "With the receipt check as advice to the reviewer: 14 / 16 (hosted: 3 / 7)",
+      "d_basis": "The 60 unbacked claims; the same finding says 'false releases of the 60 unbacked claims'."
+    },
+    {
+      "key": "hold_released",
+      "label": "release manager released after a reviewer hold (hosted)",
+      "n": "0",
+      "d": null,
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s2/S2-FIRST-LOOK.md",
+        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s2/S2-FIRST-LOOK.md"
+      },
+      "quote": "**The release manager released after a hold 0 times.** It always followed the reviewer."
+    },
+    {
+      "key": "local_follow",
+      "label": "chains where the release manager matched the reviewer (local, Qwen3-4B)",
+      "n": "270",
+      "d": "270",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md",
+        "public": "Public research record, bundle 3, findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md (finding F15)"
+      },
+      "quote": "The release manager matched the reviewer in 270 of 270 chains"
+    },
+    {
+      "key": "gate_false",
+      "label": "hosted receipt check: unbacked claims it passed, sealed count",
+      "n": "3",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s2/S2-FIRST-LOOK.md",
+        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s2/S2-FIRST-LOOK.md"
+      },
+      "quote": "passed 26 of 30 backed claims, and 3 of 60 unbacked ones"
+    },
+    {
+      "key": "gate_false_audit",
+      "label": "hosted receipt check: unbacked claims it passed, after the parser audit",
+      "n": "4",
+      "d": "60",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/README.md",
+        "public": "Public research record, bundle 3, README.md"
+      },
+      "quote": "S2 gate false \"shown\" 3 to 4 of 60"
+    },
+    {
+      "key": "claims",
+      "label": "claims (30 backed by their log, 60 not)",
+      "n": "90",
+      "d": null,
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s2/S2-FIRST-LOOK.md",
+        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s2/S2-FIRST-LOOK.md"
+      },
+      "quote": "90 claims: 30 the log backs, 60 it doesn't."
+    }
+  ],
+  "tables": [
+    {
+      "key": "release",
+      "caption": "False release of the unbacked claims (hosted | local)",
+      "columns": [
+        "Qwen hosted",
+        "Qwen local",
+        "Gemma hosted",
+        "Gemma local"
+      ],
+      "of": 60,
+      "rows": [
+        {
+          "label": "G0 word only",
+          "cells": [
+            "@qwen_g0_hosted",
+            "@qwen_g0_local",
+            "@gemma_g0_hosted",
+            "@gemma_g0_local"
+          ]
+        },
+        {
+          "label": "G1 word and log",
+          "cells": [
+            "@qwen_g1_hosted",
+            "@qwen_g1_local",
+            "@gemma_g1_hosted",
+            "@gemma_g1_local"
+          ]
+        },
+        {
+          "label": "G2 word and receipt check",
+          "cells": [
+            "@qwen_g2_hosted",
+            "@qwen_g2_local",
+            "@gemma_g2_hosted",
+            "@gemma_g2_local"
+          ]
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "key": "hosted_qwen",
+      "name": "hosted Qwen 3.5 9B, G0 against G2",
+      "kind": "sealed",
+      "a": "53",
+      "b": "0",
+      "p": "< 0.001",
+      "verdict": "shown",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s2/S2-FIRST-LOOK.md",
+        "public": "Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s2/S2-FIRST-LOOK.md"
+      },
+      "quote": "- Qwen: G0 to G2 53/0; G1 to G2 13/0 (p < 0.001)",
+      "note": "The record gives one p for the G0 to G2 and G1 to G2 comparisons together."
+    },
+    {
+      "key": "local_qwen",
+      "name": "local Qwen3-4B, G0 against G2",
+      "kind": "sealed",
+      "a": "45",
+      "b": "0",
+      "p": "< 10^-12",
+      "verdict": "shown",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md",
+        "public": "Public research record, bundle 3, findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md (finding F15)"
+      },
+      "quote": "Against the word alone: 45/0 and 42/0, p < 10^-12",
+      "note": "The record gives one p for both local comparisons."
+    },
+    {
+      "key": "local_gemma",
+      "name": "local Gemma-4-E4B, G0 against G2",
+      "kind": "sealed",
+      "a": "42",
+      "b": "0",
+      "p": "< 10^-12",
+      "verdict": "shown",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md",
+        "public": "Public research record, bundle 3, findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md (finding F15)"
+      },
+      "quote": "Against the word alone: 45/0 and 42/0, p < 10^-12",
+      "note": "The record gives one p for both local comparisons."
+    }
+  ],
+  "record_corrections": [],
+  "seal": [
+    {
+      "role": "hosted test pack: specs, models, rules, item files",
+      "list_file": "PACK-SHA256.txt",
+      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/PACK-SHA256.txt",
+      "sha256": "1a6c3f28319333cbbc70372a8df25b5a04347ec3717443d2d98833145f585971",
+      "freetsa_utc": "2026-10-06T03:07:46Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 0
+    },
+    {
+      "role": "answer keys, before the hosted results",
+      "list_file": "KEYS-SHA256.txt",
+      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/KEYS-SHA256.txt",
+      "sha256": "88d766355e9ec2558b5514c68ae8302ea598ec6b8783ce2f24a81a0ed9d31a1c",
+      "freetsa_utc": "2026-10-06T03:07:47Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 0
+    },
+    {
+      "role": "hosted results",
+      "list_file": "S2-RESULTS-SHA256.txt",
+      "path": "public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s2/S2-RESULTS-SHA256.txt",
+      "sha256": "ee452cb46489da860c1fd5f1e7abed56e4f1ed780ad4c83147875352cf127bc5",
+      "freetsa_utc": "2026-10-06T04:10:43Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 0
+    },
+    {
+      "role": "local chain design",
+      "list_file": "DESIGN-SHA256.txt",
+      "path": "chain-local-2026-10-06/DESIGN-SHA256.txt",
+      "sha256": "dbf4c73410b9d3f8784f0adf19d99957b03eaf8667cea92c63abbba7e2384985",
+      "freetsa_utc": "2026-10-06T09:08:24Z",
+      "bitcoin_blocks": [
+        970158,
+        970162
+      ],
+      "pending_calendar": 4
+    },
+    {
+      "role": "local chain raw results",
+      "list_file": "RESULTS-SHA256.txt",
+      "path": "chain-local-2026-10-06/results/RESULTS-SHA256.txt",
+      "sha256": "7804aef2bcd021adca2fdf1bf227127f1d22857ab8e373f515f6ff2e6d79400f",
+      "freetsa_utc": "2026-10-06T13:30:22Z",
+      "bitcoin_blocks": [
+        970180,
+        970184,
+        970187
+      ],
+      "pending_calendar": 4
+    }
+  ],
+  "links": [
+    {
+      "label": "Research record",
+      "url": "https://doi.org/10.5281/zenodo.23227858"
+    }
+  ]
+}

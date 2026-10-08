@@ -1,0 +1,69 @@
+{
+  "comment": "Open questions. Items are never deleted: change status instead (open, registered and running, answered by a finding, dropped with a reason).",
+  "questions": [
+    {
+      "id": "Q001",
+      "status": "open",
+      "related": [
+        "F002",
+        "F003",
+        "F004"
+      ],
+      "text": "Replicate on fresh items, held back until they run."
+    },
+    {
+      "id": "Q002",
+      "status": "open",
+      "related": [
+        "F003",
+        "F004"
+      ],
+      "text": "Does the ticket hold on longer real logs and larger models?"
+    },
+    {
+      "id": "Q003",
+      "status": "open",
+      "related": [
+        "F001"
+      ],
+      "text": "Pair \"Report whether\" and \"Check that\" on identical logs."
+    },
+    {
+      "id": "Q004",
+      "status": "open",
+      "related": [
+        "F005"
+      ],
+      "text": "Why did a certifier that rewrote the work add errors? Test certify-only."
+    },
+    {
+      "id": "Q005",
+      "status": "open",
+      "related": [
+        "F008",
+        "F009"
+      ],
+      "text": "Compare the binding gate with a told reviewer on enough claims to see a modest gap."
+    },
+    {
+      "id": "Q006",
+      "status": "open",
+      "related": [
+        "F006"
+      ],
+      "text": "Recompute the pooled forced-choice test with the audited Gemini 3.8 Flash count."
+    },
+    {
+      "id": "Q007",
+      "status": "open",
+      "related": [],
+      "text": "Run the Claude pair of the harness comparison; only the OpenAI pair is scored."
+    },
+    {
+      "id": "Q008",
+      "status": "registered, running",
+      "related": [],
+      "text": "Earned Agency Bench: registered and running. No results yet."
+    }
+  ]
+}

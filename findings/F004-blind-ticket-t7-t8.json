@@ -1,0 +1,263 @@
+{
+  "date_added": "2026-10-08",
+  "version_first_included": "1.0.0",
+  "lifecycle": "active",
+  "superseded_by": null,
+  "retraction": null,
+  "paper": true,
+  "id": "F004",
+  "slug": "blind-ticket-t7-t8",
+  "title": "Blind coat-check, tasks t7 and t8: the ticket names the check, not the answer",
+  "question": "Does the ticket still work when it names only the check, not the expected result?",
+  "status": "exploratory",
+  "status_note": "",
+  "summary_line": "A ticket that names only the check, not the answer, also took false done to none.",
+  "headline": "With a ticket that names only the check, the models called {{F004.c.t8_g37.n}}, {{F004.c.t8_g38.n}}, {{F004.c.t8_hk.n}} and {{F004.c.t8_nano.n}} never-ran logs shown (t8), and {{F004.c.t7_g37.n}}, {{F004.c.t7_g38.n}}, {{F004.c.t7_hk.n}} and {{F004.c.t7_nano.n}} failed checks shown (t7).",
+  "plain_meaning": "The gain does not come from handing over the answer: naming the check first was enough here.",
+  "limits": [
+    "The job sentence still states the target in {{F004.c.target_stated}} jobs.",
+    "Known public logs; small models."
+  ],
+  "counts": [
+    {
+      "key": "t8_g37",
+      "label": "Gemini 3.7 Flash, never-ran called shown with the blind ticket and the do sentence (t8)",
+      "n": "0",
+      "d": "16",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+      },
+      "quote": "Counts (scenarios of 16, three counted runs each): never-ran logs called \"shown\" with a ticket that names only the check (t8): Gemini 3.7 Flash 0, Gemini 3.8 Flash 0, Claude Haiku 4.5 0, GPT-5.4 nano 0"
+    },
+    {
+      "key": "t7_g37",
+      "label": "Gemini 3.7 Flash, failed check called shown with the blind ticket and the report sentence (t7)",
+      "n": "0",
+      "d": "16",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+      },
+      "quote": "Failed checks called \"shown\" (t7): 0, 0, 0, 0",
+      "d_basis": "Scenarios of 16, as the same bullet states."
+    },
+    {
+      "key": "t8_g38",
+      "label": "Gemini 3.8 Flash, never-ran called shown with the blind ticket and the do sentence (t8)",
+      "n": "0",
+      "d": "16",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+      },
+      "quote": "Counts (scenarios of 16, three counted runs each): never-ran logs called \"shown\" with a ticket that names only the check (t8): Gemini 3.7 Flash 0, Gemini 3.8 Flash 0, Claude Haiku 4.5 0, GPT-5.4 nano 0"
+    },
+    {
+      "key": "t7_g38",
+      "label": "Gemini 3.8 Flash, failed check called shown with the blind ticket and the report sentence (t7)",
+      "n": "0",
+      "d": "16",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+      },
+      "quote": "Failed checks called \"shown\" (t7): 0, 0, 0, 0",
+      "d_basis": "Scenarios of 16, as the same bullet states."
+    },
+    {
+      "key": "t8_hk",
+      "label": "Claude Haiku 4.5, never-ran called shown with the blind ticket and the do sentence (t8)",
+      "n": "0",
+      "d": "16",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+      },
+      "quote": "Counts (scenarios of 16, three counted runs each): never-ran logs called \"shown\" with a ticket that names only the check (t8): Gemini 3.7 Flash 0, Gemini 3.8 Flash 0, Claude Haiku 4.5 0, GPT-5.4 nano 0"
+    },
+    {
+      "key": "t7_hk",
+      "label": "Claude Haiku 4.5, failed check called shown with the blind ticket and the report sentence (t7)",
+      "n": "0",
+      "d": "16",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+      },
+      "quote": "Failed checks called \"shown\" (t7): 0, 0, 0, 0",
+      "d_basis": "Scenarios of 16, as the same bullet states."
+    },
+    {
+      "key": "t8_nano",
+      "label": "GPT-5.4 nano, never-ran called shown with the blind ticket and the do sentence (t8)",
+      "n": "0",
+      "d": "16",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+      },
+      "quote": "Counts (scenarios of 16, three counted runs each): never-ran logs called \"shown\" with a ticket that names only the check (t8): Gemini 3.7 Flash 0, Gemini 3.8 Flash 0, Claude Haiku 4.5 0, GPT-5.4 nano 0"
+    },
+    {
+      "key": "t7_nano",
+      "label": "GPT-5.4 nano, failed check called shown with the blind ticket and the report sentence (t7)",
+      "n": "0",
+      "d": "16",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+      },
+      "quote": "Failed checks called \"shown\" (t7): 0, 0, 0, 0",
+      "d_basis": "Scenarios of 16, as the same bullet states."
+    },
+    {
+      "key": "receipt_blind",
+      "label": "mean receipt score, every model, both blind tasks",
+      "n": "1.000",
+      "d": null,
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+      },
+      "quote": "Mean receipt score 1.000 for all four models on both blind tasks"
+    },
+    {
+      "key": "target_stated",
+      "label": "jobs whose job sentence still states the target",
+      "n": "10",
+      "d": "16",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+      },
+      "quote": "the job sentence still states the target in 10 of the 16 jobs"
+    }
+  ],
+  "tables": [
+    {
+      "key": "blind",
+      "caption": "Never-ran logs called done or shown (scenarios)",
+      "columns": [
+        "Gemini 3.7 Flash",
+        "Gemini 3.8 Flash",
+        "Claude Haiku 4.5",
+        "GPT-5.4 nano"
+      ],
+      "of": 16,
+      "rows": [
+        {
+          "label": "T3 do the work, called done",
+          "cells": [
+            "@F003.t3_g37",
+            "@F003.t3_g38",
+            "@F003.t3_hk",
+            "@F003.t3_nano"
+          ]
+        },
+        {
+          "label": "t6 ticket with the value, called shown",
+          "cells": [
+            "@F003.t6_g37",
+            "@F003.t6_g38",
+            "@F003.t6_hk",
+            "@F003.t6_nano"
+          ]
+        },
+        {
+          "label": "t8 blind ticket, called shown",
+          "cells": [
+            "@t8_g37",
+            "@t8_g38",
+            "@t8_hk",
+            "@t8_nano"
+          ]
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "key": "t3_t8_g37",
+      "name": "Gemini 3.7 Flash never-ran, T3 against t8",
+      "kind": "exploratory",
+      "a": "11",
+      "b": "0",
+      "p": "0.001",
+      "verdict": "exploratory",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+      },
+      "quote": "Gemini 3.7 Flash T3 to t8 11 to 0, p = 0.001"
+    },
+    {
+      "key": "t1_t7_g37",
+      "name": "Gemini 3.7 Flash failed check, T1 against t7",
+      "kind": "exploratory",
+      "a": "7",
+      "b": "0",
+      "p": "0.016",
+      "verdict": "exploratory",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+      },
+      "quote": "T1 to t7 7 to 0, p = 0.016"
+    }
+  ],
+  "seal": [
+    {
+      "role": "tasks, scorer, run plan and sealed forecasts, before any counted run",
+      "list_file": "FILES-SHA256.txt",
+      "path": "kaggle-coat-check-blind-2026-10-07/FILES-SHA256.txt",
+      "sha256": "c68aa45ef06568bfb4e3d26a4d94b2a9ac15243dd6cbac1a2df7905432e37a16",
+      "freetsa_utc": "2026-10-07T20:54:59Z",
+      "bitcoin_blocks": [
+        970397
+      ],
+      "pending_calendar": 4
+    },
+    {
+      "role": "addendum: three tests pinned",
+      "list_file": "ADDENDUM-1-SHA256.txt",
+      "path": "kaggle-coat-check-blind-2026-10-07/ADDENDUM-1-SHA256.txt",
+      "sha256": "09cf24f91dfa852bd776a551d7759342164c236f8cdacd879e12a74f66f790bf",
+      "freetsa_utc": "2026-10-07T20:57:03Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 4
+    },
+    {
+      "role": "results, before any count",
+      "list_file": "RESULTS-SHA256.txt",
+      "path": "kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+      "sha256": "ddf978a7ba0c6dfa4fd724394861deecb907353eb508b845ba6d7eed644cf5f0",
+      "freetsa_utc": "2026-10-07T23:47:51Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 4
+    }
+  ],
+  "links": [
+    {
+      "label": "Benchmark",
+      "url": "https://www.kaggle.com/benchmarks/iswt42/two-kinds-of-false-done"
+    },
+    {
+      "label": "Research record",
+      "url": "https://doi.org/10.5281/zenodo.23227858"
+    }
+  ],
+  "record_corrections": []
+}

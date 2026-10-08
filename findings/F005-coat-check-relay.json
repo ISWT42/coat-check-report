@@ -1,0 +1,395 @@
+{
+  "date_added": "2026-10-08",
+  "version_first_included": "1.0.0",
+  "lifecycle": "active",
+  "superseded_by": null,
+  "retraction": null,
+  "paper": true,
+  "id": "F005",
+  "slug": "coat-check-relay",
+  "title": "The coat-check relay: a false done travelling down a chain of coding jobs",
+  "question": "Does a ticket plus the real check result reduce false done on coding jobs? Does a certifier?",
+  "status": "shown",
+  "status_note": "The first primary comparison was shown; the others were not.",
+  "summary_line": "On coding jobs, a ticket plus the real check result and one fix cut false done left at the end.",
+  "headline": "Of {{F005.c.a_end.d}} jobs per arm, self-reporting agents left {{F005.c.a_end.n}} false done at the end; with a ticket and one fix, {{F005.c.b_end.n}} (exact McNemar p = {{F005.t.a_vs_b.p}}). A certifying second agent caught {{F005.c.cert_c_caught}} false done shown to it, but letting it rewrite the work added errors: {{F005.c.c_end.n}} left, from {{F005.c.c_start.n}}.",
+  "plain_meaning": "Showing the real check result before done, and allowing one fix, cut false done. A certifier caught every false claim it saw, but rewriting undid part of the gain.",
+  "limits": [
+    "One run of {{F005.c.coding_jobs.n}} jobs; cheap models, {{F005.c.invalid}} invalid replies."
+  ],
+  "counts": [
+    {
+      "key": "a_start",
+      "label": "arm A: false done at first claim, per job",
+      "n": "16",
+      "d": "36",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "ARM A  (36 jobs)\n  initial_false_done_per_done_claim: 16/30 (0.53)\n  initial_false_done_per_job: 16/36 (0.44)\n  false_done_at_end_per_job: 16/36 (0.44)\n  jobs_fixed_per_initially_failing: 0/22 (0.00)\n  final_pass_per_job: 14/36 (0.39)"
+    },
+    {
+      "key": "a_end",
+      "label": "arm A: false done left at the end, per job",
+      "n": "16",
+      "d": "36",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "ARM A  (36 jobs)\n  initial_false_done_per_done_claim: 16/30 (0.53)\n  initial_false_done_per_job: 16/36 (0.44)\n  false_done_at_end_per_job: 16/36 (0.44)\n  jobs_fixed_per_initially_failing: 0/22 (0.00)\n  final_pass_per_job: 14/36 (0.39)"
+    },
+    {
+      "key": "a_pass",
+      "label": "arm A: jobs whose hidden tests passed at the end",
+      "n": "14",
+      "d": "36",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "ARM A  (36 jobs)\n  initial_false_done_per_done_claim: 16/30 (0.53)\n  initial_false_done_per_job: 16/36 (0.44)\n  false_done_at_end_per_job: 16/36 (0.44)\n  jobs_fixed_per_initially_failing: 0/22 (0.00)\n  final_pass_per_job: 14/36 (0.39)"
+    },
+    {
+      "key": "b_start",
+      "label": "arm B: false done at first claim, per job",
+      "n": "9",
+      "d": "36",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "ARM B  (36 jobs)\n  initial_false_done_per_done_claim: 9/28 (0.32)\n  initial_false_done_per_job: 9/36 (0.25)\n  false_done_at_end_per_job: 7/36 (0.19)\n  jobs_fixed_per_initially_failing: 2/17 (0.12)\n  final_pass_per_job: 21/36 (0.58)"
+    },
+    {
+      "key": "b_end",
+      "label": "arm B: false done left at the end, per job",
+      "n": "7",
+      "d": "36",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "ARM B  (36 jobs)\n  initial_false_done_per_done_claim: 9/28 (0.32)\n  initial_false_done_per_job: 9/36 (0.25)\n  false_done_at_end_per_job: 7/36 (0.19)\n  jobs_fixed_per_initially_failing: 2/17 (0.12)\n  final_pass_per_job: 21/36 (0.58)"
+    },
+    {
+      "key": "b_pass",
+      "label": "arm B: jobs whose hidden tests passed at the end",
+      "n": "21",
+      "d": "36",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "ARM B  (36 jobs)\n  initial_false_done_per_done_claim: 9/28 (0.32)\n  initial_false_done_per_job: 9/36 (0.25)\n  false_done_at_end_per_job: 7/36 (0.19)\n  jobs_fixed_per_initially_failing: 2/17 (0.12)\n  final_pass_per_job: 21/36 (0.58)"
+    },
+    {
+      "key": "c_start",
+      "label": "arm C: false done at first claim, per job",
+      "n": "9",
+      "d": "36",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "ARM C  (36 jobs)\n  initial_false_done_per_done_claim: 9/24 (0.38)\n  initial_false_done_per_job: 9/36 (0.25)\n  false_done_at_end_per_job: 11/36 (0.31)\n  jobs_fixed_per_initially_failing: 3/21 (0.14)\n  final_pass_per_job: 18/36 (0.50)"
+    },
+    {
+      "key": "c_end",
+      "label": "arm C: false done left at the end, per job",
+      "n": "11",
+      "d": "36",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "ARM C  (36 jobs)\n  initial_false_done_per_done_claim: 9/24 (0.38)\n  initial_false_done_per_job: 9/36 (0.25)\n  false_done_at_end_per_job: 11/36 (0.31)\n  jobs_fixed_per_initially_failing: 3/21 (0.14)\n  final_pass_per_job: 18/36 (0.50)"
+    },
+    {
+      "key": "c_pass",
+      "label": "arm C: jobs whose hidden tests passed at the end",
+      "n": "18",
+      "d": "36",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "ARM C  (36 jobs)\n  initial_false_done_per_done_claim: 9/24 (0.38)\n  initial_false_done_per_job: 9/36 (0.25)\n  false_done_at_end_per_job: 11/36 (0.31)\n  jobs_fixed_per_initially_failing: 3/21 (0.14)\n  final_pass_per_job: 18/36 (0.50)"
+    },
+    {
+      "key": "d_start",
+      "label": "arm D: false done at first claim, per job",
+      "n": "7",
+      "d": "36",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "ARM D  (36 jobs)\n  initial_false_done_per_done_claim: 7/27 (0.26)\n  initial_false_done_per_job: 7/36 (0.19)\n  false_done_at_end_per_job: 9/36 (0.25)\n  jobs_fixed_per_initially_failing: 4/16 (0.25)\n  final_pass_per_job: 24/36 (0.67)"
+    },
+    {
+      "key": "d_end",
+      "label": "arm D: false done left at the end, per job",
+      "n": "9",
+      "d": "36",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "ARM D  (36 jobs)\n  initial_false_done_per_done_claim: 7/27 (0.26)\n  initial_false_done_per_job: 7/36 (0.19)\n  false_done_at_end_per_job: 9/36 (0.25)\n  jobs_fixed_per_initially_failing: 4/16 (0.25)\n  final_pass_per_job: 24/36 (0.67)"
+    },
+    {
+      "key": "d_pass",
+      "label": "arm D: jobs whose hidden tests passed at the end",
+      "n": "24",
+      "d": "36",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "ARM D  (36 jobs)\n  initial_false_done_per_done_claim: 7/27 (0.26)\n  initial_false_done_per_job: 7/36 (0.19)\n  false_done_at_end_per_job: 9/36 (0.25)\n  jobs_fixed_per_initially_failing: 4/16 (0.25)\n  final_pass_per_job: 24/36 (0.67)"
+    },
+    {
+      "key": "cert_c_caught",
+      "label": "arm C certifier: false done caught per false done it certified",
+      "n": "9",
+      "d": "9",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "CERTIFIER, arm C  (36 certifications)\n  invalid_verdicts: 1/36 (0.03)\n  faults_caught_per_false_done_certified: 9/9 (1.00)\n  false_assurance_per_unshown_or_failing: 0/24 (0.00)"
+    },
+    {
+      "key": "cert_d_caught",
+      "label": "arm D certifier: false done caught per false done it certified",
+      "n": "7",
+      "d": "7",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "CERTIFIER, arm D  (36 certifications)\n  invalid_verdicts: 2/36 (0.06)\n  faults_caught_per_false_done_certified: 7/7 (1.00)\n  false_assurance_per_unshown_or_failing: 0/23 (0.00)"
+    },
+    {
+      "key": "cert_c_assure",
+      "label": "arm C certifier: false assurance per unshown or failing claim",
+      "n": "0",
+      "d": "24",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "CERTIFIER, arm C  (36 certifications)\n  invalid_verdicts: 1/36 (0.03)\n  faults_caught_per_false_done_certified: 9/9 (1.00)\n  false_assurance_per_unshown_or_failing: 0/24 (0.00)"
+    },
+    {
+      "key": "cert_d_assure",
+      "label": "arm D certifier: false assurance per unshown or failing claim",
+      "n": "0",
+      "d": "23",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "CERTIFIER, arm D  (36 certifications)\n  invalid_verdicts: 2/36 (0.06)\n  faults_caught_per_false_done_certified: 7/7 (1.00)\n  false_assurance_per_unshown_or_failing: 0/23 (0.00)"
+    },
+    {
+      "key": "invalid",
+      "label": "invalid replies",
+      "n": "56",
+      "d": "280",
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+      },
+      "quote": "Invalid replies 56 of 280 calls"
+    },
+    {
+      "key": "chain_records",
+      "label": "records in the room's hash chain that verified",
+      "n": "1,987",
+      "d": null,
+      "source": {
+        "root": "workbench",
+        "path": "public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md",
+        "public": "Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md"
+      },
+      "quote": "The room's hash chain verifies: 1,987 records"
+    },
+    {
+      "key": "coding_jobs",
+      "label": "small coding jobs, each with a hidden test file",
+      "n": "12",
+      "d": null,
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/DESIGN.md",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (DESIGN.md)"
+      },
+      "quote": "## The jobs (12, in 3 chains of 4)"
+    },
+    {
+      "key": "cost",
+      "label": "total cost in US dollars",
+      "n": "0.118489",
+      "d": null,
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "total 280, cost US$0.118489"
+    }
+  ],
+  "tables": [
+    {
+      "key": "arms",
+      "caption": "Jobs (per arm)",
+      "columns": [
+        "False done at first claim",
+        "False done left at the end",
+        "Hidden tests passed"
+      ],
+      "of": 36,
+      "rows": [
+        {
+          "label": "A self-report",
+          "cells": [
+            "@a_start",
+            "@a_end",
+            "@a_pass"
+          ]
+        },
+        {
+          "label": "B ticket, one fix",
+          "cells": [
+            "@b_start",
+            "@b_end",
+            "@b_pass"
+          ]
+        },
+        {
+          "label": "C certify before work",
+          "cells": [
+            "@c_start",
+            "@c_end",
+            "@c_pass"
+          ]
+        },
+        {
+          "label": "D work then certify",
+          "cells": [
+            "@d_start",
+            "@d_end",
+            "@d_pass"
+          ]
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "key": "a_vs_b",
+      "name": "false done at the end, A against B",
+      "kind": "sealed (primary)",
+      "a": "9",
+      "b": "0",
+      "p": "0.0039",
+      "verdict": "shown",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "A_vs_B [primary]: 36 pairs; A_false_done=16, B_false_done=7, only_A=9, only_B=0; p = 0.0039"
+    },
+    {
+      "key": "a_vs_c",
+      "name": "A against C",
+      "kind": "sealed (primary)",
+      "a": "8",
+      "b": "3",
+      "p": "0.2266",
+      "verdict": "not shown",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "A_vs_C [primary]: 36 pairs; A_false_done=16, C_false_done=11, only_A=8, only_C=3; p = 0.2266"
+    },
+    {
+      "key": "a_vs_d",
+      "name": "A against D",
+      "kind": "sealed (secondary)",
+      "a": "10",
+      "b": "3",
+      "p": "0.0923",
+      "verdict": "not shown",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-relay-2026-10-07/runs-real-1-score.txt",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt)"
+      },
+      "quote": "A_vs_D [secondary]: 36 pairs; A_false_done=16, D_false_done=9, only_A=10, only_D=3; p = 0.0923"
+    }
+  ],
+  "seal": [
+    {
+      "role": "design, code, jobs and forecasts, before any model call",
+      "list_file": "RELAY-SEAL-SHA256.txt",
+      "path": "coat-check-relay-2026-10-07/RELAY-SEAL-SHA256.txt",
+      "sha256": "8bc219ed043c62ce6823591db3c9bb4ba059d2001937eaff74177cf7cb68eed4",
+      "freetsa_utc": "2026-10-07T21:29:16Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 4
+    },
+    {
+      "role": "raw results, before any count",
+      "list_file": "RESULTS-SHA256.txt",
+      "path": "coat-check-relay-2026-10-07/RESULTS-SHA256.txt",
+      "sha256": "b005ce266b52a61e1fbb6a9296bbc5bbfb8a6fd7af34431cfb1ff589cc58a290",
+      "freetsa_utc": "2026-10-07T23:45:35Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 4
+    },
+    {
+      "role": "scored output",
+      "list_file": "SCORED-SHA256.txt",
+      "path": "coat-check-relay-2026-10-07/SCORED-SHA256.txt",
+      "sha256": "81c76c6a31ca5d92ff4189b9a95b222dca78db3503ed2dc92e19ef59493686d2",
+      "freetsa_utc": "2026-10-07T23:46:01Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 0
+    }
+  ],
+  "links": [
+    {
+      "label": "Receipts dataset",
+      "url": "https://www.kaggle.com/datasets/iswt42/coat-check-receipts-2026-10-07"
+    },
+    {
+      "label": "Research record",
+      "url": "https://doi.org/10.5281/zenodo.23227858"
+    }
+  ],
+  "record_corrections": []
+}

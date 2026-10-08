@@ -1,0 +1,8 @@
+- **Small models, invented items.** Most tests use small or mid-sized models and items written by Claude. Results may not carry to larger models or real logs.
+- **Public items.** The Kaggle logs and answers are public, so a model with web access could look them up (F002).
+- **One author, no outside replication yet.** A time stamp shows a file existed by then, not that no other version was sealed.
+- **Small counts, many tests.** Most tests are exact paired tests on a few dozen items, uncorrected unless a card says so.
+- **Counts moved by audit.** A parser audit moved a few counts after sealing; cards record the correction, and no headline reversed.
+- **Local checks only.** Quotes were checked against local copies, not live public copies.
+- **Withheld.** Forecasts and some run records are not published.
+- **AI assistance.** Claude helped write designs, scorers and this report.

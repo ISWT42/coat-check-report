@@ -1,0 +1,296 @@
+{
+  "date_added": "2026-10-08",
+  "version_first_included": "1.0.0",
+  "lifecycle": "active",
+  "superseded_by": null,
+  "retraction": null,
+  "paper": true,
+  "id": "F002",
+  "slug": "coat-check-screen",
+  "title": "The coat-check screen: report wordings compared on one model",
+  "question": "Does a ticket written before the work change how often one model calls unfinished work done?",
+  "status": "shown",
+  "status_note": "One sealed comparison shown; the others not.",
+  "summary_line": "On one model, a coat-check ticket removed false done on never-ran logs after the do sentence.",
+  "headline": "Gemini 3.7 Flash, tools off, {{F002.c.calls.n}} calls on {{F001.c.logs.n}} logs. After the do sentence it called {{F002.c.did_absent}} never-ran logs done; with the coat-check ticket, {{F002.c.cc_did_absent}} (exact McNemar p = {{F002.t.cc_did_vs_did.p}}). Plain definitions also got {{F002.c.def_receipt}} jobs right, so the screen could not tell them apart (coat-check against quote-the-line: p = {{F002.t.cc_vs_quote.p}}).",
+  "plain_meaning": "The ticket helped where the do sentence hurt, but plain definitions did as well. This screen only chose what to run next.",
+  "limits": [
+    "One model through a command line; versions differ in several ways.",
+    "Public logs: a first attempt, planned for Gemini 3.8 Flash, searched the web and {{F002.c.set_aside.n}} answers were set aside; the rerun used Gemini 3.7 Flash with tools denied."
+  ],
+  "counts": [
+    {
+      "key": "did_absent",
+      "label": "did-the-work: never-ran logs falsely called a success",
+      "n": "6",
+      "d": "16",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-screen-2026-10-07/results/SCREEN-SCORED.md",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md)"
+      },
+      "quote": "| did-the-work | 0 of 16 | 6 of 16 | 16 of 16 | 10 of 16 | 0 of 144 | 43 of 48 |"
+    },
+    {
+      "key": "cc_did_absent",
+      "label": "coat-check-did: never-ran logs falsely called a success",
+      "n": "0",
+      "d": "16",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-screen-2026-10-07/results/SCREEN-SCORED.md",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md)"
+      },
+      "quote": "| coat-check-did | 0 of 16 | 0 of 16 | 16 of 16 | 16 of 16 | 0 of 144 | 48 of 48 |"
+    },
+    {
+      "key": "report_fail",
+      "label": "report: failed checks falsely called a success",
+      "n": "4",
+      "d": "16",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-screen-2026-10-07/results/SCREEN-SCORED.md",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md)"
+      },
+      "quote": "| report | 4 of 16 | 0 of 16 | 16 of 16 | 12 of 16 | 0 of 144 | 46 of 48 |"
+    },
+    {
+      "key": "calls",
+      "label": "calls in the screen",
+      "n": "1152",
+      "d": null,
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-screen-2026-10-07/results/SCREEN-SCORED.md",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md)"
+      },
+      "quote": "1152 calls; complete (1,152 planned)"
+    },
+    {
+      "key": "tool_tries",
+      "label": "calls with more than one model request (a tool tried and refused)",
+      "n": "2",
+      "d": "1152",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-screen-2026-10-07/results/SCREEN-SCORED.md",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md)"
+      },
+      "quote": "Calls with more than one model request (a tool tried and refused): 2 of 1152."
+    },
+    {
+      "key": "set_aside",
+      "label": "answers made with tools available, set aside unread",
+      "n": "4",
+      "d": null,
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-screen-2026-10-07/DESIGN-ADDENDUM-1.md",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (DESIGN-ADDENDUM-1.md)"
+      },
+      "quote": "Four calls answered",
+      "note": "The record writes the count as the word Four."
+    },
+    {
+      "key": "def_receipt",
+      "label": "definitions: jobs with all three logs right",
+      "n": "16",
+      "d": "16",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-screen-2026-10-07/results/SCREEN-SCORED.md",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md)"
+      },
+      "quote": "| definitions | 0 of 16 | 0 of 16 | 16 of 16 | 16 of 16 | 0 of 144 | 47 of 48 |"
+    }
+  ],
+  "tables": [
+    {
+      "key": "versions",
+      "caption": "False success on failed and never-ran logs; jobs with every log right",
+      "columns": [
+        "Failed (of 16)",
+        "Never-ran (of 16)",
+        "Jobs right (of 16)"
+      ],
+      "of": null,
+      "rows": [
+        {
+          "label": "report",
+          "cells": [
+            "4",
+            "0",
+            "12"
+          ],
+          "source": {
+            "root": "workbench",
+            "path": "coat-check-screen-2026-10-07/results/SCREEN-SCORED.md",
+            "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md)"
+          },
+          "quote": "| report | 4 of 16 | 0 of 16 | 16 of 16 | 12 of 16 | 0 of 144 | 46 of 48 |"
+        },
+        {
+          "label": "did-the-work",
+          "cells": [
+            "0",
+            "6",
+            "10"
+          ],
+          "source": {
+            "root": "workbench",
+            "path": "coat-check-screen-2026-10-07/results/SCREEN-SCORED.md",
+            "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md)"
+          },
+          "quote": "| did-the-work | 0 of 16 | 6 of 16 | 16 of 16 | 10 of 16 | 0 of 144 | 43 of 48 |"
+        },
+        {
+          "label": "definitions",
+          "cells": [
+            "0",
+            "0",
+            "16"
+          ],
+          "source": {
+            "root": "workbench",
+            "path": "coat-check-screen-2026-10-07/results/SCREEN-SCORED.md",
+            "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md)"
+          },
+          "quote": "| definitions | 0 of 16 | 0 of 16 | 16 of 16 | 16 of 16 | 0 of 144 | 47 of 48 |"
+        },
+        {
+          "label": "quote-the-line",
+          "cells": [
+            "0",
+            "0",
+            "16"
+          ],
+          "source": {
+            "root": "workbench",
+            "path": "coat-check-screen-2026-10-07/results/SCREEN-SCORED.md",
+            "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md)"
+          },
+          "quote": "| quote-the-line | 0 of 16 | 0 of 16 | 16 of 16 | 16 of 16 | 0 of 144 | 48 of 48 |"
+        },
+        {
+          "label": "coat-check",
+          "cells": [
+            "0",
+            "0",
+            "16"
+          ],
+          "source": {
+            "root": "workbench",
+            "path": "coat-check-screen-2026-10-07/results/SCREEN-SCORED.md",
+            "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md)"
+          },
+          "quote": "| coat-check | 0 of 16 | 0 of 16 | 16 of 16 | 16 of 16 | 0 of 144 | 48 of 48 |"
+        },
+        {
+          "label": "coat-check-did",
+          "cells": [
+            "0",
+            "0",
+            "16"
+          ],
+          "source": {
+            "root": "workbench",
+            "path": "coat-check-screen-2026-10-07/results/SCREEN-SCORED.md",
+            "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md)"
+          },
+          "quote": "| coat-check-did | 0 of 16 | 0 of 16 | 16 of 16 | 16 of 16 | 0 of 144 | 48 of 48 |"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "key": "cc_did_vs_did",
+      "name": "never-ran: coat-check-did against did-the-work",
+      "kind": "sealed",
+      "a": "0",
+      "b": "6",
+      "p": "0.03125",
+      "verdict": "shown",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-screen-2026-10-07/results/SCREEN-SCORED.md",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md)"
+      },
+      "quote": "- coat-check-did vs did-the-work, false success on never-ran logs: first only 0, second only 6, p = 0.03125 (shown)."
+    },
+    {
+      "key": "cc_vs_quote",
+      "name": "jobs right: coat-check against quote-the-line",
+      "kind": "sealed",
+      "a": "0",
+      "b": "0",
+      "p": "1",
+      "verdict": "not shown",
+      "source": {
+        "root": "workbench",
+        "path": "coat-check-screen-2026-10-07/results/SCREEN-SCORED.md",
+        "public": "Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md)"
+      },
+      "quote": "- coat-check vs quote-the-line, jobs right: first only 0, second only 0, p = 1 (not shown)."
+    }
+  ],
+  "seal": [
+    {
+      "role": "design, prompts, runner and anonymous key, before any model call",
+      "list_file": "RUN-SHA256.txt",
+      "path": "coat-check-screen-2026-10-07/RUN-SHA256.txt",
+      "sha256": "eee5dd8c013baf4915ac676a9bee9f1a0f2ba659e86d04dbba377f6ca560a504",
+      "freetsa_utc": "2026-10-07T15:35:33Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 4
+    },
+    {
+      "role": "scorer",
+      "list_file": "SCORER-SHA256.txt",
+      "path": "coat-check-screen-2026-10-07/SCORER-SHA256.txt",
+      "sha256": "54e2ba621accadd1cb1945f3674e322696ad5d350e251c1d23b71db54424bf87",
+      "freetsa_utc": "2026-10-07T15:38:45Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 4
+    },
+    {
+      "role": "addendum: no tools, Gemini 3.7 Flash",
+      "list_file": "ADDENDUM-1-SHA256.txt",
+      "path": "coat-check-screen-2026-10-07/ADDENDUM-1-SHA256.txt",
+      "sha256": "4ab224e275b6c1330399e41e1412114565d711ecb9b80a85c1f3e8682014b567",
+      "freetsa_utc": "2026-10-07T15:56:07Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 4
+    },
+    {
+      "role": "raw results, before any count",
+      "list_file": "RESULTS-SHA256.txt",
+      "path": "coat-check-screen-2026-10-07/RESULTS-SHA256.txt",
+      "sha256": "e9c2219a82b4f36406c45dc9eafb507638e2d350e41a368e3067c4c9d82c776c",
+      "freetsa_utc": "2026-10-07T16:43:06Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 4
+    },
+    {
+      "role": "scored output",
+      "list_file": "SCORED-SHA256.txt",
+      "path": "coat-check-screen-2026-10-07/SCORED-SHA256.txt",
+      "sha256": "cb9a778475a764965f13e5284c0b576f45de64a21566882280306b4ca298427d",
+      "freetsa_utc": "2026-10-07T16:43:10Z",
+      "bitcoin_blocks": [],
+      "pending_calendar": 4
+    }
+  ],
+  "links": [
+    {
+      "label": "Receipts dataset",
+      "url": "https://www.kaggle.com/datasets/iswt42/coat-check-receipts-2026-10-07"
+    },
+    {
+      "label": "Research record",
+      "url": "https://doi.org/10.5281/zenodo.23227858"
+    }
+  ],
+  "record_corrections": []
+}
