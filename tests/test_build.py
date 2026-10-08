@@ -49,7 +49,8 @@ class Clean(unittest.TestCase):
 
     def test_word_cap_holds(self):
         P = project()
-        S = build.render_sections(P)
+        # the cap applies to the paper extract (VERSIONING.md); cards flagged paper:false stay in the full report
+        S = build.paper_sections(P)
         self.assertLessEqual(build.count_words(build.counted_scope(S)), P["config"]["word_cap"])
 
     def test_cards_are_in_id_order(self):
