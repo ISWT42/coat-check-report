@@ -1,6 +1,6 @@
 # The Coat Check: a living technical report on whether an agent's "done" can be trusted (paper extract)
 
-Joshua Bauer (ISWT42), independent researcher · version 1.0.0
+Joshua Bauer (ISWT42), independent researcher · version 1.1.0
 
 ## 1. Summary
 
@@ -8,7 +8,7 @@ Can an AI agent's report of "done" be trusted? This report answers one finding a
 
 **Short version.** Small and mid-sized models often quoted the failing line and still marked the job done, or marked it done when the check never ran. What helped most was the coat check: a ticket written before the work, matched at pickup against a record the agent cannot change.
 
-Version 1.0.0: 9 findings, 5 shown, 1 not shown, 3 exploratory.
+Version 1.1.0: 9 findings, 5 shown, 1 not shown, 3 exploratory.
 
 - **F001** [exploratory] Models quoted the failing line yet said done; rewording the task moved false done onto checks that never ran.
 - **F002** [shown] On one model, a coat-check ticket removed false done on never-ran logs after the do sentence.

@@ -1,16 +1,16 @@
 ---
 title: "The Coat Check: a living technical report on whether an agent's \"done\" can be trusted"
 author: "Joshua Bauer"
-version: "1.0.0"
+version: "1.1.0"
 date: "2026-10-08"
-doi: "PENDING-version-doi-set-at-release"
+doi: "10.5281/zenodo.23228949"
 ---
 
 # The Coat Check: a living technical report on whether an agent's "done" can be trusted
 
-Joshua Bauer (ISWT42), independent researcher · version 1.0.0 · 8 October 2026
+Joshua Bauer (ISWT42), independent researcher · version 1.1.0 · 8 October 2026
 
-Contact: joshua@iswt.ca. DOI of this version: PENDING-version-doi-set-at-release. Concept DOI (always the latest): PENDING-concept-doi-set-at-release.
+Contact: joshua@iswt.ca. DOI (always the latest version): 10.5281/zenodo.23228949. Each version's own DOI is listed on that record (version 1.0.0: 10.5281/zenodo.23228950).
 
 Licence: Text and data CC BY 4.0; code MIT.
 
@@ -20,7 +20,7 @@ Can an AI agent's report of "done" be trusted? This report answers one finding a
 
 **Short version.** Small and mid-sized models often quoted the failing line and still marked the job done, or marked it done when the check never ran. What helped most was the coat check: a ticket written before the work, matched at pickup against a record the agent cannot change.
 
-Version 1.0.0: 9 findings, 5 shown, 1 not shown, 3 exploratory.
+Version 1.1.0: 9 findings, 5 shown, 1 not shown, 3 exploratory.
 
 - **F001** [exploratory] Models quoted the failing line yet said done; rewording the task moved false done onto checks that never ran.
 - **F002** [shown] On one model, a coat-check ticket removed false done on never-ran logs after the do sentence.
@@ -352,6 +352,14 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 **Acknowledgement.** Built with Claude (Anthropic) as research assistant.
 
 ## 6. Changelog
+
+### Version 1.1.0 (2026-10-08)
+
+Adds the DOIs Zenodo assigned at the first release: the concept DOI 10.5281/zenodo.23228949 (always the latest) and version 1.0.0's own DOI 10.5281/zenodo.23228950. No finding changed.
+
+- Findings added: none
+- Changed: none
+- Retracted (card kept, marked): none
 
 ### Version 1.0.0 (2026-10-08)
 

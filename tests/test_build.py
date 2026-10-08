@@ -18,6 +18,12 @@ def project():
     return build.load_project(ROOT)
 
 
+def next_version(P):
+    # one patch above the latest real release, so fixtures never collide with a real version
+    major, minor, patch = (int(x) for x in P["changelog"][-1]["version"].split("."))
+    return "%d.%d.%d" % (major, minor, patch + 1)
+
+
 class Clean(unittest.TestCase):
     def test_current_project_has_no_errors(self):
         self.assertEqual(build.validate(project()), [])
@@ -124,7 +130,7 @@ class PlantedFaults(unittest.TestCase):
 
     def test_version_must_match_latest_changelog(self):
         P = project()
-        P["config"]["version"] = "1.1.0"
+        P["config"]["version"] = next_version(P)
         self.assertTrue(any("latest changelog version" in e for e in build.validate(P)))
 
     def test_finding_needs_a_changelog_entry(self):
@@ -149,9 +155,10 @@ class Lifecycle(unittest.TestCase):
         P = project()
         f = P["findings"][2]
         f["lifecycle"] = "retracted"
-        f["retraction"] = {"version": "1.0.1", "date": "2026-10-09", "reason": "The counts were from the wrong run."}
-        P["changelog"].append({"version": "1.0.1", "date": "2026-10-09", "summary": "Correction.", "added": [], "changed": [], "superseded": [], "retracted": [f["id"]]})
-        P["config"]["version"] = "1.0.1"
+        v = next_version(P)
+        f["retraction"] = {"version": v, "date": "2026-10-09", "reason": "The counts were from the wrong run."}
+        P["changelog"].append({"version": v, "date": "2026-10-09", "summary": "Correction.", "added": [], "changed": [], "superseded": [], "retracted": [f["id"]]})
+        P["config"]["version"] = v
         return P, f
 
     def test_retracted_card_stays_visible_and_marked(self):
@@ -159,7 +166,7 @@ class Lifecycle(unittest.TestCase):
         self.assertEqual(build.validate(P), [])
         md = build.compose_md(P)
         self.assertIn("### %s." % f["id"], md)
-        self.assertIn("RETRACTED in version 1.0.1", md)
+        self.assertIn("RETRACTED in version " + P["config"]["version"], md)
         self.assertIn("(RETRACTED)", md)
         self.assertIn("Retracted (card kept, marked): %s" % f["id"], md)
         self.assertIn("**Result.**", md.split("### %s." % f["id"])[1].split("### F")[0])
@@ -181,9 +188,10 @@ class Lifecycle(unittest.TestCase):
         f = P["findings"][0]
         f["lifecycle"] = "superseded"
         f["superseded_by"] = "F002"
-        f["superseded_in"] = "1.0.1"
-        P["changelog"].append({"version": "1.0.1", "date": "2026-10-09", "summary": "Superseded one card.", "added": [], "changed": [], "superseded": [f["id"]], "retracted": []})
-        P["config"]["version"] = "1.0.1"
+        v = next_version(P)
+        f["superseded_in"] = v
+        P["changelog"].append({"version": v, "date": "2026-10-09", "summary": "Superseded one card.", "added": [], "changed": [], "superseded": [f["id"]], "retracted": []})
+        P["config"]["version"] = v
         self.assertEqual(build.validate(P), [])
         md = build.compose_md(P)
         self.assertIn("Superseded by F002", md)

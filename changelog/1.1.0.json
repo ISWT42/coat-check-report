@@ -1,0 +1,9 @@
+{
+  "version": "1.1.0",
+  "date": "2026-10-08",
+  "summary": "Adds the DOIs Zenodo assigned at the first release: the concept DOI 10.5281/zenodo.23228949 (always the latest) and version 1.0.0's own DOI 10.5281/zenodo.23228950. No finding changed.",
+  "added": [],
+  "changed": [],
+  "superseded": [],
+  "retracted": []
+}

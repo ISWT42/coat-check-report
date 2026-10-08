@@ -582,7 +582,7 @@ def title_block_md(P):
     return "\n".join([
         "# " + cfg["title"], "",
         "%s · version %s · %d %s %d" % (cfg["author_line"], cfg["version"], d.day, MONTHS[d.month - 1], d.year), "",
-        "Contact: %s. DOI of this version: %s. Concept DOI (always the latest): %s." % (cfg["contact"], cfg["citation"]["doi"], cfg["citation"]["concept_doi"]), "",
+        "Contact: %s. DOI (always the latest version): %s. Each version's own DOI is listed on that record (version 1.0.0: 10.5281/zenodo.23228950)." % (cfg["contact"], cfg["citation"]["concept_doi"]), "",
         "Licence: " + cfg["license"], ""])
 
 
@@ -869,8 +869,8 @@ def build_html(P, S):
         toc.append('<a href="#%s">%s</a>' % (anchor, label))
     toc.append("</nav>")
     byline = "%s · version %s · %d %s %d" % (cfg["author_line"], cfg["version"], d.day, MONTHS[d.month - 1], d.year)
-    top = ('<h1>%s</h1>\n<p class="byline">%s</p>\n<p class="meta">Contact: %s. DOI of this version: %s. Concept DOI (always the latest): %s. Licence: %s</p>\n%s'
-           % (html.escape(cfg["title"], quote=False), html.escape(byline), html.escape(cfg["contact"]), html.escape(c["doi"]), html.escape(c["concept_doi"]), html.escape(cfg["license"]), "\n".join(toc)))
+    top = ('<h1>%s</h1>\n<p class="byline">%s</p>\n<p class="meta">Contact: %s. DOI (always the latest version): <a href="https://doi.org/%s">%s</a>. Each version\'s own DOI is listed on that record (version 1.0.0: 10.5281/zenodo.23228950). Licence: %s</p>\n%s'
+           % (html.escape(cfg["title"], quote=False), html.escape(byline), html.escape(cfg["contact"]), html.escape(c["concept_doi"]), html.escape(c["concept_doi"]), html.escape(cfg["license"]), "\n".join(toc)))
     return ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
             "<title>%s</title>\n%s\n<style>%s</style>\n</head>\n<body>\n<main>\n%s\n%s\n</main>\n</body>\n</html>\n"
             % (html.escape(cfg["short_title"] + " " + cfg["version"]), head, CSS, top, body))
