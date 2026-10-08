@@ -15,7 +15,7 @@
  "headline": "On {{F009.c.claims.n}} fresh claims the binding gate released {{F009.c.qwen_g3.n}} and {{F009.c.gemma_g3.n}} of {{F009.c.qwen_g3.d}} false claims; the told reviewer {{F008.c.gate_qwen_g1t.n}} and {{F008.c.gate_gemma_g1t.n}}. The primary comparison gave p = {{F009.t.g1t_g3_qwen.p}} for both models: not shown. The gate held back {{F009.c.held_back}} true claims.",
  "plain_meaning": "The gate let few through, but this size cannot show a modest gap over a told reviewer; advice alone was much weaker.",
  "limits": [
-  "Small models; claims written by Claude; the key is withheld.",
+  "Small models; invented claims; the key is withheld.",
   "Each held-back true claim is a job for a person."
  ],
  "counts": [

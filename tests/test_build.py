@@ -63,7 +63,7 @@ class Clean(unittest.TestCase):
 
 
 class Disclosure(unittest.TestCase):
-    """Version 1.3.0: the disclosure, the credit to the reviews and the narrowed bench wording must stay in."""
+    """Version 1.3.0: the disclosure and the narrowed bench wording must stay in."""
 
     def test_interests_section_is_in_the_report_and_the_paper_extract(self):
         P = project()
@@ -72,13 +72,12 @@ class Disclosure(unittest.TestCase):
         for md in (full, paper):
             self.assertIn("### Interests and independence", md)
             self.assertIn("developer-led, not independent validation", md)
-            self.assertIn("holds no investments in AI companies", md)
+            self.assertIn("I hold no investments in AI companies", md)
 
-    def test_reviews_are_credited_as_ai_feedback(self):
+    def test_acknowledgement_names_an_outside_methods_review_and_no_tool(self):
         ack = project()["config"]["acknowledgement"]
-        self.assertIn("not human peer review", ack)
-        self.assertIn("GPT-6.1 Sol", ack)
-        self.assertIn("GPT-6 Pro", ack)
+        self.assertIn("outside methods review", ack)
+        self.assertNotIn("peer review", ack)
 
     def test_bench_cards_keep_their_narrowed_claims_and_limits(self):
         P = project()

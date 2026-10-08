@@ -15,7 +15,7 @@
  "headline": "Across {{F006.c.models.n}} models and {{F006.c.calls.n}} calls, Claude Opus 5.5 guessed on {{F006.c.opus_forced}} logs missing their evidence when forced, and on {{F006.c.opus_allowed}} when \"not shown\" was allowed. The {{F006.c.newer.n}} newer models pooled: {{F006.t.pooled.a}} guesses only when forced, {{F006.t.pooled.b}} only when allowed (p = {{F006.t.pooled.p}}).",
  "plain_meaning": "A forced binary answer manufactures guesses. Offering not shown removed most of them at no cost on intact logs.",
  "limits": [
-  "One call per item; one author's items.",
+  "One call per item; my items only.",
   "A guess is defined by the forced format."
  ],
  "counts": [

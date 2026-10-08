@@ -542,7 +542,7 @@ def evidence_entries(P):
 
 
 def appendix_b(P):
-    L = ["Each count, table row and test below rests on the quoted line from the named file. Paths are relative to the author's working folder; the public copy is named where known.", ""]
+    L = ["Each count, table row and test below rests on the quoted line from the named file. Paths are relative to my working folder; the public copy is named where known.", ""]
     for f, ents in evidence_entries(P):
         L.append("### Evidence for %s" % f["id"])
         L.append("")

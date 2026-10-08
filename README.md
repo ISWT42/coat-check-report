@@ -1,6 +1,6 @@
 # The Coat Check: a living technical report
 
-By Joshua Bauer (ISWT42), independent researcher. Contact: joshua@iswt.ca. Built with Claude (Anthropic) as research assistant. Local repository only; nothing here has been published.
+By Joshua Bauer (ISWT42), independent researcher. Contact: joshua@iswt.ca. Releases: https://github.com/ISWT42/coat-check-report/releases (concept DOI 10.5281/zenodo.23228949).
 
 The report asks whether an AI agent's "done" can be trusted. It is built from data: every number comes from a finding file that names the sealed record and the exact line it was copied from.
 

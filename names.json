@@ -2,7 +2,7 @@
   "comment": "Names that contain digits. They are masked before the number check. When a new model or task name with digits appears in prose, add it here (a visible, reviewed step).",
   "terms": [
     "Gemini 3.7 Flash", "Gemini 3.8 Flash", "Claude Haiku 4.5", "GPT-5.4 nano",
-    "Gemma 4 26B", "Qwen 3.5 9B", "Qwen3-4B", "Gemma-4-E4B", "GPT-6.1 Sol", "GPT-6 Pro", "Claude Opus 5.5",
+    "Gemma 4 26B", "Qwen 3.5 9B", "Qwen3-4B", "Gemma-4-E4B", "GPT-6.1 Sol", "Claude Opus 5.5",
     "Opus 5.5", "Gemma 4", "qwen3.5-9b", "gemma-4-26b-a4b-it", "deepseek-v4.1-flash", "kimi-k3",
     "gpt-6.1-sol", "gemini-3.8-flash", "grok-4.7", "glm-5.3", "claude-opus-5.5",
     "SHA-256", "SHA256", "Python 3", "CC BY 4.0", "Bitcoin block"

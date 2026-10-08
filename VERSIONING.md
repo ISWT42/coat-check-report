@@ -1,6 +1,6 @@
 # Versioning and release plan
 
-This report is living: findings are added as studies finish. Each release is a frozen copy with its own DOI. Nothing is released from this repository without the author's yes.
+This report is living: findings are added as studies finish. Each release is a frozen copy with its own DOI. Nothing is released from this repository without my yes.
 
 ## Zenodo: one concept DOI, one DOI per version
 

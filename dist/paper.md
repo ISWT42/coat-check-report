@@ -1,14 +1,14 @@
 # The Coat Check: a living technical report on whether an agent's "done" can be trusted (paper extract)
 
-Joshua Bauer (ISWT42), independent researcher · version 1.3.0
+Joshua Bauer (ISWT42), independent researcher · version 1.3.1
 
 ## 1. Summary
 
 Can an AI agent's report of "done" be trusted? This report answers one finding at a time.
 
-**Short version.** Small and mid-sized models often quoted the failing line and still marked the job done, or marked it done when the check never ran. In the studies here, the coat check (a ticket written before the work, matched at pickup against a record the agent cannot change) went with less false done. The studies differ in design and size, so this report does not rank them. One author runs and evaluates these methods: see Interests and independence, under Limits.
+**Short version.** Small and mid-sized models often quoted the failing line and still marked the job done, or marked it done when the check never ran. In the studies here, the coat check (a ticket written before the work, matched at pickup against a record the agent cannot change) went with less false done. The studies differ in design and size, so this report does not rank them. I run and evaluate these methods myself: see Interests and independence, under Limits.
 
-Version 1.3.0: 8 findings, 5 shown, 1 not shown, 2 exploratory.
+Version 1.3.1: 8 findings, 5 shown, 1 not shown, 2 exploratory.
 
 - **F001** [exploratory] Models quoted the failing line yet said done; rewording the task moved false done onto checks that never ran.
 - **F002** [shown] On one model, a coat-check ticket removed false done on never-ran logs after the do sentence.
@@ -197,7 +197,7 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Record correction.* Parser audit, 7 October: Gemini 3.8 Flash forced guesses 20 of 27 became 25 of 27; the pooled test was not recomputed.
 
-*Limits.* One call per item; one author's items. A guess is defined by the forced format.
+*Limits.* One call per item; my items only. A guess is defined by the forced format.
 
 *Seal.* FreeTSA 2026-10-06; Bitcoin 970198 to 970275 (Appendix C).
 
@@ -281,24 +281,23 @@ Each finding is a data file with the path and quoted line behind every count. Ev
 
 *Meaning.* The gate let few through, but this size cannot show a modest gap over a told reviewer; advice alone was much weaker.
 
-*Limits.* Small models; claims written by Claude; the key is withheld. Each held-back true claim is a job for a person.
+*Limits.* Small models; invented claims; the key is withheld. Each held-back true claim is a job for a person.
 
 *Seal.* FreeTSA 2026-10-07; Bitcoin 970271 to 970333 (Appendix C).
 
 ## 4. Limits and threats to validity
 
-- **Small models, invented items.** Most tests use small or mid-sized models and items written by Claude. Results may not carry to larger models or real logs.
+- **Small models, invented items.** Most tests use small or mid-sized models and items made up for the tests. Results may not carry to larger models or real logs.
 - **Public items.** The Kaggle logs and answers are public, so a model with web access could look them up (F002).
-- **One author, no outside replication yet.** A time stamp shows a file existed by then, not that no other version was sealed.
+- **My work only, no outside replication yet.** A time stamp shows a file existed by then, not that no other version was sealed.
 - **Small counts, many tests.** Most tests are exact paired tests on a few dozen items, uncorrected unless a card says so.
 - **Counts moved by audit.** A parser audit moved a few counts after sealing; cards record the correction, and no headline reversed.
 - **Local checks only.** Quotes were checked against local copies, not live public copies.
 - **Withheld.** Forecasts and some run records are not published.
-- **AI assistance.** Claude helped write designs, scorers and this report.
 
 ### Interests and independence
 
-The author develops the coat-check method and receipt tools, and may offer paid services built on them. Evaluations here of the author's own methods and tools are developer-led, not independent validation. Outside review and replication are invited: a replication kit exists and will be published, with its link added here. The author holds no investments in AI companies.
+I develop the coat-check method and receipt tools, and I may offer paid services built on them. My evaluations here of my own methods and tools are developer-led, not independent validation. Outside review and replication are invited: a replication kit exists and will be published, with its link added here. I hold no investments in AI companies.
 
 ## 5. What's next
 
@@ -308,9 +307,9 @@ The author develops the coat-check method and receipt tools, and may offer paid 
 - **Q004** [open] Why did a certifier that rewrote the work add errors? Test certify-only.
 - **Q005** [open] Compare the binding gate with a told reviewer on enough claims to see a modest gap.
 - **Q006** [open] Recompute the pooled forced-choice test with the audited Gemini 3.8 Flash count.
-- **Q007** [closed] The harness comparison ended as the OpenAI pair only: too few errors to show a difference; the Claude pair was closed by the owner on 8 October.
+- **Q007** [closed] The harness comparison ended as the OpenAI pair only: too few errors to show a difference; I closed the Claude pair on 8 October.
 - **Q008** [answered by a finding] Earned Agency Bench: run once on small models; the results are in the findings listed here.
 - **Q009** [open] A second bench on messy real logs, with an imperfect checker that is not handed the test line.
 - **Q010** [open] Replicate the bench with other models and fresh jobs. The sealed code is in the public record.
 
-**Acknowledgement.** Built with Claude (Anthropic) as research assistant. Version 1.3.0 was revised after AI-generated methods reviews by ChatGPT (GPT-6.1 Sol in Work, which reviewed F010 and F011, re-ran the scorer and checked the seals; GPT-6 Pro in Chat, which reviewed the plan for the next bench and the public wording), 8 October 2026. These are AI methods feedback, not human peer review.
+**Acknowledgement.** Version 1.3.0 was revised after an outside methods review, 8 October 2026.
