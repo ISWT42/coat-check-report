@@ -1,4 +1,4 @@
-- **Small models, invented items.** Most tests use small or mid-sized models and items made up for the tests. Results may not carry to larger models or real logs.
+- **Small models, invented items.** Most tests use small or mid-sized models. The test items were generated with a language model from fixed specifications, not drawn from real work. Results may not carry to larger models or real logs.
 - **Public items.** The Kaggle logs and answers are public, so a model with web access could look them up (F002).
 - **My work only, no outside replication yet.** A time stamp shows a file existed by then, not that no other version was sealed.
 - **Small counts, many tests.** Most tests are exact paired tests on a few dozen items, uncorrected unless a card says so.
