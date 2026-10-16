@@ -11,15 +11,15 @@
   "word_cap": 3000,
   "word_cap_scope": "Sections 1 to 5 and the acknowledgement. The changelog and the appendices are not counted.",
   "citation": {
-    "doi": "10.5281/zenodo.23228949",
-    "concept_doi": "10.5281/zenodo.23228949",
+    "doi": "https://github.com/ISWT42/coat-check-report",
+    "concept_doi": "https://github.com/ISWT42/coat-check-report",
     "pdf_url": "https://github.com/ISWT42/coat-check-report/releases/latest/download/report.pdf",
     "keywords": "AI agents; verification; false completion; receipts; timestamps; preregistration"
   },
   "public_links": [
     {
-      "label": "Public research record (Zenodo DOI)",
-      "url": "https://doi.org/10.5281/zenodo.23227858"
+      "label": "Public research record",
+      "url": "https://github.com/ISWT42/iswt-research-record"
     },
     {
       "label": "Coat-check receipts dataset (Kaggle)",
@@ -35,10 +35,6 @@
     }
   ],
   "allowed_literals": [
-    {
-      "text": "10.5281/zenodo",
-      "reason": "DOI prefix, not a claim"
-    },
     {
       "text": "Two kinds of false done",
       "reason": "name of the benchmark and the first finding"

@@ -35,7 +35,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/README.md",
-    "public": "Public research record, bundle 7, README.md (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, README.md (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "Four small, cheap AI models worked on a bank of 40 small coding jobs."
   },
@@ -47,7 +47,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/README.md",
-    "public": "Public research record, bundle 7, README.md (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, README.md (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "Four small, cheap AI models worked on a bank of 40 small coding jobs."
   },
@@ -59,7 +59,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "games scored: 40; unfinished: 0; left out for breaking a rule: 0; dropped step attempts: 0"
   },
@@ -71,7 +71,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM A baseline  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 198/320 (0.62)\n    said_done: 314/320 (0.98)\n    claimed_false_done_per_job: 116/320 (0.36)\n    claimed_false_done_per_done_claim: 116/314 (0.37)\n    accepted_false_done_per_job: 116/320 (0.36)"
   },
@@ -83,7 +83,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM A baseline  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 198/320 (0.62)\n    said_done: 314/320 (0.98)\n    claimed_false_done_per_job: 116/320 (0.36)\n    claimed_false_done_per_done_claim: 116/314 (0.37)\n    accepted_false_done_per_job: 116/320 (0.36)"
   },
@@ -95,7 +95,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM A baseline  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 198/320 (0.62)\n    said_done: 314/320 (0.98)\n    claimed_false_done_per_job: 116/320 (0.36)\n    claimed_false_done_per_done_claim: 116/314 (0.37)\n    accepted_false_done_per_job: 116/320 (0.36)"
   },
@@ -107,7 +107,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "    cost per passing job: 0.000242; per delivered good job: 0.000242\n    forecasts: n 319, Brier 0.322, mean forecast 0.92, pass rate 0.62"
   },
@@ -119,7 +119,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "    cost per passing job: 0.000242; per delivered good job: 0.000242\n    forecasts: n 319, Brier 0.322, mean forecast 0.92, pass rate 0.62"
   },
@@ -131,7 +131,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM B ticket  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 192/320 (0.60)\n    said_done: 315/320 (0.98)\n    claimed_false_done_per_job: 123/320 (0.38)\n    claimed_false_done_per_done_claim: 123/315 (0.39)\n    accepted_false_done_per_job: 123/320 (0.38)"
   },
@@ -143,7 +143,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM B ticket  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 192/320 (0.60)\n    said_done: 315/320 (0.98)\n    claimed_false_done_per_job: 123/320 (0.38)\n    claimed_false_done_per_done_claim: 123/315 (0.39)\n    accepted_false_done_per_job: 123/320 (0.38)"
   },
@@ -155,7 +155,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM B ticket  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 192/320 (0.60)\n    said_done: 315/320 (0.98)\n    claimed_false_done_per_job: 123/320 (0.38)\n    claimed_false_done_per_done_claim: 123/315 (0.39)\n    accepted_false_done_per_job: 123/320 (0.38)"
   },
@@ -167,7 +167,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM C relay  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 197/320 (0.62)\n    said_done: 312/320 (0.97)\n    claimed_false_done_per_job: 115/320 (0.36)\n    claimed_false_done_per_done_claim: 115/312 (0.37)\n    accepted_false_done_per_job: 0/320 (0.00)"
   },
@@ -179,7 +179,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM C relay  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 197/320 (0.62)\n    said_done: 312/320 (0.97)\n    claimed_false_done_per_job: 115/320 (0.36)\n    claimed_false_done_per_done_claim: 115/312 (0.37)\n    accepted_false_done_per_job: 0/320 (0.00)"
   },
@@ -191,7 +191,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM C relay  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 197/320 (0.62)\n    said_done: 312/320 (0.97)\n    claimed_false_done_per_job: 115/320 (0.36)\n    claimed_false_done_per_done_claim: 115/312 (0.37)\n    accepted_false_done_per_job: 0/320 (0.00)"
   },
@@ -203,7 +203,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM D earned  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 202/320 (0.63)\n    said_done: 317/320 (0.99)\n    claimed_false_done_per_job: 115/320 (0.36)\n    claimed_false_done_per_done_claim: 115/317 (0.36)\n    accepted_false_done_per_job: 39/320 (0.12)"
   },
@@ -215,7 +215,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM D earned  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 202/320 (0.63)\n    said_done: 317/320 (0.99)\n    claimed_false_done_per_job: 115/320 (0.36)\n    claimed_false_done_per_done_claim: 115/317 (0.36)\n    accepted_false_done_per_job: 39/320 (0.12)"
   },
@@ -227,7 +227,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM D earned  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 202/320 (0.63)\n    said_done: 317/320 (0.99)\n    claimed_false_done_per_job: 115/320 (0.36)\n    claimed_false_done_per_done_claim: 115/317 (0.36)\n    accepted_false_done_per_job: 39/320 (0.12)"
   },
@@ -239,7 +239,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM E random  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 188/320 (0.59)\n    said_done: 313/320 (0.98)\n    claimed_false_done_per_job: 125/320 (0.39)\n    claimed_false_done_per_done_claim: 125/313 (0.40)\n    accepted_false_done_per_job: 44/320 (0.14)"
   },
@@ -251,7 +251,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM E random  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 188/320 (0.59)\n    said_done: 313/320 (0.98)\n    claimed_false_done_per_job: 125/320 (0.39)\n    claimed_false_done_per_done_claim: 125/313 (0.40)\n    accepted_false_done_per_job: 44/320 (0.14)"
   },
@@ -263,7 +263,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM E random  (8 games)\n  [all rounds] jobs 320\n    pass_rate: 188/320 (0.59)\n    said_done: 313/320 (0.98)\n    claimed_false_done_per_job: 125/320 (0.39)\n    claimed_false_done_per_done_claim: 125/313 (0.40)\n    accepted_false_done_per_job: 44/320 (0.14)"
   },
@@ -275,7 +275,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  [rounds 2-5] jobs 256\n    pass_rate: 157/256 (0.61)\n    said_done: 250/256 (0.98)\n    claimed_false_done_per_job: 93/256 (0.36)\n    claimed_false_done_per_done_claim: 93/250 (0.37)\n    accepted_false_done_per_job: 93/256 (0.36)"
   },
@@ -287,7 +287,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  [rounds 2-5] jobs 256\n    pass_rate: 158/256 (0.62)\n    said_done: 249/256 (0.97)\n    claimed_false_done_per_job: 91/256 (0.36)\n    claimed_false_done_per_done_claim: 91/249 (0.37)\n    accepted_false_done_per_job: 0/256 (0.00)"
   },
@@ -299,7 +299,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  certifier:\n    certifications: 320\n    invalid_verdicts: 1/320 (0.00)\n    faults_caught_per_failing_work: 122/122 (1.00)\n    false_assurance_per_failing_work: 0/122 (0.00)\n    false_alarm_per_passing_work: 0/197 (0.00)\n    verdict_exactly_right_per_valid: 319/319 (1.00)"
   },
@@ -311,7 +311,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  certifier:\n    certifications: 320\n    invalid_verdicts: 1/320 (0.00)\n    faults_caught_per_failing_work: 122/122 (1.00)\n    false_assurance_per_failing_work: 0/122 (0.00)\n    false_alarm_per_passing_work: 0/197 (0.00)\n    verdict_exactly_right_per_valid: 319/319 (1.00)"
   },
@@ -323,7 +323,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  certifier:\n    certifications: 320\n    invalid_verdicts: 1/320 (0.00)\n    faults_caught_per_failing_work: 122/122 (1.00)\n    false_assurance_per_failing_work: 0/122 (0.00)\n    false_alarm_per_passing_work: 0/197 (0.00)\n    verdict_exactly_right_per_valid: 319/319 (1.00)"
   },
@@ -335,7 +335,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  certifier:\n    certifications: 320\n    invalid_verdicts: 1/320 (0.00)\n    faults_caught_per_failing_work: 122/122 (1.00)\n    false_assurance_per_failing_work: 0/122 (0.00)\n    false_alarm_per_passing_work: 0/197 (0.00)\n    verdict_exactly_right_per_valid: 319/319 (1.00)"
   },
@@ -347,7 +347,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  certifier:\n    certifications: 320\n    invalid_verdicts: 1/320 (0.00)\n    faults_caught_per_failing_work: 122/122 (1.00)\n    false_assurance_per_failing_work: 0/122 (0.00)\n    false_alarm_per_passing_work: 0/197 (0.00)\n    verdict_exactly_right_per_valid: 319/319 (1.00)"
   },
@@ -359,7 +359,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "    tokens in/out/reasoning: 340273/68034/0; wall seconds summed 2867.3; cost US$0.047824\n    cost per passing job: 0.000242; per delivered good job: 0.000242"
   },
@@ -371,7 +371,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "    tokens in/out/reasoning: 638183/75636/0; wall seconds summed 3964.3; cost US$0.075394\n    cost per passing job: 0.000383; per delivered good job: 0.000383"
   },
@@ -383,7 +383,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "CALLS: 3920, cost US$0.316988"
   },
@@ -395,7 +395,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "CALLS: 3920, cost US$0.316988"
   },
@@ -432,7 +432,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md",
-    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567)"
+    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "Arm C had 197 passes and 123 failures."
   },
@@ -445,7 +445,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md",
-    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567)"
+    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "ARM C VERDICT invalid on a job whose hidden tests failed : 1"
   },
@@ -457,7 +457,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md",
-    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567)"
+    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "That is about 58% more (1.58 times; from the unrounded totals, US$0.075394 over 197 jobs against US$0.047824 over 198 jobs, 58.4%)."
   },
@@ -469,7 +469,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "    cost per passing job: 0.000242; per delivered good job: 0.000242\n    forecasts: n 319, Brier 0.322, mean forecast 0.92, pass rate 0.62\n    accepted false done by kind: clean 21/160 (0.13), ambiguous 22/80 (0.28), missing_package 73/80 (0.91)"
   },
@@ -481,7 +481,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/config.json",
-    "public": "Public research record, bundle 7, config.json (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, config.json (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "send reasoning OFF, temperature 0, seed 42 and a fixed reply limit (openrouter-plain 400 tokens, openrouter-plain-long 1200)"
   },
@@ -493,7 +493,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/config.json",
-    "public": "Public research record, bundle 7, config.json (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, config.json (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "send reasoning OFF, temperature 0, seed 42 and a fixed reply limit (openrouter-plain 400 tokens, openrouter-plain-long 1200)"
   },
@@ -505,7 +505,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/config.json",
-    "public": "Public research record, bundle 7, config.json (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, config.json (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "\"max_out_tokens_by_role\": {\"forecast\": 400, \"certify\": 400, \"work\": 1200},"
   }
@@ -576,7 +576,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  S3 [secondary] n = 8, mean difference -0.3844, p = 0.0078, Holm-adjusted p = 0.0312\n      certify-only relay: C minus B, same measure",
    "line": "{name}: mean difference {a} per game, p = {b}, Holm-adjusted p = {p}"
@@ -592,7 +592,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  S2 [secondary] n = 8, mean difference +0.0219, p = 0.1250, Holm-adjusted p = 0.2500\n      ticket: B minus A, false done handed on, all rounds",
    "line": "{name}: mean difference {a} per game, p = {b}, Holm-adjusted p = {p}"
@@ -608,7 +608,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md",
-    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567)"
+    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "PAIRED S2 (B minus A, accepted_false_done) mean +0.0219, p = 0.1250; per-rep differences: +0.00000, +0.00000, +0.00000, +0.02500, +0.05000, +0.02500, +0.07500, +0.00000; smallest +0.00000, largest +0.07500",
    "line": "{name}: {a}"
@@ -624,7 +624,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md",
-    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567)"
+    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "PAIRED S3 (C minus B, accepted_false_done) mean -0.3844, p = 0.0078; per-rep differences: -0.32500, -0.40000, -0.35000, -0.35000, -0.40000, -0.45000, -0.40000, -0.40000; smallest -0.45000, largest -0.32500",
    "line": "{name}: {a}"
@@ -663,7 +663,7 @@
   },
   {
    "label": "Research record, version with the bench",
-   "url": "https://doi.org/10.5281/zenodo.23235648"
+   "url": "https://github.com/ISWT42/iswt-research-record"
   },
   {
    "label": "Addendum 1 to the bench bundle (8 October 2026)",
@@ -671,7 +671,7 @@
   },
   {
    "label": "Research record, version with the addendum",
-   "url": "https://doi.org/10.5281/zenodo.23237567"
+   "url": "https://github.com/ISWT42/iswt-research-record"
   }
  ],
  "record_corrections": [],

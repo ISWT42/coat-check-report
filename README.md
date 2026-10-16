@@ -1,6 +1,6 @@
 # The Coat Check: a living technical report
 
-By Joshua Bauer (ISWT42), independent researcher. Contact: joshua@iswt.ca. Releases: https://github.com/ISWT42/coat-check-report/releases (concept DOI 10.5281/zenodo.23228949).
+By Joshua Bauer (ISWT42), independent researcher. Contact: joshua@iswt.ca. Releases: https://github.com/ISWT42/coat-check-report/releases (https://github.com/ISWT42/coat-check-report).
 
 The report asks whether an AI agent's "done" can be trusted. It is built from data: every number comes from a finding file that names the sealed record and the exact line it was copied from.
 
@@ -28,7 +28,7 @@ Outputs in `dist/`: `report.md`, `report.html` (self-contained, light and dark, 
 | `build.py` | The only build script: checks, renders, writes `dist/`. |
 | `tools/` | `seal_info.py` (reads a seal list, its FreeTSA time and Bitcoin height, no network), `make_pdf.js`, `check_layout.js`. |
 | `tests/` | Planted-fault tests: each check must fail when its fault is planted. |
-| `VERSIONING.md` | Zenodo concept and version DOIs, semantic versions, release triggers. |
+| `VERSIONING.md` | Semantic versions, release triggers, how a release is cut. |
 
 ## The checks (all must pass)
 
