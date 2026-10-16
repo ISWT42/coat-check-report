@@ -33,7 +33,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  T1 [primary] n = 8, mean difference -0.0117, p = 0.6562\n      false done handed on, rounds 2-5: D minus E; below 0 favours earned agency"
   },
@@ -45,7 +45,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  [rounds 2-5] jobs 256\n    pass_rate: 162/256 (0.63)\n    said_done: 254/256 (0.99)\n    claimed_false_done_per_job: 92/256 (0.36)\n    claimed_false_done_per_done_claim: 92/254 (0.36)\n    accepted_false_done_per_job: 33/256 (0.13)"
   },
@@ -57,7 +57,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  [rounds 2-5] jobs 256\n    pass_rate: 148/256 (0.58)\n    said_done: 250/256 (0.98)\n    claimed_false_done_per_job: 102/256 (0.40)\n    claimed_false_done_per_done_claim: 102/250 (0.41)\n    accepted_false_done_per_job: 36/256 (0.14)"
   },
@@ -69,7 +69,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  [rounds 2-5] jobs 256\n    pass_rate: 162/256 (0.63)\n    said_done: 254/256 (0.99)\n    claimed_false_done_per_job: 92/256 (0.36)\n    claimed_false_done_per_done_claim: 92/254 (0.36)\n    accepted_false_done_per_job: 33/256 (0.13)\n    accepted_false_done_per_accepted: 33/195 (0.17)\n    delivered_good_per_job: 162/256 (0.63)\n    missed_good_per_pass: 0/162 (0.00)\n    checked_share: 160/256 (0.62)"
   },
@@ -81,7 +81,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  [rounds 2-5] jobs 256\n    pass_rate: 148/256 (0.58)\n    said_done: 250/256 (0.98)\n    claimed_false_done_per_job: 102/256 (0.40)\n    claimed_false_done_per_done_claim: 102/250 (0.41)\n    accepted_false_done_per_job: 36/256 (0.14)\n    accepted_false_done_per_accepted: 36/184 (0.20)\n    delivered_good_per_job: 148/256 (0.58)\n    missed_good_per_pass: 0/148 (0.00)\n    checked_share: 160/256 (0.62)"
   },
@@ -93,7 +93,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  [rounds 2-5] jobs 256\n    pass_rate: 157/256 (0.61)\n    said_done: 250/256 (0.98)\n    claimed_false_done_per_job: 93/256 (0.36)\n    claimed_false_done_per_done_claim: 93/250 (0.37)\n    accepted_false_done_per_job: 93/256 (0.36)\n    accepted_false_done_per_accepted: 93/250 (0.37)\n    delivered_good_per_job: 157/256 (0.61)\n    missed_good_per_pass: 0/157 (0.00)\n    checked_share: 0/256 (0.00)"
   },
@@ -105,7 +105,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  [rounds 2-5] jobs 256\n    pass_rate: 158/256 (0.62)\n    said_done: 249/256 (0.97)\n    claimed_false_done_per_job: 91/256 (0.36)\n    claimed_false_done_per_done_claim: 91/249 (0.37)\n    accepted_false_done_per_job: 0/256 (0.00)\n    accepted_false_done_per_accepted: 0/158 (0.00)\n    delivered_good_per_job: 158/256 (0.62)\n    missed_good_per_pass: 0/158 (0.00)\n    checked_share: 256/256 (1.00)"
   },
@@ -117,7 +117,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  T1b [primary guard] n = 8, mean difference +0.0547, p = 0.2031\n      good work delivered, rounds 2-5: D minus E; D must not be lower by more than 0.05"
   },
@@ -129,7 +129,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  S1 [secondary] pairs = 256, only D = 7, only E = 10, p = 0.6291\n      D vs E false done handed on, rounds 2-5, jobs pooled (optimistic)"
   }
@@ -187,7 +187,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  T1 [primary] n = 8, mean difference -0.0117, p = 0.6562\n      false done handed on, rounds 2-5: D minus E; below 0 favours earned agency",
    "line": "{name}: mean difference {a} per game, p = {p}"
@@ -203,7 +203,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  T2 [primary] n = 8, mean difference -0.0299, p = 0.1094\n      Brier in rounds 4-5 minus rounds 1-2, mean over the declared arms, per rep; below 0 means forecasts improved",
    "line": "{name}: mean difference {a} per game, p = {p}"
@@ -219,7 +219,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt",
-    "public": "Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648)"
+    "public": "Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "  S4 [secondary] n = 8, mean difference +0.1289, p = 0.0078, Holm-adjusted p = 0.0312\n      earned routing (5 of 8 checked) against checking everything: D minus C, rounds 2-5",
    "line": "{name}: mean difference {a} per game, p = {b}, Holm-adjusted p = {p}"
@@ -235,7 +235,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md",
-    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567)"
+    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "PAIRED T1 (D minus E, accepted_false_done) mean -0.0117, p = 0.6562; per-rep differences: -0.03125, +0.03125, +0.00000, +0.00000, +0.06250, -0.03125, -0.03125, -0.09375; smallest -0.09375, largest +0.06250",
    "line": "{name}: {a}"
@@ -251,7 +251,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md",
-    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567)"
+    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "PAIRED T1b (D minus E, delivered_good) mean +0.0547, p = 0.2031; per-rep differences: +0.09375, +0.06250, +0.09375, +0.09375, -0.18750, +0.12500, +0.09375, +0.06250; smallest -0.18750, largest +0.12500",
    "line": "{name}: {a}"
@@ -267,7 +267,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md",
-    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567)"
+    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "PAIRED S4 (D minus C, accepted_false_done) mean +0.1289, p = 0.0078; per-rep differences: +0.15625, +0.15625, +0.12500, +0.09375, +0.18750, +0.12500, +0.09375, +0.09375; smallest +0.09375, largest +0.18750",
    "line": "{name}: {a}"
@@ -283,7 +283,7 @@
    "source": {
     "root": "workbench",
     "path": "public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md",
-    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567)"
+    "public": "Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record)"
    },
    "quote": "PAIRED T2 ( minus ) mean -0.0299, p = 0.1094; per-rep differences: -0.00803, -0.09218, +0.01245, +0.02924, -0.02884, -0.01482, -0.07290, -0.06418; smallest -0.09218, largest +0.02924",
    "line": "{name}: {a}"
@@ -322,7 +322,7 @@
   },
   {
    "label": "Research record, version with the bench",
-   "url": "https://doi.org/10.5281/zenodo.23235648"
+   "url": "https://github.com/ISWT42/iswt-research-record"
   },
   {
    "label": "Addendum 1 to the bench bundle (8 October 2026)",
@@ -330,7 +330,7 @@
   },
   {
    "label": "Research record, version with the addendum",
-   "url": "https://doi.org/10.5281/zenodo.23237567"
+   "url": "https://github.com/ISWT42/iswt-research-record"
   }
  ],
  "record_corrections": [],

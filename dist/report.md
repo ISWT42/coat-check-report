@@ -3,14 +3,14 @@ title: "The Coat Check: a living technical report on whether an agent's \"done\"
 author: "Joshua Bauer"
 version: "1.3.2"
 date: "2026-10-08"
-doi: "10.5281/zenodo.23228949"
+doi: "https://github.com/ISWT42/coat-check-report"
 ---
 
 # The Coat Check: a living technical report on whether an agent's "done" can be trusted
 
 Joshua Bauer (ISWT42), independent researcher · version 1.3.2 · 8 October 2026
 
-Contact: joshua@iswt.ca. DOI (always the latest version): 10.5281/zenodo.23228949. Each version's own DOI is listed on that record (version 1.0.0: 10.5281/zenodo.23228950).
+Contact: joshua@iswt.ca. Releases: https://github.com/ISWT42/coat-check-report.
 
 Licence: Text and data CC BY 4.0; code MIT.
 
@@ -458,7 +458,7 @@ Adds the findings from the first real run of the Earned Agency Bench: F010, cert
 
 ### Version 1.1.0 (2026-10-08)
 
-Adds the DOIs Zenodo assigned at the first release: the concept DOI 10.5281/zenodo.23228949 (always the latest) and version 1.0.0's own DOI 10.5281/zenodo.23228950. No finding changed.
+Adds the permanent release links to the report.
 
 - Findings added: none
 - Changed: none
@@ -496,7 +496,7 @@ Run `python build.py --pdf` in the report's folder (Python 3, standard library o
 
 ### A.6 Public links
 
-- [Public research record (Zenodo DOI)](https://doi.org/10.5281/zenodo.23227858)
+- [Public research record](https://github.com/ISWT42/iswt-research-record)
 - [Coat-check receipts dataset (Kaggle)](https://www.kaggle.com/datasets/iswt42/coat-check-receipts-2026-10-07)
 - [Benchmark: Two Kinds of False Done (Kaggle)](https://www.kaggle.com/benchmarks/iswt42/two-kinds-of-false-done)
 - [Benchmark DOI](https://doi.org/10.34740/kaggle/w/116515)
@@ -679,7 +679,7 @@ Supports: test t1_t3_g37.
 
 ### Evidence for F002
 
-Links: [Receipts dataset](https://www.kaggle.com/datasets/iswt42/coat-check-receipts-2026-10-07) · [Research record](https://doi.org/10.5281/zenodo.23227858)
+Links: [Receipts dataset](https://www.kaggle.com/datasets/iswt42/coat-check-receipts-2026-10-07) · [Research record](https://github.com/ISWT42/iswt-research-record)
 
 **F002.1** `coat-check-screen-2026-10-07/results/SCREEN-SCORED.md`. Public copy: Kaggle dataset coat-check-receipts-2026-10-07, screen/ folder (SCREEN-SCORED.md).
 
@@ -771,7 +771,7 @@ Supports: test cc_vs_quote.
 
 ### Evidence for F003
 
-Links: [Benchmark](https://www.kaggle.com/benchmarks/iswt42/two-kinds-of-false-done) · [Research record](https://doi.org/10.5281/zenodo.23227858)
+Links: [Benchmark](https://www.kaggle.com/benchmarks/iswt42/two-kinds-of-false-done) · [Research record](https://github.com/ISWT42/iswt-research-record)
 
 **F003.1** `public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md`. Public copy: Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md.
 
@@ -815,7 +815,7 @@ Supports: r6_g37 (1.000); r6_g38 (1.000); r6_hk (1.000); r6_nano (0.958).
 
 ### Evidence for F004
 
-Links: [Benchmark](https://www.kaggle.com/benchmarks/iswt42/two-kinds-of-false-done) · [Research record](https://doi.org/10.5281/zenodo.23227858)
+Links: [Benchmark](https://www.kaggle.com/benchmarks/iswt42/two-kinds-of-false-done) · [Research record](https://github.com/ISWT42/iswt-research-record)
 
 **F004.1** `public-record-2026-10-08/2-coat-check-kaggle-and-7-oct-findings/findings-2026-10-07/FINDINGS-2026-10-07.md`. Public copy: Public research record, bundle 2, findings-2026-10-07/FINDINGS-2026-10-07.md.
 
@@ -867,7 +867,7 @@ Supports: test t1_t7_g37.
 
 ### Evidence for F005
 
-Links: [Receipts dataset](https://www.kaggle.com/datasets/iswt42/coat-check-receipts-2026-10-07) · [Research record](https://doi.org/10.5281/zenodo.23227858)
+Links: [Receipts dataset](https://www.kaggle.com/datasets/iswt42/coat-check-receipts-2026-10-07) · [Research record](https://github.com/ISWT42/iswt-research-record)
 
 **F005.1** `coat-check-relay-2026-10-07/runs-real-1-score.txt`. Public copy: Kaggle dataset coat-check-receipts-2026-10-07, relay/ folder (runs-real-1-score.txt).
 
@@ -1001,7 +1001,7 @@ Supports: test a_vs_d.
 
 ### Evidence for F006
 
-Links: [Research record](https://doi.org/10.5281/zenodo.23227858)
+Links: [Research record](https://github.com/ISWT42/iswt-research-record)
 
 **F006.1** `public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md`. Public copy: Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s12/S12-FIRST-LOOK.md.
 
@@ -1141,7 +1141,7 @@ Supports: test gemma.
 
 ### Evidence for F007
 
-Links: [Research record](https://doi.org/10.5281/zenodo.23227858)
+Links: [Research record](https://github.com/ISWT42/iswt-research-record)
 
 **F007.1** `public-record-2026-10-08/3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md`. Public copy: Public research record, bundle 3, findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md (finding F15).
 
@@ -1241,7 +1241,7 @@ Supports: test local_qwen; test local_gemma.
 
 ### Evidence for F008
 
-Links: [Research record](https://doi.org/10.5281/zenodo.23227858)
+Links: [Research record](https://github.com/ISWT42/iswt-research-record)
 
 **F008.1** `public-record-2026-10-08/3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s11/S11-FIRST-LOOK.md`. Public copy: Public research record, bundle 3, gemini-pack-s1-s12/keys-and-results/results/s11/S11-FIRST-LOOK.md.
 
@@ -1381,7 +1381,7 @@ Supports: setup sentence.
 
 ### Evidence for F009
 
-Links: [Research record](https://doi.org/10.5281/zenodo.23227858)
+Links: [Research record](https://github.com/ISWT42/iswt-research-record)
 
 **F009.1** `public-record-2026-10-08/3-checker-studies-5-to-7-oct/gate-test-2026-10-07/results/GATE-RESULTS.redacted.md`. Public copy: Public research record, bundle 3, gate-test-2026-10-07/results/GATE-RESULTS.redacted.md.
 
@@ -1465,9 +1465,9 @@ Supports: test g2_g3_gemma.
 
 ### Evidence for F010
 
-Links: [Bench folder in the research record](https://github.com/ISWT42/iswt-research-record/tree/v2026.10.08.1/7-earned-agency-bench-2026-10-08) · [Research record, version with the bench](https://doi.org/10.5281/zenodo.23235648) · [Addendum 1 to the bench bundle (8 October 2026)](https://github.com/ISWT42/iswt-research-record/blob/v2026.10.08.3/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md) · [Research record, version with the addendum](https://doi.org/10.5281/zenodo.23237567)
+Links: [Bench folder in the research record](https://github.com/ISWT42/iswt-research-record/tree/v2026.10.08.1/7-earned-agency-bench-2026-10-08) · [Research record, version with the bench](https://github.com/ISWT42/iswt-research-record) · [Addendum 1 to the bench bundle (8 October 2026)](https://github.com/ISWT42/iswt-research-record/blob/v2026.10.08.3/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md) · [Research record, version with the addendum](https://github.com/ISWT42/iswt-research-record)
 
-**F010.1** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/README.md`. Public copy: Public research record, bundle 7, README.md (version DOI 10.5281/zenodo.23235648).
+**F010.1** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/README.md`. Public copy: Public research record, bundle 7, README.md (https://github.com/ISWT42/iswt-research-record).
 
 ```
 Four small, cheap AI models worked on a bank of 40 small coding jobs.
@@ -1475,7 +1475,7 @@ Four small, cheap AI models worked on a bank of 40 small coding jobs.
 
 Supports: models (4); bank (40).
 
-**F010.2** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.2** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
 games scored: 40; unfinished: 0; left out for breaking a rule: 0; dropped step attempts: 0
@@ -1483,7 +1483,7 @@ games scored: 40; unfinished: 0; left out for breaking a rule: 0; dropped step a
 
 Supports: games (40).
 
-**F010.3** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.3** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
 ARM A baseline  (8 games)
@@ -1497,7 +1497,7 @@ ARM A baseline  (8 games)
 
 Supports: a_done (314 of 320); a_false (116 of 320); a_pass (198 of 320).
 
-**F010.4** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.4** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
     cost per passing job: 0.000242; per delivered good job: 0.000242
@@ -1506,7 +1506,7 @@ Supports: a_done (314 of 320); a_false (116 of 320); a_pass (198 of 320).
 
 Supports: a_forecast (0.92); a_pass_rate (0.62).
 
-**F010.5** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.5** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
 ARM B ticket  (8 games)
@@ -1520,7 +1520,7 @@ ARM B ticket  (8 games)
 
 Supports: b_done (315 of 320); b_false (123 of 320); b_pass (192 of 320).
 
-**F010.6** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.6** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
 ARM C relay  (8 games)
@@ -1534,7 +1534,7 @@ ARM C relay  (8 games)
 
 Supports: c_done (312 of 320); c_false (0 of 320); c_pass (197 of 320).
 
-**F010.7** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.7** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
 ARM D earned  (8 games)
@@ -1548,7 +1548,7 @@ ARM D earned  (8 games)
 
 Supports: d_done (317 of 320); d_false (39 of 320); d_pass (202 of 320).
 
-**F010.8** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.8** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
 ARM E random  (8 games)
@@ -1562,7 +1562,7 @@ ARM E random  (8 games)
 
 Supports: e_done (313 of 320); e_false (44 of 320); e_pass (188 of 320).
 
-**F010.9** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.9** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   [rounds 2-5] jobs 256
@@ -1575,7 +1575,7 @@ Supports: e_done (313 of 320); e_false (44 of 320); e_pass (188 of 320).
 
 Supports: a_false_late (93 of 256).
 
-**F010.10** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.10** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   [rounds 2-5] jobs 256
@@ -1588,7 +1588,7 @@ Supports: a_false_late (93 of 256).
 
 Supports: c_false_late (0 of 256).
 
-**F010.11** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.11** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   certifier:
@@ -1602,7 +1602,7 @@ Supports: c_false_late (0 of 256).
 
 Supports: c_caught (122 of 122); c_assure (0 of 122); c_alarm (0 of 197); c_invalid (1 of 320); c_right (319 of 319).
 
-**F010.12** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.12** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
     tokens in/out/reasoning: 340273/68034/0; wall seconds summed 2867.3; cost US$0.047824
@@ -1611,7 +1611,7 @@ Supports: c_caught (122 of 122); c_assure (0 of 122); c_alarm (0 of 197); c_inva
 
 Supports: cost_a_good (0.000242).
 
-**F010.13** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.13** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
     tokens in/out/reasoning: 638183/75636/0; wall seconds summed 3964.3; cost US$0.075394
@@ -1620,7 +1620,7 @@ Supports: cost_a_good (0.000242).
 
 Supports: cost_c_good (0.000383).
 
-**F010.14** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.14** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
 CALLS: 3920, cost US$0.316988
@@ -1636,7 +1636,7 @@ Supports: calls (3920); cost (0.316988).
 
 Supports: r2_false (2 of 68); r2_true (23 of 32).
 
-**F010.16** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567).
+**F010.16** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record).
 
 ```
 Arm C had 197 passes and 123 failures.
@@ -1644,7 +1644,7 @@ Arm C had 197 passes and 123 failures.
 
 Supports: c_fail (123 of 320).
 
-**F010.17** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567).
+**F010.17** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record).
 
 ```
 ARM C VERDICT invalid on a job whose hidden tests failed : 1
@@ -1652,7 +1652,7 @@ ARM C VERDICT invalid on a job whose hidden tests failed : 1
 
 Supports: c_invalid_failing (1 of 123).
 
-**F010.18** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567).
+**F010.18** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record).
 
 ```
 That is about 58% more (1.58 times; from the unrounded totals, US$0.075394 over 197 jobs against US$0.047824 over 198 jobs, 58.4%).
@@ -1660,7 +1660,7 @@ That is about 58% more (1.58 times; from the unrounded totals, US$0.075394 over 
 
 Supports: cost_rise (58).
 
-**F010.19** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.19** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
     cost per passing job: 0.000242; per delivered good job: 0.000242
@@ -1670,7 +1670,7 @@ Supports: cost_rise (58).
 
 Supports: a_missing_pkg (73 of 80).
 
-**F010.20** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/config.json`. Public copy: Public research record, bundle 7, config.json (version DOI 10.5281/zenodo.23235648).
+**F010.20** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/config.json`. Public copy: Public research record, bundle 7, config.json (https://github.com/ISWT42/iswt-research-record).
 
 ```
 send reasoning OFF, temperature 0, seed 42 and a fixed reply limit (openrouter-plain 400 tokens, openrouter-plain-long 1200)
@@ -1678,7 +1678,7 @@ send reasoning OFF, temperature 0, seed 42 and a fixed reply limit (openrouter-p
 
 Supports: temperature (0); seed (42).
 
-**F010.21** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/config.json`. Public copy: Public research record, bundle 7, config.json (version DOI 10.5281/zenodo.23235648).
+**F010.21** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/config.json`. Public copy: Public research record, bundle 7, config.json (https://github.com/ISWT42/iswt-research-record).
 
 ```
 "max_out_tokens_by_role": {"forecast": 400, "certify": 400, "work": 1200},
@@ -1686,7 +1686,7 @@ Supports: temperature (0); seed (42).
 
 Supports: work_cap (1200).
 
-**F010.22** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.22** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   S3 [secondary] n = 8, mean difference -0.3844, p = 0.0078, Holm-adjusted p = 0.0312
@@ -1695,7 +1695,7 @@ Supports: work_cap (1200).
 
 Supports: test s3.
 
-**F010.23** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F010.23** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   S2 [secondary] n = 8, mean difference +0.0219, p = 0.1250, Holm-adjusted p = 0.2500
@@ -1704,7 +1704,7 @@ Supports: test s3.
 
 Supports: test s2.
 
-**F010.24** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567).
+**F010.24** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record).
 
 ```
 PAIRED S2 (B minus A, accepted_false_done) mean +0.0219, p = 0.1250; per-rep differences: +0.00000, +0.00000, +0.00000, +0.02500, +0.05000, +0.02500, +0.07500, +0.00000; smallest +0.00000, largest +0.07500
@@ -1712,7 +1712,7 @@ PAIRED S2 (B minus A, accepted_false_done) mean +0.0219, p = 0.1250; per-rep dif
 
 Supports: test s2_diffs.
 
-**F010.25** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567).
+**F010.25** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record).
 
 ```
 PAIRED S3 (C minus B, accepted_false_done) mean -0.3844, p = 0.0078; per-rep differences: -0.32500, -0.40000, -0.35000, -0.35000, -0.40000, -0.45000, -0.40000, -0.40000; smallest -0.45000, largest -0.32500
@@ -1722,9 +1722,9 @@ Supports: test s3_diffs.
 
 ### Evidence for F011
 
-Links: [Bench folder in the research record](https://github.com/ISWT42/iswt-research-record/tree/v2026.10.08.1/7-earned-agency-bench-2026-10-08) · [Research record, version with the bench](https://doi.org/10.5281/zenodo.23235648) · [Addendum 1 to the bench bundle (8 October 2026)](https://github.com/ISWT42/iswt-research-record/blob/v2026.10.08.3/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md) · [Research record, version with the addendum](https://doi.org/10.5281/zenodo.23237567)
+Links: [Bench folder in the research record](https://github.com/ISWT42/iswt-research-record/tree/v2026.10.08.1/7-earned-agency-bench-2026-10-08) · [Research record, version with the bench](https://github.com/ISWT42/iswt-research-record) · [Addendum 1 to the bench bundle (8 October 2026)](https://github.com/ISWT42/iswt-research-record/blob/v2026.10.08.3/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md) · [Research record, version with the addendum](https://github.com/ISWT42/iswt-research-record)
 
-**F011.1** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F011.1** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   T1 [primary] n = 8, mean difference -0.0117, p = 0.6562
@@ -1733,7 +1733,7 @@ Links: [Bench folder in the research record](https://github.com/ISWT42/iswt-rese
 
 Supports: pairs (8); test t1.
 
-**F011.2** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F011.2** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   [rounds 2-5] jobs 256
@@ -1746,7 +1746,7 @@ Supports: pairs (8); test t1.
 
 Supports: d_false_late (33 of 256).
 
-**F011.3** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F011.3** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   [rounds 2-5] jobs 256
@@ -1759,7 +1759,7 @@ Supports: d_false_late (33 of 256).
 
 Supports: e_false_late (36 of 256).
 
-**F011.4** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F011.4** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   [rounds 2-5] jobs 256
@@ -1776,7 +1776,7 @@ Supports: e_false_late (36 of 256).
 
 Supports: d_checked (160 of 256).
 
-**F011.5** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F011.5** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   [rounds 2-5] jobs 256
@@ -1793,7 +1793,7 @@ Supports: d_checked (160 of 256).
 
 Supports: e_checked (160 of 256).
 
-**F011.6** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F011.6** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   [rounds 2-5] jobs 256
@@ -1810,7 +1810,7 @@ Supports: e_checked (160 of 256).
 
 Supports: a_checked (0 of 256).
 
-**F011.7** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F011.7** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   [rounds 2-5] jobs 256
@@ -1827,7 +1827,7 @@ Supports: a_checked (0 of 256).
 
 Supports: c_checked (256 of 256).
 
-**F011.8** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F011.8** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   T1b [primary guard] n = 8, mean difference +0.0547, p = 0.2031
@@ -1836,7 +1836,7 @@ Supports: c_checked (256 of 256).
 
 Supports: t1b_diff (0.0547).
 
-**F011.9** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F011.9** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   S1 [secondary] pairs = 256, only D = 7, only E = 10, p = 0.6291
@@ -1845,7 +1845,7 @@ Supports: t1b_diff (0.0547).
 
 Supports: s1_p (0.6291).
 
-**F011.10** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F011.10** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   T2 [primary] n = 8, mean difference -0.0299, p = 0.1094
@@ -1854,7 +1854,7 @@ Supports: s1_p (0.6291).
 
 Supports: test t2.
 
-**F011.11** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (version DOI 10.5281/zenodo.23235648).
+**F011.11** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/runs/real-1-score.txt`. Public copy: Public research record, bundle 7, runs/real-1-score.txt (https://github.com/ISWT42/iswt-research-record).
 
 ```
   S4 [secondary] n = 8, mean difference +0.1289, p = 0.0078, Holm-adjusted p = 0.0312
@@ -1863,7 +1863,7 @@ Supports: test t2.
 
 Supports: test s4.
 
-**F011.12** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567).
+**F011.12** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record).
 
 ```
 PAIRED T1 (D minus E, accepted_false_done) mean -0.0117, p = 0.6562; per-rep differences: -0.03125, +0.03125, +0.00000, +0.00000, +0.06250, -0.03125, -0.03125, -0.09375; smallest -0.09375, largest +0.06250
@@ -1871,7 +1871,7 @@ PAIRED T1 (D minus E, accepted_false_done) mean -0.0117, p = 0.6562; per-rep dif
 
 Supports: test t1_diffs.
 
-**F011.13** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567).
+**F011.13** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record).
 
 ```
 PAIRED T1b (D minus E, delivered_good) mean +0.0547, p = 0.2031; per-rep differences: +0.09375, +0.06250, +0.09375, +0.09375, -0.18750, +0.12500, +0.09375, +0.06250; smallest -0.18750, largest +0.12500
@@ -1879,7 +1879,7 @@ PAIRED T1b (D minus E, delivered_good) mean +0.0547, p = 0.2031; per-rep differe
 
 Supports: test t1b_diffs.
 
-**F011.14** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567).
+**F011.14** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record).
 
 ```
 PAIRED S4 (D minus C, accepted_false_done) mean +0.1289, p = 0.0078; per-rep differences: +0.15625, +0.15625, +0.12500, +0.09375, +0.18750, +0.12500, +0.09375, +0.09375; smallest +0.09375, largest +0.18750
@@ -1887,7 +1887,7 @@ PAIRED S4 (D minus C, accepted_false_done) mean +0.1289, p = 0.0078; per-rep dif
 
 Supports: test s4_diffs.
 
-**F011.15** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (version DOI 10.5281/zenodo.23237567).
+**F011.15** `public-record-2026-10-08/7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md`. Public copy: Public research record, bundle 7, ADDENDUM-1-2026-10-08.md (https://github.com/ISWT42/iswt-research-record).
 
 ```
 PAIRED T2 ( minus ) mean -0.0299, p = 0.1094; per-rep differences: -0.00803, -0.09218, +0.01245, +0.02924, -0.02884, -0.01482, -0.07290, -0.06418; smallest -0.09218, largest +0.02924
